@@ -1,4 +1,4 @@
-# user-storage
+# User Storage Ecommerce 🔥
 
 ## Project setup
 ```
