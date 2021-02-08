@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <SearchBar />
+    <Nav />
+    <router-view />
+    <Footer />
   </div>
 </template>
+
+<script>
+import Nav from "./components/Global/Nav";
+import SearchBar from "./components/Global/SearchBar";
+import Footer from "./components/Global/Footer";
+export default {
+  components: {
+    Nav,
+    SearchBar,
+    Footer
+  }
+};
+</script>
 
 <style>
 #app {

@@ -1,0 +1,16 @@
+<template>
+  <div id="nav">
+    <router-link to="/dam">Dam</router-link> |
+    <router-link to="/barn">Barn</router-link> |
+    <router-link to="/herr">Herr</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Nav"
+};
+</script>
+
+<style scoped lang="scss"></style>
