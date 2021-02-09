@@ -12,6 +12,7 @@
 </template>
 
 <script>
+// Test
 import Nav from "./components/Global/Nav";
 import SearchBar from "./components/Global/SearchBar";
 import ShoppingCart from "./components/Global/ShoppingCart";
