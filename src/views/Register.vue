@@ -44,6 +44,10 @@ export default {
             username: "",
             password: ""
         }
+    },
+
+    methods: {
+      //if username = localStorage.username then "you already have an account. Please sign in"
     }
 }
 </script>

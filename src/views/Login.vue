@@ -13,12 +13,17 @@
             ></b-form-input>
           </b-form-group>
           <b-form-group id="input-group-2" label="Password:" label-for="input-2">
-            <b-form-input id="input-2" type="password" placeholder="Enter password" v-model="password"></b-form-input>
+            <b-form-input
+              id="input-2"
+              type="password"
+              placeholder="Enter password"
+              v-model="password"
+            ></b-form-input>
           </b-form-group>
           <div class="text-center">
-              <b-button variant="info" type="submit" >Sign in</b-button> 
-              <span class="mx-2">or</span>
-              <b-button to="/register">Register</b-button>
+            <b-button variant="info" type="submit">Sign in</b-button>
+            <span class="mx-2">or</span>
+            <b-button to="/register">Register</b-button>
           </div>
         </b-form>
       </b-card-body>
@@ -30,33 +35,31 @@
 export default {
   name: 'Login',
 
-  data () {
-      return {
-          username: "",
-          password: ""
-      }
-  }, 
+  data() {
+    return {
+      username: "",
+      password: ""
+    }
+  },
 
-  mounted () {
-          localStorage.setItem('username', '')
-        
-      
+  mounted() {
+    if (localStorage.getItem("username") !="" && localStorage.getItem("password") !="") {
+      this.$router.push("/user")
+    }
   },
 
   methods: {
-      onSubmit (e) {
-          e.preventDefault()
-          this.login()
-      },
-    login () {
-        console.log(this.username)
-        localStorage.setItem('username', this.username)
-        localStorage.setItem('password', this.password)
-
-    }
-      
+    onSubmit(e) {
+      e.preventDefault()
+      this.login()
+    },
+    login() {
+      console.log(this.username)
+      localStorage.setItem('username', this.username)
+      localStorage.setItem('password', this.password)
+      this.$router.push('/user')
+    },
   },
-  
 }
 </script>
 
