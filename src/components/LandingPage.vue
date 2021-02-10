@@ -2,19 +2,19 @@
 <div class="landingPage">
     <div class="categoryDeck">
         <!-- tre kategori-cards -->
-        <b-card-group deck>
-            <b-card title="Dam" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+        <b-row>
+            <b-card title="Women" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
             <b-link to="../views/Dam" class="stretched-link"></b-link>
             </b-card>
 
-            <b-card title="Herr" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+            <b-card title="Men" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
             <b-link to="../views/Herr" class="stretched-link"></b-link>
             </b-card>
 
-            <b-card title="Barn" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+            <b-card title="Children" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
             <b-link to="../views/Barn" class="stretched-link"></b-link>
             </b-card>
-        </b-card-group>
+        </b-row>
     </div>
 
     <!-- jumbotron med rea -->
@@ -26,16 +26,16 @@
     
     <!-- tre kategori-cards -->
     <div class="categoryDeck">
-        <b-card-group deck>
-            <b-card title="Jackor" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+        <b-row>
+            <b-card title="Jackets" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
             </b-card>
 
             <b-card title="T-shirts" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
             </b-card>
 
-            <b-card title="Accessoarer" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
+            <b-card title="Accessories" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
             </b-card>
-        </b-card-group>
+        </b-row>
     </div>
 </div>
 </template>
@@ -57,5 +57,8 @@ div.landingPage{
 }
 .categoryDeck{
     padding: 20px;
+}
+div.row{
+    justify-content: space-evenly;
 }
 </style>

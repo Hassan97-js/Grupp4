@@ -1,33 +1,33 @@
 <template>
     <div class="categoryDeck">
-        <b-card-group deck>
+        <b-row>
             <b-card class="reviewCard">
                 <b-img v-bind="mainProps" rounded="circle" alt="Circle image" fluid></b-img>
+                <b-form-rating variant="warning" v-model="value" no-border readonly></b-form-rating>
                 <b-card-text>
-                Some review text to show how the company is.
+                Review text about the company and what customers and others think about the website.
                 </b-card-text>
-
-                <b-card-text>Name or something of the customer.</b-card-text>
+                <b-card-text>Name of reviewer.</b-card-text>
                 </b-card>
 
             <b-card class="reviewCard">
                 <b-img v-bind="mainProps" rounded="circle" alt="Circle image" fluid></b-img>
+                <b-form-rating variant="warning" v-model="value" no-border readonly></b-form-rating>
                 <b-card-text>
-                Some review text to show how the company is.
+                Review text about the company and what customers and others think about the website.
                 </b-card-text>
-
-                <b-card-text>Name or something of the customer.</b-card-text>
+                <b-card-text>Name of reviewer.</b-card-text>
             </b-card>
         
             <b-card class="reviewCard">
                 <b-img v-bind="mainProps" rounded="circle" alt="Circle image" fluid></b-img>
+                <b-form-rating variant="warning" v-model="value" no-border readonly></b-form-rating>
                 <b-card-text>
-                Some review text to show how the company is.
+                Review text about the company and what customers and others think about the website.
                 </b-card-text>
-
-                <b-card-text>Name or something of the customer.</b-card-text>
+                <b-card-text>Name of reviewer.</b-card-text>
             </b-card>
-        </b-card-group>
+        </b-row>
     </div>
 </template>
 
@@ -35,7 +35,8 @@
 export default {
     data() {
       return {
-        mainProps: { blank: true, blankColor: '#777', width: 150, height: 150, class: 'm1' }
+        mainProps: { blank: true, blankColor: '#777', width: 150, height: 150, class: 'm1' },
+        value: 3
       }
     },
      name: 'Reviews'
@@ -43,10 +44,15 @@ export default {
 </script>
 
 <style scoped>
-.categoryDeck{
-padding: 0px 100px
+div.row{
+    justify-content: center;
+    padding: 10px 0px;
 }
 p.card-text{
     padding: 15px;
+}
+.reviewCard{
+    max-width: 265px;
+    margin: 0px 10px;
 }
 </style>
