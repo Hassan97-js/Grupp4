@@ -20,7 +20,7 @@
         <b-icon class="mx-2" icon="heart-fill" variant="danger"></b-icon>
       </router-link>
       |
-      <router-link class="link-item" to="/user">
+      <router-link class="link-item" to="/login">
         <b-icon class="mx-2" icon="person-circle" variant="secondary"></b-icon>
       </router-link>
       |
