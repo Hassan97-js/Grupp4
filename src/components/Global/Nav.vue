@@ -38,8 +38,26 @@ export default {
 </script>
 
 <style scoped lang="scss">
+/*
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+
+ */
 nav#nav {
   display: flex;
+  padding: 30px;
   div.logo {
     display: flex;
     justify-self: start;
@@ -52,9 +70,16 @@ nav#nav {
     display: flex;
     margin: 0 auto;
     align-items: center;
-    .link-item {
+    font-weight: bold;
+    a.link-item {
       margin: 0 1rem;
     }
+  }
+  a.link-item {
+    color: black;
+  }
+  a.router-link-exact-active {
+    color: #42b983;
   }
 }
 </style>

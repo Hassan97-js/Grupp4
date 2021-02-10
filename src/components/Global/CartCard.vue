@@ -7,7 +7,7 @@
     <div class="user-cart-options">
       <b-icon class="btn-cart-x" icon="cart-x" variant="danger"></b-icon>
       <div class="product-value">
-        <select name="" id="">
+        <select class="custom-select custom-select">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
