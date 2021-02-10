@@ -25,7 +25,12 @@
       </router-link>
       |
       <router-link class="link-item" to="/cart">
-        <b-icon class="mx-2" icon="cart3" variant="secondary"></b-icon>
+        <b-icon
+          @click="makeItVisible"
+          class="mx-2"
+          icon="cart3"
+          variant="secondary"
+        ></b-icon>
       </router-link>
     </div>
   </nav>
@@ -33,28 +38,23 @@
 
 <script>
 export default {
-  name: "Nav"
+  name: "Nav",
+  computed: {
+    visible() {
+      return this.$store.state.isVisible;
+    }
+  },
+  methods: {
+    makeItVisible() {
+      this.visible === false
+        ? this.$store.commit("setIsVisible", true)
+        : this.$store.commit("setIsVisible", false);
+    }
+  }
 };
 </script>
 
 <style scoped lang="scss">
-/*
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-
- */
 nav#nav {
   display: flex;
   padding: 30px;
