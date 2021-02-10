@@ -2,7 +2,7 @@
   <div class="card w-50 mx-auto">
     <b-card>
       <b-card-body>
-        <b-form>
+        <b-form @submit="onSubmit">
           <p class="h4 text-center ">Register</p>
           <b-form-group id="input-group-1" label="Email:" label-for="input-1">
             <b-form-input
@@ -47,7 +47,17 @@ export default {
     },
 
     methods: {
-      //if username = localStorage.username then "you already have an account. Please sign in"
+      onSubmit(e) {
+        e.preventDefault()
+        this.login()
+      },
+
+      login() {
+        localStorage.setItem('username', this.username)
+      localStorage.setItem('password', this.password)
+      localStorage.setItem('email', this.email)
+      this.$router.push('/user')
+      }
     }
 }
 </script>
