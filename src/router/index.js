@@ -7,6 +7,9 @@ import Dam from "../views/Dam.vue";
 import Barn from "../views/Barn.vue";
 import Herr from "../views/Herr.vue";
 import About from "../views/About.vue";
+import Login from "../views/Login.vue";
+import Register from "../views/Register.vue";
+import User from "../views/User.vue";
 
 Vue.use(VueRouter);
 
@@ -37,6 +40,21 @@ const routes = [
     path: "/about",
     name: "About",
     component: About
+  }, 
+  {
+    path: "/login",
+    name: "Login", 
+    component: Login
+  },
+  {
+    path: "/register",
+    name: "Register", 
+    component: Register
+  },
+  {
+    path: "/user",
+    name: "User", 
+    component: User
   }
 ];
 
