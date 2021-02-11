@@ -1,8 +1,9 @@
 <template>
   <div>
-    <b-avatar size="4em" class="mb-4"></b-avatar>
+    <b-avatar :text="firstLetter" size="4em" class="mb-4"></b-avatar>
     <h1>Hello {{ username }}!</h1>
-    <hr class="mt-5" />
+    <b-button class="mx-2" variant="danger" @click="logout">Log out</b-button>
+    <hr class="mt-3" />
     <b-container>
       <b-row class="mt-5">
         <b-col>
@@ -85,7 +86,7 @@
       </b-row>
       <hr class="mt-5" />
     </b-container>
-    <b-button class="mt-5" variant="danger" @click="logout">Log out</b-button>
+
     <b-modal id="confirm-username">
       <p class="my-4">Username changed!</p>
     </b-modal>
@@ -108,6 +109,11 @@ export default {
       password: localStorage.getItem("password"),
       email: localStorage.getItem("email")
     };
+  },
+  computed: {
+    firstLetter() {
+      return this.username.charAt(0);
+    }
   },
 
   methods: {
