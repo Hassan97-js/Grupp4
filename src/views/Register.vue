@@ -1,6 +1,6 @@
 <template>
-  <div class="card w-50 mx-auto">
-    <b-card>
+  <div>
+    <b-card class="register mx-auto">
       <b-card-body>
         <b-form @submit="onSubmit">
           <p class="h4 text-center ">Register</p>
@@ -61,3 +61,15 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+  @import "~bootstrap/scss/functions";
+    @import "~bootstrap/scss/variables";
+    @import "~bootstrap/scss/mixins";
+    
+    @include media-breakpoint-up(sm) {
+        .register {
+            width: 480px;
+        }
+    }
+</style>

@@ -9,13 +9,13 @@
         <b-container>
             <b-row class="mt-5">
                 <b-col>
-                    <h3>Username:</h3>
+                    <h4>Username:</h4>
                 </b-col>
                 <b-col>
                     <p>{{ username }}</p>
                 </b-col>
                 <b-col>
-                    <b-button v-b-modal.username-modal
+                    <b-button v-b-modal.username-modal size="sm" variant="light"
                         >Edit<b-icon class="ml-2" icon="pencil"></b-icon
                     ></b-button>
                     <b-modal
@@ -40,13 +40,13 @@
 
             <b-row class="mt-5">
                 <b-col>
-                    <h3>Password:</h3>
+                    <h4>Password:</h4>
                 </b-col>
                 <b-col>
                     <p>&bull;&bull;&bull;&bull;&bull;&bull;</p>
                 </b-col>
                 <b-col>
-                    <b-button v-b-modal.password-modal
+                    <b-button v-b-modal.password-modal size="sm" variant="light"
                         >Edit<b-icon class="ml-2" icon="pencil"></b-icon
                     ></b-button>
                     <b-modal
@@ -72,11 +72,11 @@
 
             <b-row class="mt-5">
                 <b-col>
-                    <h3>Email:</h3>
+                    <h4>Email:</h4>
                 </b-col>
                 <b-col>{{ email }}</b-col>
                 <b-col>
-                    <b-button v-b-modal.email-modal
+                    <b-button v-b-modal.email-modal size="sm" variant="light"
                         >Edit<b-icon class="ml-2" icon="pencil"></b-icon
                     ></b-button>
                     <b-modal
