@@ -1,0 +1,254 @@
+{
+    "products": [
+  {
+    "id": 1,
+    "productType": "assec",
+    "productTarget": "women"
+  },
+  {
+    "id": 2,
+    "productType": "hoodie",
+    "productTarget": "kids"
+  },
+  {
+    "id": 3,
+    "productType": "hoodie",
+    "productTarget": "kids"
+  },
+  {
+    "id": 4,
+    "productType": "tshirt",
+    "productTarget": "men"
+  },
+  {
+    "id": 5,
+    "productType": "hoodie",
+    "productTarget": "men"
+  },
+  {
+    "id": 6,
+    "productType": "assec",
+    "productTarget": "men"
+  },
+  {
+    "id": 7,
+    "productType": "tshirt",
+    "productTarget": "men"
+  },
+  {
+    "id": 8,
+    "productType": "hoodie",
+    "productTarget": "men"
+  },
+  {
+    "id": 9,
+    "productType": "hoodie",
+    "productTarget": "men"
+  },
+  {
+    "id": 10,
+    "productType": "hoodie",
+    "productTarget": "men"
+  },
+  {
+    "id": 11,
+    "productType": "tshirt",
+    "productTarget": "men"
+  },
+  {
+    "id": 12,
+    "productType": "assec",
+    "productTarget": "men"
+  },
+  {
+    "id": 13,
+    "productType": "tshirt",
+    "productTarget": "kids"
+  },
+  {
+    "id": 14,
+    "productType": "assec",
+    "productTarget": "men"
+  },
+  {
+    "id": 15,
+    "productType": "trousers",
+    "productTarget": "kids"
+  },
+  {
+    "id": 16,
+    "productType": "hoodie",
+    "productTarget": "kids"
+  },
+  {
+    "id": 17,
+    "productType": "hoodie",
+    "productTarget": "kids"
+  },
+  {
+    "id": 18,
+    "productType": "assec",
+    "productTarget": "kids"
+  },
+  {
+    "id": 19,
+    "productType": "assec",
+    "productTarget": "men"
+  },
+  {
+    "id": 20,
+    "productType": "trousers",
+    "productTarget": "men"
+  },
+  {
+    "id": 21,
+    "productType": "tshirt",
+    "productTarget": "kids"
+  },
+  {
+    "id": 22,
+    "productType": "tshirt",
+    "productTarget": "men"
+  },
+  {
+    "id": 23,
+    "productType": "tshirt",
+    "productTarget": "men"
+  },
+  {
+    "id": 24,
+    "productType": "hoodie",
+    "productTarget": "kids"
+  },
+  {
+    "id": 25,
+    "productType": "hoodie",
+    "productTarget": "men"
+  },
+  {
+    "id": 26,
+    "productType": "tshirt",
+    "productTarget": "men"
+  },
+  {
+    "id": 27,
+    "productType": "assec",
+    "productTarget": "men"
+  },
+  {
+    "id": 28,
+    "productType": "hoodie",
+    "productTarget": "women"
+  },
+  {
+    "id": 29,
+    "productType": "trousers",
+    "productTarget": "men"
+  },
+  {
+    "id": 30,
+    "productType": "trousers",
+    "productTarget": "kids"
+  },
+  {
+    "id": 31,
+    "productType": "tshirt",
+    "productTarget": "kids"
+  },
+  {
+    "id": 32,
+    "productType": "assec",
+    "productTarget": "women"
+  },
+  {
+    "id": 33,
+    "productType": "trousers",
+    "productTarget": "women"
+  },
+  {
+    "id": 34,
+    "productType": "trousers",
+    "productTarget": "men"
+  },
+  {
+    "id": 35,
+    "productType": "hoodie",
+    "productTarget": "men"
+  },
+  {
+    "id": 36,
+    "productType": "tshirt",
+    "productTarget": "women"
+  },
+  {
+    "id": 37,
+    "productType": "trousers",
+    "productTarget": "women"
+  },
+  {
+    "id": 38,
+    "productType": "trousers",
+    "productTarget": "men"
+  },
+  {
+    "id": 39,
+    "productType": "hoodie",
+    "productTarget": "kids"
+  },
+  {
+    "id": 40,
+    "productType": "assec",
+    "productTarget": "men"
+  },
+  {
+    "id": 41,
+    "productType": "assec",
+    "productTarget": "women"
+  },
+  {
+    "id": 42,
+    "productType": "assec",
+    "productTarget": "men"
+  },
+  {
+    "id": 43,
+    "productType": "hoodie",
+    "productTarget": "kids"
+  },
+  {
+    "id": 44,
+    "productType": "trousers",
+    "productTarget": "women"
+  },
+  {
+    "id": 45,
+    "productType": "trousers",
+    "productTarget": "men"
+  },
+  {
+    "id": 46,
+    "productType": "trousers",
+    "productTarget": "kids"
+  },
+  {
+    "id": 47,
+    "productType": "assec",
+    "productTarget": "women"
+  },
+  {
+    "id": 48,
+    "productType": "tshirt",
+    "productTarget": "kids"
+  },
+  {
+    "id": 49,
+    "productType": "trousers",
+    "productTarget": "kids"
+  },
+  {
+    "id": 50,
+    "productType": "trousers",
+    "productTarget": "women"
+  }
+]
+}
