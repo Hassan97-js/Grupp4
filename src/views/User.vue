@@ -1,8 +1,11 @@
 <template>
     <div>
-        <b-avatar size="4em" class="mb-4"></b-avatar>
+        <b-avatar :text="firstLetter" size="4em" class="mb-4"></b-avatar>
         <h1>Hello {{ username }}!</h1>
-        <hr class="mt-5" />
+        <b-button class="mx-2" variant="danger" @click="logout"
+            >Log out</b-button
+        >
+        <hr class="mt-3" />
         <b-container>
             <b-row class="mt-5">
                 <b-col>
@@ -71,7 +74,7 @@
                 <b-col>
                     <h3>Email:</h3>
                 </b-col>
-                <b-col>{{email}}</b-col>
+                <b-col>{{ email }}</b-col>
                 <b-col>
                     <b-button v-b-modal.email-modal
                         >Edit<b-icon class="ml-2" icon="pencil"></b-icon
@@ -82,10 +85,7 @@
                         @ok="handleOkEmail"
                     >
                         <form ref="form">
-                            <b-form-group
-                                label="Email"
-                                label-for="email-input"
-                            >
+                            <b-form-group label="Email" label-for="email-input">
                                 <b-form-input
                                     type="email"
                                     id="email-input"
@@ -98,9 +98,7 @@
             </b-row>
             <hr class="mt-5" />
         </b-container>
-        <b-button class="mt-5" variant="danger" @click="logout"
-            >Log out</b-button
-        >
+
         <b-modal id="confirm-username">
             <p class="my-4">Username changed!</p>
         </b-modal>
@@ -122,6 +120,11 @@
                 username: localStorage.getItem('username'),
                 password: localStorage.getItem('password'),
                 email: localStorage.getItem('email')
+            }
+        },
+        computed: {
+            firstLetter() {
+                return this.username.charAt(0)
             }
         },
 
