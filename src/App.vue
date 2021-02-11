@@ -1,27 +1,26 @@
 <template>
   <div id="app">
-    <b-container>
-      <SearchBar />
-      <Nav />
+    <SearchBar />
+    <Nav />
+    <div class="hr-line"></div>
+    <b-container class="mt-4">
       <router-view />
     </b-container>
-    <div class="hr-line"></div>
-    <ShoppingCart />
+    <bootShoppingCart />
     <Footer />
   </div>
 </template>
 
 <script>
-// Test
 import Nav from "./components/Global/Nav";
 import SearchBar from "./components/Global/SearchBar";
-import ShoppingCart from "./components/Global/ShoppingCart";
+import bootShoppingCart from "./components/Global/bootShoppingCart";
 import Footer from "./components/Global/Footer";
 export default {
   components: {
     Nav,
     SearchBar,
-    ShoppingCart,
+    bootShoppingCart,
     Footer
   }
 };

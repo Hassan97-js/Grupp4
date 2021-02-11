@@ -3,8 +3,12 @@
     <b-card>
       <b-card-body>
         <b-form @submit="onSubmit">
-          <p class="h4 text-center ">Sign in</p>
-          <b-form-group id="input-group-1" label="Username:" label-for="input-1">
+          <p class="h4 text-center">Sign in</p>
+          <b-form-group
+            id="input-group-1"
+            label="Username:"
+            label-for="input-1"
+          >
             <b-form-input
               id="input-1"
               placeholder="Enter username"
@@ -12,7 +16,11 @@
               v-model="username"
             ></b-form-input>
           </b-form-group>
-          <b-form-group id="input-group-2" label="Password:" label-for="input-2">
+          <b-form-group
+            id="input-group-2"
+            label="Password:"
+            label-for="input-2"
+          >
             <b-form-input
               id="input-2"
               type="password"
@@ -33,34 +41,37 @@
 
 <script>
 export default {
-  name: 'Login',
+  name: "Login",
 
   data() {
     return {
       username: "",
       password: ""
-    }
+    };
   },
 
   mounted() {
-    if (localStorage.getItem("username") !="" && localStorage.getItem("password") !="") {
-      this.$router.push("/user")
+    if (
+      localStorage.getItem("username") != "" &&
+      localStorage.getItem("password") != ""
+    ) {
+      this.$router.push("/user");
     }
   },
 
   methods: {
     onSubmit(e) {
-      e.preventDefault()
-      this.login()
+      e.preventDefault();
+      this.login();
     },
     login() {
-      console.log(this.username)
-      localStorage.setItem('username', this.username)
-      localStorage.setItem('password', this.password)
-      this.$router.push('/user')
-    },
-  },
-}
+      console.log(this.username);
+      localStorage.setItem("username", this.username);
+      localStorage.setItem("password", this.password);
+      this.$router.push("/user");
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>

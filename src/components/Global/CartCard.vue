@@ -16,12 +16,12 @@
       </div>
     </div>
     <div class="user-cart-options">
-      <select class="input-select">
+      <select class="input-select form-control-sm mr-2 p-1">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
       </select>
-      <span class="product-pris">summa</span>
+      <span class="product-pris">Priset</span>
     </div>
   </div>
 </template>
@@ -34,23 +34,25 @@ export default {
 
 <style scoped lang="scss">
 div.flex-cart-container {
-  height: 20vh;
+  height: 35%;
+  max-height: 220px;
   width: 80%;
   margin: 0 auto 1rem auto;
   background: gray;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  padding: 1rem;
   div.flex-product-info-item {
     display: flex;
-    padding: 1rem;
+    padding: 0.3rem;
   }
   img.product-img {
-    height: 130px;
-    width: 130px;
+    height: 100px;
+    width: 100px;
   }
   div.product-info-text {
-    padding: 0.5rem;
+    margin-left: 10px;
     width: 80%;
     p {
       text-align: left;
@@ -58,11 +60,18 @@ div.flex-cart-container {
   }
   div.user-cart-options {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
   }
 }
 .btn-cart-x {
   cursor: pointer;
   float: right;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  div.flex-cart-container {
+    height: 58%;
+    max-height: 220px;
+  }
 }
 </style>

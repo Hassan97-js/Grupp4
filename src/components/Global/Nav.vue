@@ -1,11 +1,13 @@
 <template>
   <nav id="nav">
     <div class="logo">
-      <img
-        class="logoImg"
-        src="../../assets/bootstrapLogo.png"
-        alt="Bootstrap logo"
-      />
+      <router-link to="/">
+        <img
+          class="logoImg"
+          src="../../assets/bootstrapLogo.png"
+          alt="Bootstrap logo"
+        />
+      </router-link>
     </div>
     <div class="navLinks">
       <div>
@@ -26,12 +28,13 @@
       |
       <router-link class="link-item" to="/cart">
         <b-icon
+          v-b-toggle.sidebar-right
           @click="makeItVisible"
-          class="mx-2"
+          class="mx-2 icon"
           icon="cart3"
           variant="secondary"
-        ></b-icon>
-      </router-link>
+        ></b-icon
+      ></router-link>
     </div>
   </nav>
 </template>
@@ -80,6 +83,29 @@ nav#nav {
   }
   a.router-link-exact-active {
     color: #42b983;
+  }
+  .icon:focus {
+    box-shadow: none;
+  }
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  nav#nav {
+    padding: 15px;
+    flex-direction: column;
+    div.logo {
+      justify-self: center;
+      width: 100%;
+      a {
+        margin: 0 auto 0.8rem auto;
+        .logoImg {
+          width: 20%;
+        }
+      }
+    }
+    .userMenu {
+      margin-top: 1rem;
+      justify-content: center;
+    }
   }
 }
 </style>
