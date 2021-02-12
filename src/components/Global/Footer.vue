@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="col-lg-4 col-12">
-          <h4 class="font-rubik font-size-20">Newslatter</h4>
+          <h4 class="font-rubik font-size-20">Newsletter</h4>
           <form class="form-row">
             <div class="text-center py-3">
               <ul class="list-unstyled list-inline mb-0">
@@ -18,7 +18,7 @@
                   <h5 class="mb-1">Register for free</h5>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#" class="btn btn-danger btn-rounded">Sign up!</a>
+                  <router-link to="/login" class="btn btn-danger btn-rounded">Sign up!</router-link>
                 </li>
               </ul>
             </div>
@@ -27,8 +27,8 @@
         <div class="col-lg-2 col-12">
           <h4 class="font-rubik font-size-20">Information</h4>
           <div class="d-flex flex-column flex-wrap">
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
-              >About Us</a
+            <router-link to="/about" class="font-rale font-size-14 text-white-50 pb-1"
+              >About Us</router-link
             >
             <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
               >Delivery Information</a
@@ -37,15 +37,15 @@
               >Privacy Policy</a
             >
             <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
-              >Terms & Conditions</a
+              >Terms &amp; Conditions</a
             >
           </div>
         </div>
         <div class="col-lg-2 col-12">
           <h4 class="font-rubik font-size-20">Account</h4>
           <div class="d-flex flex-column flex-wrap">
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
-              >My Account</a
+            <router-link to="/login" class="font-rale font-size-14 text-white-50 pb-1"
+              >My Account</router-link
             >
             <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
               >Order History</a
@@ -54,7 +54,7 @@
               >Wish List</a
             >
             <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
-              >Newslatters</a
+              >Newsletters</a
             >
           </div>
           <dir>
@@ -129,5 +129,10 @@ footer.sticky-footer {
   color: white;
   text-align: center;
   padding: 1.8rem;
+}
+svg {
+  
+  margin: 3px;
+  
 }
 </style>
