@@ -3,7 +3,7 @@
     <SearchBar />
     <Nav />
     <div class="hr-line"></div>
-    <b-container class="mt-4">
+    <b-container class="mt-4 min-vh">
       <router-view />
     </b-container>
     <bootShoppingCart />
@@ -27,12 +27,16 @@ export default {
 </script>
 
 <style>
+.min-vh {
+  min-height: 57.1vh;
+}
 div.hr-line {
   width: 100vw;
   height: 2vh;
   background: grey;
 }
 #app {
+  overflow: hidden;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

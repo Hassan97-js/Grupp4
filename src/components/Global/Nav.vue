@@ -26,34 +26,19 @@
         <b-icon class="mx-2" icon="person-circle" variant="secondary"></b-icon>
       </router-link>
       |
-      <router-link class="link-item" to="/cart">
-        <b-icon
-          v-b-toggle.sidebar-right
-          @click="makeItVisible"
-          class="mx-2 icon"
-          icon="cart3"
-          variant="secondary"
-        ></b-icon
-      ></router-link>
+      <b-icon
+        v-b-toggle.sidebar-right
+        class="mx-2 icon"
+        icon="cart3"
+        variant="secondary"
+      ></b-icon>
     </div>
   </nav>
 </template>
 
 <script>
 export default {
-  name: "Nav",
-  computed: {
-    visible() {
-      return this.$store.state.isVisible;
-    }
-  },
-  methods: {
-    makeItVisible() {
-      this.visible === false
-        ? this.$store.commit("setIsVisible", true)
-        : this.$store.commit("setIsVisible", false);
-    }
-  }
+  name: "Nav"
 };
 </script>
 
@@ -84,8 +69,8 @@ nav#nav {
   a.router-link-exact-active {
     color: #42b983;
   }
-  .icon:focus {
-    box-shadow: none;
+  .icon {
+    cursor: pointer;
   }
 }
 @media (min-width: 375px) and (max-width: 768px) {
