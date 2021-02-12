@@ -4,7 +4,7 @@
       <router-link to="/">
         <img
           class="logoImg"
-          src="../../assets/bootstrapLogo.png"
+          src="../../assets/double-line-logo.png"
           alt="Bootstrap logo"
         />
       </router-link>
@@ -49,7 +49,7 @@ nav#nav {
   div.logo {
     display: flex;
     justify-self: start;
-    width: 50px;
+    width: 175px;
     .logoImg {
       width: 100%;
     }
