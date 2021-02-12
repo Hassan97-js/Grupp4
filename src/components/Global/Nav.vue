@@ -14,7 +14,8 @@
         <router-link class="link-item" to="/dam">Dam</router-link> |
         <router-link class="link-item" to="/barn">Barn</router-link> |
         <router-link class="link-item" to="/herr">Herr</router-link> |
-        <router-link class="link-item" to="/about">About</router-link>
+        <router-link class="link-item" to="/about">About</router-link> |
+        <router-link class="link-item" to="/product">Product Page</router-link>
       </div>
     </div>
     <div class="userMenu d-flex align-items-center">

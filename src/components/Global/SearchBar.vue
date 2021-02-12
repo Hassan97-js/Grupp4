@@ -32,7 +32,7 @@ export default {
 <style scoped lang="scss">
 div.searchbar-container {
   div.inputWidth {
-    width: 40%;
+    width: 20%;
   }
   .text-style {
     font-size: 0.8rem;
