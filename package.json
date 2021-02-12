@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "concurrently \"json-server ./db/products.json\" \"vue-cli-service serve\"",
+    "serveMe": "vue-cli-service serve",
     "generate": "json-server ./db/generate.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -39,19 +40,13 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "*.{js,jsx,vue}": [ "vue-cli-service lint", "git add" ]
   },
   "eslintConfig": {
     "env": {
       "node": true
     },
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/essential"
-    ],
+    "extends": [ "eslint:recommended", "plugin:vue/essential" ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
