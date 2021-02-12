@@ -7,7 +7,9 @@ module.exports = function() {
                 //Tänker att vi med v-if kan koppla bilder till?
                 id: n+1,
                 productType: _.sample(["tshirt", "trousers", "hoodie","assec" ]),
-                productTarget: _.sample(["women", "men", "kids"]),                
+                productTarget: _.sample(["women", "men", "kids"]),
+                onSale: _.sample([true, false]),
+                price: _.sample([99, 149, 199, 299])
             }
         })
 

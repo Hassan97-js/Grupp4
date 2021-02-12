@@ -2,253 +2,354 @@
     "products": [
   {
     "id": 1,
-    "productType": "assec",
-    "productTarget": "women"
+    "productType": "trousers",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 299
   },
   {
     "id": 2,
-    "productType": "hoodie",
-    "productTarget": "kids"
+    "productType": "trousers",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 199
   },
   {
     "id": 3,
-    "productType": "hoodie",
-    "productTarget": "kids"
+    "productType": "assec",
+    "productTarget": "kids",
+    "onSale": false,
+    "price": 149
   },
   {
     "id": 4,
-    "productType": "tshirt",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 5,
-    "productType": "hoodie",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 99
   },
   {
     "id": 6,
-    "productType": "assec",
-    "productTarget": "men"
+    "productType": "hoodie",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 199
   },
   {
     "id": 7,
-    "productType": "tshirt",
-    "productTarget": "men"
+    "productType": "assec",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 99
   },
   {
     "id": 8,
-    "productType": "hoodie",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "women",
+    "onSale": false,
+    "price": 99
   },
   {
     "id": 9,
     "productType": "hoodie",
-    "productTarget": "men"
+    "productTarget": "women",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 10,
-    "productType": "hoodie",
-    "productTarget": "men"
+    "productType": "tshirt",
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 11,
-    "productType": "tshirt",
-    "productTarget": "men"
+    "productType": "assec",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 199
   },
   {
     "id": 12,
-    "productType": "assec",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 13,
-    "productType": "tshirt",
-    "productTarget": "kids"
+    "productType": "trousers",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 199
   },
   {
     "id": 14,
     "productType": "assec",
-    "productTarget": "men"
+    "productTarget": "women",
+    "onSale": false,
+    "price": 149
   },
   {
     "id": 15,
     "productType": "trousers",
-    "productTarget": "kids"
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 16,
-    "productType": "hoodie",
-    "productTarget": "kids"
+    "productType": "assec",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 17,
-    "productType": "hoodie",
-    "productTarget": "kids"
+    "productType": "assec",
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 149
   },
   {
     "id": 18,
-    "productType": "assec",
-    "productTarget": "kids"
+    "productType": "tshirt",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 149
   },
   {
     "id": 19,
-    "productType": "assec",
-    "productTarget": "men"
+    "productType": "hoodie",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 99
   },
   {
     "id": 20,
-    "productType": "trousers",
-    "productTarget": "men"
+    "productType": "hoodie",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 99
   },
   {
     "id": 21,
-    "productType": "tshirt",
-    "productTarget": "kids"
+    "productType": "hoodie",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 199
   },
   {
     "id": 22,
     "productType": "tshirt",
-    "productTarget": "men"
+    "productTarget": "women",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 23,
-    "productType": "tshirt",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 24,
-    "productType": "hoodie",
-    "productTarget": "kids"
+    "productType": "tshirt",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 25,
-    "productType": "hoodie",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 26,
-    "productType": "tshirt",
-    "productTarget": "men"
+    "productType": "hoodie",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 27,
-    "productType": "assec",
-    "productTarget": "men"
+    "productType": "tshirt",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 149
   },
   {
     "id": 28,
-    "productType": "hoodie",
-    "productTarget": "women"
+    "productType": "trousers",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 29,
-    "productType": "trousers",
-    "productTarget": "men"
+    "productType": "assec",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 199
   },
   {
     "id": 30,
     "productType": "trousers",
-    "productTarget": "kids"
+    "productTarget": "women",
+    "onSale": false,
+    "price": 149
   },
   {
     "id": 31,
-    "productType": "tshirt",
-    "productTarget": "kids"
+    "productType": "hoodie",
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 32,
-    "productType": "assec",
-    "productTarget": "women"
+    "productType": "hoodie",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 149
   },
   {
     "id": 33,
-    "productType": "trousers",
-    "productTarget": "women"
+    "productType": "tshirt",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 34,
-    "productType": "trousers",
-    "productTarget": "men"
+    "productType": "assec",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 35,
-    "productType": "hoodie",
-    "productTarget": "men"
+    "productType": "tshirt",
+    "productTarget": "women",
+    "onSale": false,
+    "price": 199
   },
   {
     "id": 36,
-    "productType": "tshirt",
-    "productTarget": "women"
+    "productType": "assec",
+    "productTarget": "women",
+    "onSale": false,
+    "price": 299
   },
   {
     "id": 37,
-    "productType": "trousers",
-    "productTarget": "women"
+    "productType": "tshirt",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 299
   },
   {
     "id": 38,
-    "productType": "trousers",
-    "productTarget": "men"
+    "productType": "assec",
+    "productTarget": "men",
+    "onSale": true,
+    "price": 199
   },
   {
     "id": 39,
-    "productType": "hoodie",
-    "productTarget": "kids"
+    "productType": "tshirt",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 40,
-    "productType": "assec",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 41,
     "productType": "assec",
-    "productTarget": "women"
+    "productTarget": "men",
+    "onSale": false,
+    "price": 149
   },
   {
     "id": 42,
-    "productType": "assec",
-    "productTarget": "men"
+    "productType": "trousers",
+    "productTarget": "kids",
+    "onSale": false,
+    "price": 149
   },
   {
     "id": 43,
-    "productType": "hoodie",
-    "productTarget": "kids"
+    "productType": "assec",
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 199
   },
   {
     "id": 44,
-    "productType": "trousers",
-    "productTarget": "women"
+    "productType": "assec",
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 199
   },
   {
     "id": 45,
-    "productType": "trousers",
-    "productTarget": "men"
+    "productType": "hoodie",
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 46,
-    "productType": "trousers",
-    "productTarget": "kids"
+    "productType": "tshirt",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 99
   },
   {
     "id": 47,
-    "productType": "assec",
-    "productTarget": "women"
+    "productType": "tshirt",
+    "productTarget": "men",
+    "onSale": false,
+    "price": 99
   },
   {
     "id": 48,
-    "productType": "tshirt",
-    "productTarget": "kids"
+    "productType": "trousers",
+    "productTarget": "kids",
+    "onSale": true,
+    "price": 299
   },
   {
     "id": 49,
-    "productType": "trousers",
-    "productTarget": "kids"
+    "productType": "hoodie",
+    "productTarget": "women",
+    "onSale": true,
+    "price": 199
   },
   {
     "id": 50,
     "productType": "trousers",
-    "productTarget": "women"
+    "productTarget": "men",
+    "onSale": true,
+    "price": 299
   }
 ]
+
 }
