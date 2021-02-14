@@ -26,7 +26,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./scss/main.scss";
 .wrapper {
   min-height: 70vh;
 }
@@ -43,5 +44,6 @@ div.hr-line {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: $body-bg;
 }
 </style>
