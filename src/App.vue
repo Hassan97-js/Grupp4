@@ -26,7 +26,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "./scss/main.scss";
 .min-vh {
   min-height: 57.1vh;
 }
@@ -42,5 +43,6 @@ div.hr-line {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: $body-bg;
 }
 </style>

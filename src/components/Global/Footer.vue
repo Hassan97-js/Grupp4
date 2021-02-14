@@ -18,7 +18,7 @@
                   <h5 class="mb-1">Register for free</h5>
                 </li>
                 <li class="list-inline-item">
-                  <router-link to="/login" class="btn btn-danger btn-rounded">Sign up!</router-link>
+                  <router-link to="/register" class="btn btn-danger btn-rounded">Sign up!</router-link>
                 </li>
               </ul>
             </div>
