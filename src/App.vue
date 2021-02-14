@@ -28,8 +28,8 @@ export default {
 
 <style lang="scss">
 @import "./scss/main.scss";
-.min-vh {
-  min-height: 57.1vh;
+.wrapper {
+  min-height: 70vh;
 }
 div.hr-line {
   width: 100vw;
