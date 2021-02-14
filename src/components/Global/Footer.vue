@@ -18,7 +18,9 @@
                   <h5 class="mb-1">Register for free</h5>
                 </li>
                 <li class="list-inline-item">
-                  <router-link to="/login" class="btn btn-danger btn-rounded">Sign up!</router-link>
+                  <router-link to="/login" class="btn btn-danger btn-rounded"
+                    >Sign up!</router-link
+                  >
                 </li>
               </ul>
             </div>
@@ -27,7 +29,9 @@
         <div class="col-lg-2 col-12">
           <h4 class="font-rubik font-size-20">Information</h4>
           <div class="d-flex flex-column flex-wrap">
-            <router-link to="/about" class="font-rale font-size-14 text-white-50 pb-1"
+            <router-link
+              to="/about"
+              class="font-rale font-size-14 text-white-50 pb-1"
               >About Us</router-link
             >
             <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
@@ -44,7 +48,9 @@
         <div class="col-lg-2 col-12">
           <h4 class="font-rubik font-size-20">Account</h4>
           <div class="d-flex flex-column flex-wrap">
-            <router-link to="/login" class="font-rale font-size-14 text-white-50 pb-1"
+            <router-link
+              to="/login"
+              class="font-rale font-size-14 text-white-50 pb-1"
               >My Account</router-link
             >
             <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
@@ -120,19 +126,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-footer.sticky-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: salmon;
-  color: white;
-  text-align: center;
-  padding: 1.8rem;
-}
 svg {
-
   margin: 3px;
-
 }
 </style>

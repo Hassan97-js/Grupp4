@@ -9,30 +9,40 @@
         />
       </router-link>
     </div>
-    <div class="navLinks">
-      <div>
-        <router-link class="link-item" to="/dam">Dam</router-link> |
-        <router-link class="link-item" to="/barn">Barn</router-link> |
-        <router-link class="link-item" to="/herr">Herr</router-link> |
-        <router-link class="link-item" to="/about">About</router-link> |
-        <router-link class="link-item" to="/product">Product Page</router-link>
-      </div>
+    <div class="navLinks d-md-flex flex-column flex-lg-row">
+      <router-link class="link-item mt-sm-2 mt-lg-0" to="/barn"
+        >Barn</router-link
+      >
+      <router-link class="link-item mt-sm-2 mt-lg-0" to="/dam">Dam</router-link>
+      <router-link class="link-item mt-sm-2 mt-lg-0" to="/herr"
+        >Herr</router-link
+      >
+      <router-link class="link-item mt-sm-2 mt-lg-0" to="/about"
+        >About</router-link
+      >
+      <router-link class="link-item mt-sm-2 mt-lg-0" to="/product"
+        >Product Page</router-link
+      >
     </div>
-    <div class="userMenu d-flex align-items-center">
-      <router-link class="link-item" to="/favorit">
-        <b-icon class="mx-2" icon="heart-fill" variant="danger"></b-icon>
+    <div
+      class="userMenu d-flex align-items-start align-items-md-start align-items-lg-center"
+    >
+      <router-link class="link-item flex-link-item mr-2" to="/favorit">
+        <b-icon class="" icon="heart-fill" variant="danger"></b-icon>
+        Favourite
       </router-link>
-      |
-      <router-link class="link-item" to="/login">
-        <b-icon class="mx-2" icon="person-circle" variant="secondary"></b-icon>
+      <router-link class="link-item flex-link-item mx-2" to="/login">
+        <b-icon class="" icon="person-circle" variant="secondary"></b-icon>
+        Signup
       </router-link>
-      |
-      <b-icon
+      <router-link
+        to="#"
         v-b-toggle.sidebar-right
-        class="mx-2 icon"
-        icon="cart3"
-        variant="secondary"
-      ></b-icon>
+        class="link-item mx-2 flex-link-item"
+      >
+        <b-icon class="icon" icon="cart3" variant="secondary"></b-icon>
+        Cart
+      </router-link>
     </div>
   </nav>
 </template>
@@ -52,10 +62,10 @@ nav#nav {
     justify-self: start;
     width: 175px;
     .logoImg {
-      width: 100%;
+      width: 70%;
     }
   }
-  .navLinks {
+  div.navLinks {
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -66,6 +76,8 @@ nav#nav {
   }
   a.link-item {
     color: black;
+    cursor: pointer;
+    text-decoration: none;
   }
   a.router-link-exact-active {
     color: #42b983;
@@ -76,21 +88,46 @@ nav#nav {
 }
 @media (min-width: 375px) and (max-width: 768px) {
   nav#nav {
+    div.navLinks {
+      margin: 1rem auto;
+      a.link-item {
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+      }
+    }
     padding: 15px;
     flex-direction: column;
     div.logo {
       justify-self: center;
       width: 100%;
+      margin: 1rem 0;
       a {
         margin: 0 auto 0.8rem auto;
         .logoImg {
-          width: 20%;
+          width: 35%;
         }
       }
     }
     .userMenu {
-      margin-top: 1rem;
+      margin: 1rem 0;
       justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 963px) {
+  nav#nav {
+    .navLinks {
+      a.link-item {
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+      }
+    }
+    a.flex-link-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.9rem;
     }
   }
 }
