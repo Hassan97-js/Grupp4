@@ -41,11 +41,11 @@
                         ></b-form-input>
                     </b-form-group>
                     <div class="text-center">
-                        <b-button variant="info" type="submit"
+                        <b-button variant="success" type="submit"
                             >Register</b-button
                         >
                         <span class="mx-2">or</span>
-                        <b-button to="/login">Sign in</b-button>
+                        <b-button variant="primary" to="/login">Sign in</b-button>
                     </div>
                 </b-form>
             </b-card-body>
