@@ -29,11 +29,11 @@
                         ></b-form-input>
                     </b-form-group>
                     <div class="text-center">
-                        <b-button variant="info" type="submit"
+                        <b-button variant="success" type="submit"
                             >Sign in</b-button
                         >
                         <span class="mx-2">or</span>
-                        <b-button to="/register">Register</b-button>
+                        <b-button variant="primary" to="/register">Register</b-button>
                     </div>
                 </b-form>
             </b-card-body>

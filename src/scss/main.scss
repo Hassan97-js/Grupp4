@@ -14,6 +14,13 @@ $theme-colors: (
     'danger': #f44336
 );
 
+// Our colour theme
+$light-shade: #f7f9fa;
+$light-purple: #b2a8bf;
+$main-orange: #ffb17a;
+$main-blue: #3988ff;
+$dark-shade: #3b386a;
+
 // Sass imports (The variables need to be set prior to importing)
 @import '~bootstrap';
 @import '~bootstrap-vue';
