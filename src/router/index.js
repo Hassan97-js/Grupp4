@@ -6,6 +6,7 @@ import Home from "../views/Home.vue";
 import Dam from "../views/Dam.vue";
 import Barn from "../views/Barn.vue";
 import Herr from "../views/Herr.vue";
+import ProductPage from "../views/ProductPage.vue";
 import About from "../views/About.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
@@ -37,23 +38,29 @@ const routes = [
   },
 
   {
+    path: "/product",
+    name: "Herr",
+    component: ProductPage
+  },
+
+  {
     path: "/about",
     name: "About",
     component: About
-  }, 
+  },
   {
     path: "/login",
-    name: "Login", 
+    name: "Login",
     component: Login
   },
   {
     path: "/register",
-    name: "Register", 
+    name: "Register",
     component: Register
   },
   {
     path: "/user",
-    name: "User", 
+    name: "User",
     component: User
   }
 ];

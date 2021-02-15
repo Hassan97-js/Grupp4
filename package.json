@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "concurrently \"json-server ./db/products.json\" \"vue-cli-service serve\"",
+    "json-serve": "json-server ./db/products.json",
+    "serve": "vue-cli-service serve",
+    "json-vue-serve": "npm-run-all -p json-serve serve",
     "generate": "json-server ./db/generate.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -32,6 +34,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^9.5.0",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.32.6",
     "vue-template-compiler": "^2.6.11"
   },

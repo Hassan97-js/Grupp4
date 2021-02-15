@@ -45,7 +45,14 @@ div.searchbar-container {
       width: 80%;
     }
     .input-space {
-      margin-top: 2rem;
+      margin: 2rem 0;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 963px) {
+  div.searchbar-container {
+    div.inputWidth {
+      width: 40%;
     }
   }
 }
