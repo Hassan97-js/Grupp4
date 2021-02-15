@@ -6,12 +6,12 @@ $body-bg: #f7f9fa;
 
 // Bootstrap theme colors
 $theme-colors: (
-    'default': #999999,
-    'primary': #f6af79,
-    'info': #3b386a,
-    'success': #7faf5c,
-    'warning': #fc9f24,
-    'danger': #f44336
+  'default': #999999,
+  'primary': #f6af79,
+  'info': #3b386a,
+  'success': #7faf5c,
+  'warning': #fc9f24,
+  'danger': #f44336
 );
 
 // Sass imports (The variables need to be set prior to importing)
@@ -20,6 +20,6 @@ $theme-colors: (
 
 // Unset default Vue CLI foreground color set in App.vue, to prevent override of
 // the color set in $body-color
-/* #app {
+#app {
   color: unset;
-} */
+}

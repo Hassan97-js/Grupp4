@@ -62,6 +62,20 @@
           </li>
         </ul>
       </div>
+      <div class="product-size mb-3">
+        <h3 class="select-size">Select a size</h3>
+        <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
+          <li class="col-4 px-1 px-lg-0">
+            <span class="border border-dark px-3">S</span>
+          </li>
+          <li class="col-4 px-0">
+            <span class="border border-dark px-3">M</span>
+          </li>
+          <li class="col-4 px-0">
+            <span class="border border-dark px-3">L</span>
+          </li>
+        </ul>
+      </div>
       <div class="description mb-4">
         <h3>Benefits</h3>
         <ul class="text-left p-0">
@@ -71,7 +85,17 @@
           <li>The best Sony Over-ear Headphones</li>
         </ul>
       </div>
-      <button class="buy--btn">ADD TO CART</button>
+      <div
+        class="row favourit w-100 mx-auto justify-content-between align-items-center"
+      >
+        <button class="buy--btn">ADD TO CART</button>
+        <b-icon
+          class="ml-5"
+          icon="heart-fill"
+          variant="danger"
+          style="width: 2rem; height: 2rem"
+        ></b-icon>
+      </div>
     </div>
   </section>
 </template>
@@ -102,7 +126,6 @@ li {
   }
 }
 
-// Fonts
 @media (min-width: 0px) and (max-width: 576px) {
   .product-info-title {
     font-size: 1.5rem;
@@ -113,6 +136,14 @@ li {
   .variant {
     h3 {
       font-size: 1.5rem;
+    }
+  }
+  .product-size {
+    h3 {
+      font-size: 1.5rem;
+    }
+    ul {
+      width: 80%;
     }
   }
   .description {
@@ -132,6 +163,17 @@ li {
   .variant {
     h3 {
       font-size: 2rem;
+    }
+  }
+  .product-size {
+    h3 {
+      font-size: 2rem;
+    }
+    ul {
+      width: 50%;
+      li {
+        font-size: 1.2rem;
+      }
     }
   }
   .description {
@@ -158,6 +200,17 @@ li {
       font-size: 2.5rem;
     }
   }
+  .product-size {
+    h3 {
+      font-size: 2.5rem;
+    }
+    ul {
+      width: 50%;
+      li {
+        font-size: 1.4rem;
+      }
+    }
+  }
   .description {
     h3 {
       font-size: 2.5rem;
@@ -180,6 +233,17 @@ li {
   .variant {
     h3 {
       font-size: 3.1rem;
+    }
+  }
+  .product-size {
+    h3 {
+      font-size: 3.1rem;
+    }
+    ul {
+      width: 50%;
+      li {
+        font-size: 1.6rem;
+      }
     }
   }
   .description {
