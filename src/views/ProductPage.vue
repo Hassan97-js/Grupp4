@@ -108,7 +108,6 @@ export default {};
 li {
   list-style: none;
 }
-
 .buy--btn {
   padding: 1.2rem 2.2rem;
   border: none;

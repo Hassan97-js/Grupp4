@@ -42,19 +42,13 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "*.{js,jsx,vue}": [ "vue-cli-service lint", "git add" ]
   },
   "eslintConfig": {
     "env": {
       "node": true
     },
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/essential"
-    ],
+    "extends": [ "eslint:recommended", "plugin:vue/essential" ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
