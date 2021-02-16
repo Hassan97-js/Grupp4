@@ -1,4 +1,6 @@
 {
+    "products": [
+ {
     "id": 1,
     "productType": "hoodie",
     "color": 1,
@@ -6,7 +8,8 @@
     "productTarget": "women",
     "onSale": true,
     "price": 149
-}, {
+},
+{
     "id": 2,
     "productType": "tshirt",
     "color": 2,
@@ -99,7 +102,6 @@
     "productType": "hoodie",
     "color": 1,
     "img": "/src/assets/hoodie-orange.png",
-    ,
     "productTarget": "women",
     "onSale": false,
     "price": 99
@@ -399,4 +401,7 @@
     "productTarget": "kids",
     "onSale": true,
     "price": 99
+}
+]
+
 }
