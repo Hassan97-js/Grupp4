@@ -116,7 +116,7 @@ li {
   font-weight: 700;
   letter-spacing: 1.3px;
   color: #fff;
-  background-color: #ff3f40;
+  background-color: #7faf5c;
   box-shadow: 2px 2px 25px -7px #4c4c4c;
   cursor: pointer;
 
