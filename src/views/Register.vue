@@ -45,7 +45,7 @@
                             >Register</b-button
                         >
                         <span class="mx-2">or</span>
-                        <b-button variant="primary" to="/login">Sign in</b-button>
+                        <b-button variant="light" to="/login">Sign in</b-button>
                     </div>
                 </b-form>
             </b-card-body>

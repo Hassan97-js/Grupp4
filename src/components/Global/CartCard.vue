@@ -10,25 +10,55 @@
         alt="Product Image"
       />
       <div class="product-info-text">
-        <p>Pruduct Name</p>
-        <p>Info</p>
-        <p>Storlek/Färg</p>
+        <p class="text-capitalize">{{ $store.state.cart[0].productType }}</p>
+        <p>{{ $store.state.cart[0].productInfon }}</p>
       </div>
     </div>
     <div class="user-cart-options">
-      <select class="input-select form-control-sm mr-2 p-1">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-      </select>
-      <span class="product-pris">Priset</span>
+      <div
+        class="counter-button d-flex justify-content-start mt-2 align-items-center"
+      >
+        <button
+          @click="decrease"
+          class="btn btn-outline-primary btn-sm px-2 py-0 h-25"
+        >
+          -
+        </button>
+        <input
+          class="input-select form-control-sm w-25 mx-2 p-1 border-0 text-center"
+          type="text"
+          v-model="counterValue"
+        />
+        <button
+          @click="increase"
+          class="btn btn-outline-primary btn-sm px-2 py-0 h-25"
+        >
+          +
+        </button>
+      </div>
+      <span class="product-pris mr-5 mb-0 font-weight-bold h5">{{
+        $store.state.cart[0].price
+      }}</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CartCard"
+  name: "CartCard",
+  data() {
+    return {
+      counterValue: 1
+    };
+  },
+  methods: {
+    increase() {
+      if (this.counterValue < 10) this.counterValue++;
+    },
+    decrease() {
+      if (this.counterValue > 1) this.counterValue--;
+    }
+  }
 };
 </script>
 

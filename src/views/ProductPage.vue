@@ -1,5 +1,5 @@
 <template>
-  <section class="product row my-5">
+  <section v-if="products" class="product row my-5">
     <div class="product-photo col-12 col-lg-6 w-100 px-0">
       <div class="photo-container w-100 h-100">
         <div class="photo-main mb-5">
@@ -26,9 +26,13 @@
     </div>
     <div class="product-info col-12 col-lg-6 text-left p-4">
       <div class="title mb-3">
-        <h1 class="product-info-title">Sony Over-ear Headphones</h1>
+        <h1 class="product-info-title text-capitalize">
+          {{ products[8].productType }}
+        </h1>
       </div>
-      <div class="price font-weight-bold h1 mb-3"><span>7.93$</span></div>
+      <div class="price font-weight-bold h1 mb-3">
+        <span>{{ products[8].price }} :-</span>
+      </div>
       <div class="variant mb-3">
         <h3 class="select-color">Select a color</h3>
         <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
@@ -79,16 +83,13 @@
       <div class="description mb-4">
         <h3>Benefits</h3>
         <ul class="text-left p-0">
-          <li>The best Sony Over-ear Headphones</li>
-          <li>The best Sony Over-ear Headphones</li>
-          <li>The best Sony Over-ear Headphones</li>
-          <li>The best Sony Over-ear Headphones</li>
+          <li>{{ products[8].productInfon }}</li>
         </ul>
       </div>
       <div
         class="row favourit w-100 mx-auto justify-content-between align-items-center"
       >
-        <button class="buy--btn">ADD TO CART</button>
+        <button @click="addToCart" class="buy--btn">ADD TO CART</button>
         <b-icon
           class="ml-5"
           icon="heart-fill"
@@ -101,7 +102,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    products() {
+      return this.$store.state.allProducts;
+    }
+  },
+  created() {
+    this.$store.dispatch("getProductInfo");
+  },
+  methods: {
+    addToCart() {
+      this.$store.commit("pushToCart", this.products[8]);
+    }
+  }
+};
 </script>
 
 <style scoped lang="scss">
@@ -116,7 +131,7 @@ li {
   font-weight: 700;
   letter-spacing: 1.3px;
   color: #fff;
-  background-color: #ff3f40;
+  background-color: #7faf5c;
   box-shadow: 2px 2px 25px -7px #4c4c4c;
   cursor: pointer;
 

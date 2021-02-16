@@ -6,12 +6,12 @@ $body-bg: #f7f9fa;
 
 // Bootstrap theme colors
 $theme-colors: (
-  'default': #999999,
-  'primary': #f6af79,
-  'info': #3b386a,
-  'success': #7faf5c,
-  'warning': #fc9f24,
-  'danger': #f44336
+    'default': #999999,
+    'primary': #f6af79,
+    'info': #3b386a,
+    'success': #7faf5c,
+    'warning': #fc9f24,
+    'danger': #f44336
 );
 
 // Our colour theme
@@ -28,5 +28,5 @@ $dark-shade: #3b386a;
 // Unset default Vue CLI foreground color set in App.vue, to prevent override of
 // the color set in $body-color
 #app {
-  color: unset;
+    color: unset;
 }
