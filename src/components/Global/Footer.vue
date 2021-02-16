@@ -18,7 +18,11 @@
                   <h5 class="mb-1">Register for free</h5>
                 </li>
                 <li class="list-inline-item">
-                  <router-link to="/register" class="btn btn-primary btn-rounded">Sign up!</router-link>
+                  <router-link
+                    to="/register"
+                    class="btn btn-primary btn-rounded"
+                    >Sign up!</router-link
+                  >
                 </li>
               </ul>
             </div>
@@ -67,7 +71,6 @@
             <b-icon class="mx-1" icon="linkedin"></b-icon>
             <b-icon class="mx-1" icon="google"></b-icon>
           </div>
-          
         </div>
       </div>
     </div>
@@ -80,6 +83,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-  
-</style>
+<style scoped lang="scss"></style>
