@@ -32,27 +32,36 @@ export default {
 <style scoped lang="scss">
 div.searchbar-container {
   div.inputWidth {
-    width: 40%;
+    width: 35%;
+  }
+  .input-space {
+    margin: 2rem 0;
   }
   .text-style {
     font-size: 0.8rem;
   }
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 576px) {
   div.searchbar-container {
     div.inputWidth {
       width: 80%;
     }
-    .input-space {
-      margin: 2rem 0;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  div.searchbar-container {
+    div.inputWidth {
+      width: 60%;
     }
   }
 }
-@media (min-width: 769px) and (max-width: 963px) {
+
+@media (min-width: 769px) and (max-width: 992px) {
   div.searchbar-container {
     div.inputWidth {
-      width: 40%;
+      width: 65%;
     }
   }
 }
