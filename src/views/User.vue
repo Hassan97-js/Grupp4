@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-avatar :text="firstLetter" size="4em" class="mb-4"></b-avatar>
+        <b-avatar variant="primary" :text="firstLetter" size="4em" class="mb-4"></b-avatar>
         <h1>Hello {{ username }}!</h1>
         <b-button class="mx-2" variant="danger" @click="logout"
             >Log out</b-button
