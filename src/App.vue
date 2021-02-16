@@ -32,7 +32,8 @@ export default {
   min-height: 70vh;
 }
 div.hr-line {
-  width: 100vw;
+  width: 99%;
+  margin: 0 auto;
   height: 1vh;
   background: $light-purple;
 }
