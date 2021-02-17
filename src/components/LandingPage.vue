@@ -1,64 +1,126 @@
 <template>
-<div class="landingPage">
-    <div class="categoryDeck">
-        <!-- tre kategori-cards -->
-        <b-row>
-            <b-card title="Women" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            <b-link to="../views/Dam" class="stretched-link"></b-link>
-            </b-card>
-
-            <b-card title="Men" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            <b-link to="../views/Herr" class="stretched-link"></b-link>
-            </b-card>
-
-            <b-card title="Children" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            <b-link to="../views/Barn" class="stretched-link"></b-link>
-            </b-card>
-        </b-row>
-    </div>
+  <div class="landingPage">
+    <b-container class="categoryDeck">
+      <!-- tre kategori-cards -->
+      <b-row>
+        <b-col class="card-container" cols="8" sm="4" md="4">
+          <b-card
+            title="Women"
+            img-src="https://picsum.photos/300/300/?image=41"
+            img-alt="Image"
+            img-top
+            class="category-card"
+          >
+            <b-link to="/Dam" class="stretched-link"></b-link>
+          </b-card>
+        </b-col>
+        <b-col class="card-container" cols="8" sm="4" md="4">
+          <b-card
+            title="Men"
+            img-src="https://picsum.photos/300/300/?image=41"
+            img-alt="Image"
+            img-top
+            class="category-card"
+          >
+            <b-link to="/Herr" class="stretched-link"></b-link>
+          </b-card>
+        </b-col>
+        <b-col class="card-container" cols="8" sm="4" md="4">
+          <b-card
+            title="Children"
+            img-src="https://picsum.photos/300/300/?image=41"
+            img-alt="Image"
+            img-top
+            class="category-card"
+          >
+            <b-link to="/Barn" class="stretched-link"></b-link>
+          </b-card>
+        </b-col>
+      </b-row>
+    </b-container>
 
     <!-- jumbotron med rea -->
     <div class="saleJumbotron">
-        <b-jumbotron header="Sale" lead="View all items on Sale">
-            <b-button variant="primary" href="#">Shop Sale</b-button>
-        </b-jumbotron>
+      <b-jumbotron
+        class="jumbotron-info"
+        header="Sale"
+        lead="View all items on Sale"
+      >
+        <b-button variant="primary" href="#">Shop Sale</b-button>
+      </b-jumbotron>
     </div>
-    
+
     <!-- tre kategori-cards -->
     <div class="categoryDeck">
-        <b-row>
-            <b-card title="Jackets" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            </b-card>
-
-            <b-card title="T-shirts" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            </b-card>
-
-            <b-card title="Accessories" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            </b-card>
-        </b-row>
+      <b-row>
+        <b-col cols="8" sm="4" md="4">
+          <b-card
+            title="Hoodies"
+            img-src="https://picsum.photos/300/300/?image=41"
+            img-alt="Image"
+            img-top
+            class="category-card"
+          >
+          </b-card>
+        </b-col>
+        <b-col cols="8" sm="4" md="4">
+          <b-card
+            title="T-shirts"
+            img-src="https://picsum.photos/300/300/?image=41"
+            img-alt="Image"
+            img-top
+            class="category-card"
+          >
+          </b-card>
+        </b-col>
+        <b-col cols="8" sm="4" md="4">
+          <b-card
+            title="Accessories"
+            img-src="https://picsum.photos/300/300/?image=41"
+            img-alt="Image"
+            img-top
+            class="category-card"
+          >
+          </b-card>
+        </b-col>
+      </b-row>
     </div>
-</div>
+  </div>
 </template>
 <script>
 export default {
-    name: 'LandingPage'
-}
+  name: "LandingPage"
+};
 </script>
 
 <style scoped>
-div.landingPage{
-    padding: 20px;
+b-container.landingPage {
+  padding: 20px;
 }
-.saleJumbotron{
-    padding: 20px;
+.saleJumbotron {
+  padding: 20px;
 }
-.jumbotron{
-    margin: 0px;
+.jumbotron-info {
+  margin: 0px;
+  background-color: #3988ff;
 }
-.categoryDeck{
-    padding: 20px;
+.categoryDeck {
+  padding: 20px;
 }
-div.row{
-    justify-content: space-evenly;
+div.card.category-card {
+  margin: 10px;
+}
+div.row {
+  justify-content: space-evenly;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  a.stetched-link,
+  h4.card-title {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  div.card-body {
+    padding: 15px;
+  }
 }
 </style>
