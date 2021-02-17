@@ -1,5 +1,5 @@
 <template>
-    <div class="categoryDeck">
+    <div class="reviewDeck">
         <b-row>
             <b-col class="review-card" cols="8" sm="4" md="4" lg="4">
                 <b-card class="reviewCard">
@@ -99,34 +99,70 @@
 </script>
 
 <style scoped>
-    div.card-body {
-        flex-direction: column;
-    }
-    div.row {
-        justify-content: center;
-        padding: 20px;
-    }
-    p.card-text {
-        padding: 15px;
-    }
-    div.reviewCard {
-        margin: 0px 10px;
-        padding: 0px;
-    }
-    @media (min-width: 576px) and (max-width: 768px) {
+    <<<<<<< HEAD
+        .reviewDeck {
+            padding-bottom: 50px;
+        }
         div.card-body {
-            padding: 10px;
+            flex-direction: column;
+        }
+        div.row {
+            justify-content: center;
+            /* padding: 10px; */
         }
         p.card-text {
-            padding: 0px;
-            font-size: 12px;
+            padding: 15px;
         }
         div.reviewCard {
-            margin: 0px 5px;
+            margin: 10px 10px;
             padding: 0px;
         }
-        div.rating-wrapper {
-            align-items: center;
+        @media (min-width: 576px) and (max-width: 768px) {
+            div.card-body {
+                padding: 10px;
+            }
+            p.card-text {
+                padding: 0px;
+                font-size: 12px;
+            }
+            div.reviewCard {
+                margin: 0px 5px;
+                padding: 0px;
+            }
+            div.rating-wrapper {
+                align-items: center;
+            }
         }
+    =======
+    div.card-body {
+      flex-direction: column;
     }
+    div.row {
+      justify-content: center;
+      padding: 20px;
+    }
+    p.card-text {
+      padding: 15px;
+    }
+    div.reviewCard {
+      margin: 0px 10px;
+      padding: 0px;
+    }
+    @media (min-width: 576px) and (max-width: 768px) {
+      div.card-body {
+        padding: 10px;
+      }
+      p.card-text {
+        padding: 0px;
+        font-size: 12px;
+      }
+      div.reviewCard {
+        margin: 0px 5px;
+        padding: 0px;
+      }
+      div.rating-wrapper {
+        align-items: center;
+      }
+    }
+    >>>>>>> 7b5a7b915e9c05b6b1b6546dc4417b19a54cb2ff
 </style>

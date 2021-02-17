@@ -9,18 +9,15 @@
 </template>
 
 <script>
-import LandingPage from '@/components/LandingPage.vue';
-import Reviews from '@/components/Reviews.vue';
+import LandingPage from "@/components/LandingPage.vue";
+import Reviews from "@/components/Reviews.vue";
 export default {
-
   components: { LandingPage, Reviews },
-  name: 
-    "Home"
+  name: "Home"
 };
 </script>
 <style scoped>
 /* *{
   padding: 40px;
 } */
-
 </style>
