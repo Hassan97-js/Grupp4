@@ -11,7 +11,7 @@
             img-top
             class="category-card"
           >
-            <b-link to="/dam" class="stretched-link"></b-link>
+            <b-link to="/Dam" class="stretched-link"></b-link>
           </b-card>
         </b-col>
         <b-col class="card-container" cols="8" sm="4" md="4">
@@ -22,7 +22,7 @@
             img-top
             class="category-card"
           >
-            <b-link to="/herr" class="stretched-link"></b-link>
+            <b-link to="/Herr" class="stretched-link"></b-link>
           </b-card>
         </b-col>
         <b-col class="card-container" cols="8" sm="4" md="4">
@@ -33,7 +33,7 @@
             img-top
             class="category-card"
           >
-            <b-link to="/barn" class="stretched-link"></b-link>
+            <b-link to="/Barn" class="stretched-link"></b-link>
           </b-card>
         </b-col>
       </b-row>
