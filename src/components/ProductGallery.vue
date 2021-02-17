@@ -3,12 +3,13 @@
         <b-card
             v-for="product in products"
             :key="product.id"
-            img-src="https://picsum.photos/600/300/?image=25"
+            :img-src="require('../assets/' + product.img )"
             img-alt="Image"
             img-top
             style="max-width: 20rem;"
             class="mb-2 product-card"
         >
+        
             <div class="h2 mb-0">
                 <b-icon
                     icon="heart-fill"
@@ -38,6 +39,7 @@
                 ></b-button>
             </b-row>
         </b-card>
+        
     </div>
 </template>
 

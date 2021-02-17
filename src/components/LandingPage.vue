@@ -4,15 +4,15 @@
         <!-- tre kategori-cards -->
         <b-row>
             <b-card title="Women" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            <b-link to="../views/Dam" class="stretched-link"></b-link>
+            <b-link to="/Dam" class="stretched-link"></b-link>
             </b-card>
 
             <b-card title="Men" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            <b-link to="../views/Herr" class="stretched-link"></b-link>
+            <b-link to="/Herr" class="stretched-link"></b-link>
             </b-card>
 
             <b-card title="Children" img-src="https://picsum.photos/300/300/?image=41" img-alt="Image" img-top>
-            <b-link to="../views/Barn" class="stretched-link"></b-link>
+            <b-link to="/Barn" class="stretched-link"></b-link>
             </b-card>
         </b-row>
     </div>

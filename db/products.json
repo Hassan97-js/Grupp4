@@ -4,7 +4,7 @@
     "id": 1,
     "productType": "hoodie",
     "color": 1,
-    "img": "/src/assets/hoodie-orange.png",
+    "img": "hoodie-orange.png",
     "productTarget": "women",
     "onSale": true,
     "price": 149
@@ -13,7 +13,7 @@
     "id": 2,
     "productType": "tshirt",
     "color": 2,
-    "img": "/src/assets/tshirt-purple.png",
+    "img": "tshirt-purple.png",
     "productTarget": "kids",
     "onSale": false,
     "price": 99
@@ -21,7 +21,7 @@
     "id": 3,
     "productType": "hoodie",
     "color": 3,
-    "img": "/src/assets/hoodie-white.png",
+    "img": "hoodie-white.png",
     "productTarget": "men",
     "onSale": true,
     "price": 99
@@ -29,7 +29,7 @@
     "id": 4,
     "productType": "tshirt",
     "color": 2,
-    "img": "/src/assets/tshirt-purple.png",
+    "img": "tshirt-purple.png",
     "productTarget": "men",
     "onSale": true,
     "price": 299
@@ -37,7 +37,7 @@
     "id": 5,
     "productType": "assec",
     "color": 3,
-    "img": "/src/assets/assec-white.png",
+    "img": "assec-white.png",
     "productTarget": "kids",
     "onSale": true,
     "price": 199
@@ -45,7 +45,7 @@
     "id": 6,
     "productType": "tshirt",
     "color": 1,
-    "img": "/src/assets/tshirt-orange.png",
+    "img": "tshirt-orange.png",
     "productTarget": "kids",
     "onSale": true,
     "price": 199
@@ -53,7 +53,7 @@
     "id": 7,
     "productType": "hoodie",
     "color": 3,
-    "img": "/src/assets/hoodie-white.png",
+    "img": "hoodie-white.png",
     "productTarget": "women",
     "onSale": true,
     "price": 149
@@ -61,7 +61,7 @@
     "id": 8,
     "productType": "assec",
     "color": 1,
-    "img": "/src/assets/assec-orange.png",
+    "img": "assec-orange.png",
     "productTarget": "men",
     "onSale": true,
     "price": 299
@@ -69,7 +69,7 @@
     "id": 9,
     "productType": "tshirt",
     "color": 3,
-    "img": "/src/assets/tshirt-white.png",
+    "img": "tshirt-white.png",
     "productTarget": "men",
     "onSale": true,
     "price": 149
@@ -77,7 +77,7 @@
     "id": 10,
     "productType": "hoodie",
     "color": 2,
-    "img": "/src/assets/hoodie-purple.png",
+    "img": "hoodie-purple.png",
     "productTarget": "kids",
     "onSale": true,
     "price": 99
@@ -85,7 +85,7 @@
     "id": 11,
     "productType": "tshirt",
     "color": 1,
-    "img": "/src/assets/tshirt-orange.png",
+    "img": "tshirt-orange.png",
     "productTarget": "kids",
     "onSale": false,
     "price": 299
@@ -93,7 +93,7 @@
     "id": 12,
     "productType": "hoodie",
     "color": 3,
-    "img": "/src/assets/hoodie-white.png",
+    "img": "hoodie-white.png",
     "productTarget": "kids",
     "onSale": true,
     "price": 99
@@ -101,7 +101,7 @@
     "id": 13,
     "productType": "hoodie",
     "color": 1,
-    "img": "/src/assets/hoodie-orange.png",
+    "img": "hoodie-orange.png",
     "productTarget": "women",
     "onSale": false,
     "price": 99
@@ -109,7 +109,7 @@
     "id": 14,
     "productType": "trousers",
     "color": 1,
-    "img": "/src/assets/trousers-orange.png",
+    "img": "trousers-orange.png",
     "productTarget": "men",
     "onSale": true,
     "price": 199
@@ -117,7 +117,7 @@
     "id": 15,
     "productType": "hoodie",
     "color": 1,
-    "img": "/src/assets/hoodie-orange.png",
+    "img": "hoodie-orange.png",
     "productTarget": "women",
     "onSale": false,
     "price": 99
@@ -125,7 +125,7 @@
     "id": 16,
     "productType": "assec",
     "color": 2,
-    "img": "/src/assets/assec-purple.png",
+    "img": "assec-purple.png",
     "productTarget": "women",
     "onSale": true,
     "price": 299
@@ -133,7 +133,7 @@
     "id": 17,
     "productType": "tshirt",
     "color": 1,
-    "img": "/src/assets/tshirt-orange.png",
+    "img": "tshirt-orange.png",
     "productTarget": "men",
     "onSale": true,
     "price": 299
@@ -141,7 +141,7 @@
     "id": 18,
     "productType": "hoodie",
     "color": 2,
-    "img": "/src/assets/hoodie-purple.png",
+    "img": "hoodie-purple.png",
     "productTarget": "men",
     "onSale": true,
     "price": 299
@@ -149,7 +149,7 @@
     "id": 19,
     "productType": "trousers",
     "color": 1,
-    "img": "/src/assets/trousers-orange.png",
+    "img": "trousers-orange.png",
     "productTarget": "women",
     "onSale": false,
     "price": 199
@@ -157,7 +157,7 @@
     "id": 20,
     "productType": "assec",
     "color": 2,
-    "img": "/src/assets/assec-purple.png",
+    "img": "assec-purple.png",
     "productTarget": "men",
     "onSale": true,
     "price": 199
@@ -165,7 +165,7 @@
     "id": 21,
     "productType": "assec",
     "color": 1,
-    "img": "/src/assets/assec-orange.png",
+    "img": "assec-orange.png",
     "productTarget": "women",
     "onSale": false,
     "price": 149
@@ -173,7 +173,7 @@
     "id": 22,
     "productType": "assec",
     "color": 2,
-    "img": "/src/assets/assec-purple.png",
+    "img": "assec-purple.png",
     "productTarget": "men",
     "onSale": true,
     "price": 99
@@ -181,7 +181,7 @@
     "id": 23,
     "productType": "trousers",
     "color": 3,
-    "img": "/src/assets/trousers-blue.png",
+    "img": "trousers-blue.png",
     "productTarget": "women",
     "onSale": true,
     "price": 149
@@ -189,7 +189,7 @@
     "id": 24,
     "productType": "tshirt",
     "color": 2,
-    "img": "/src/assets/tshirt-purple.png",
+    "img": "tshirt-purple.png",
     "productTarget": "women",
     "onSale": true,
     "price": 99
@@ -197,7 +197,7 @@
     "id": 25,
     "productType": "assec",
     "color": 3,
-    "img": "/src/assets/assec-white.png",
+    "img": "assec-white.png",
     "productTarget": "women",
     "onSale": true,
     "price": 149
@@ -205,7 +205,7 @@
     "id": 26,
     "productType": "trousers",
     "color": 1,
-    "img": "/src/assets/trousers-orange.png",
+    "img": "trousers-orange.png",
     "productTarget": "women",
     "onSale": true,
     "price": 99
@@ -213,7 +213,7 @@
     "id": 27,
     "productType": "tshirt",
     "color": 2,
-    "img": "/src/assets/tshirt-purple.png",
+    "img": "tshirt-purple.png",
     "productTarget": "men",
     "onSale": false,
     "price": 99
@@ -221,7 +221,7 @@
     "id": 28,
     "productType": "tshirt",
     "color": 3,
-    "img": "/src/assets/tshirt-white.png",
+    "img": "tshirt-white.png",
     "productTarget": "kids",
     "onSale": false,
     "price": 99
@@ -229,7 +229,7 @@
     "id": 29,
     "productType": "trousers",
     "color": 2,
-    "img": "/src/assets/trousers-purple.png",
+    "img": "trousers-purple.png",
     "productTarget": "women",
     "onSale": false,
     "price": 299
@@ -237,7 +237,7 @@
     "id": 30,
     "productType": "assec",
     "color": 1,
-    "img": "/src/assets/assec-orange.png",
+    "img": "assec-orange.png",
     "productTarget": "men",
     "onSale": true,
     "price": 299
@@ -245,7 +245,7 @@
     "id": 31,
     "productType": "trousers",
     "color": 1,
-    "img": "/src/assets/trousers-orange.png",
+    "img": "trousers-orange.png",
     "productTarget": "men",
     "onSale": true,
     "price": 299
@@ -253,7 +253,7 @@
     "id": 32,
     "productType": "trousers",
     "color": 1,
-    "img": "/src/assets/trousers-orange.png",
+    "img": "trousers-orange.png",
     "productTarget": "kids",
     "onSale": true,
     "price": 299
@@ -261,7 +261,7 @@
     "id": 33,
     "productType": "hoodie",
     "color": 3,
-    "img": "/src/assets/hoodie-white.png",
+    "img": "hoodie-white.png",
     "productTarget": "kids",
     "onSale": false,
     "price": 99
@@ -269,7 +269,7 @@
     "id": 34,
     "productType": "trousers",
     "color": 2,
-    "img": "/src/assets/trousers-purple.png",
+    "img": "trousers-purple.png",
     "productTarget": "women",
     "onSale": true,
     "price": 199
@@ -277,7 +277,7 @@
     "id": 35,
     "productType": "tshirt",
     "color": 3,
-    "img": "/src/assets/tshirt-white.png",
+    "img": "tshirt-white.png",
     "productTarget": "men",
     "onSale": true,
     "price": 99
@@ -285,7 +285,7 @@
     "id": 36,
     "productType": "hoodie",
     "color": 3,
-    "img": "/src/assets/hoodie-white.png",
+    "img": "hoodie-white.png",
     "productTarget": "men",
     "onSale": false,
     "price": 299
@@ -293,7 +293,7 @@
     "id": 37,
     "productType": "trousers",
     "color": 2,
-    "img": "/src/assets/trousers-purple.png",
+    "img": "trousers-purple.png",
     "productTarget": "women",
     "onSale": true,
     "price": 99
@@ -301,7 +301,7 @@
     "id": 38,
     "productType": "assec",
     "color": 2,
-    "img": "/src/assets/assec-purple.png",
+    "img": "assec-purple.png",
     "productTarget": "women",
     "onSale": false,
     "price": 199
@@ -309,7 +309,7 @@
     "id": 39,
     "productType": "trousers",
     "color": 2,
-    "img": "/src/assets/trousers-purple.png",
+    "img": "trousers-purple.png",
     "productTarget": "men",
     "onSale": true,
     "price": 149
@@ -317,7 +317,7 @@
     "id": 40,
     "productType": "hoodie",
     "color": 2,
-    "img": "/src/assets/hoodie-purple.png",
+    "img": "hoodie-purple.png",
     "productTarget": "kids",
     "onSale": false,
     "price": 199
@@ -325,7 +325,7 @@
     "id": 41,
     "productType": "tshirt",
     "color": 3,
-    "img": "/src/assets/tshirt-white.png",
+    "img": "tshirt-white.png",
     "productTarget": "men",
     "onSale": false,
     "price": 99
@@ -333,7 +333,7 @@
     "id": 42,
     "productType": "hoodie",
     "color": 2,
-    "img": "/src/assets/hoodie-purple.png",
+    "img": "hoodie-purple.png",
     "productTarget": "men",
     "onSale": false,
     "price": 299
@@ -341,7 +341,7 @@
     "id": 43,
     "productType": "hoodie",
     "color": 1,
-    "img": "/src/assets/hoodie-orange.png",
+    "img": "hoodie-orange.png",
     "productTarget": "kids",
     "onSale": false,
     "price": 149
@@ -349,7 +349,7 @@
     "id": 44,
     "productType": "assec",
     "color": 2,
-    "img": "/src/assets/assec-purple.png",
+    "img": "assec-purple.png",
     "productTarget": "women",
     "onSale": true,
     "price": 299
@@ -357,7 +357,7 @@
     "id": 45,
     "productType": "tshirt",
     "color": 2,
-    "img": "/src/assets/tshirt-purple.png",
+    "img": "tshirt-purple.png",
     "productTarget": "women",
     "onSale": true,
     "price": 199
@@ -365,7 +365,7 @@
     "id": 46,
     "productType": "tshirt",
     "color": 3,
-    "img": "/src/assets/tshirt-white.png",
+    "img": "tshirt-white.png",
     "productTarget": "women",
     "onSale": true,
     "price": 149
@@ -373,7 +373,7 @@
     "id": 47,
     "productType": "hoodie",
     "color": 2,
-    "img": "/src/assets/hoodie-purple.png",
+    "img": "hoodie-purple.png",
     "productTarget": "kids",
     "onSale": false,
     "price": 199
@@ -381,7 +381,7 @@
     "id": 48,
     "productType": "assec",
     "color": 2,
-    "img": "/src/assets/assec-purple.png",
+    "img": "assec-purple.png",
     "productTarget": "women",
     "onSale": true,
     "price": 99
@@ -389,7 +389,7 @@
     "id": 49,
     "productType": "tshirt",
     "color": 2,
-    "img": "/src/assets/tshirt-purple.png",
+    "img": "tshirt-purple.png",
     "productTarget": "men",
     "onSale": true,
     "price": 99
@@ -397,7 +397,7 @@
     "id": 50,
     "productType": "hoodie",
     "color": 2,
-    "img": "/src/assets/hoodie-purple.png",
+    "img": "hoodie-purple.png",
     "productTarget": "kids",
     "onSale": true,
     "price": 99
