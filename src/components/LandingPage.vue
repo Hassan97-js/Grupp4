@@ -12,7 +12,7 @@
                         class="category-card"
                     >
                         <b-link
-                            to="../views/Dam"
+                            to="/Dam"
                             class="stretched-link"
                         ></b-link>
                     </b-card>
@@ -26,7 +26,7 @@
                         class="category-card"
                     >
                         <b-link
-                            to="../views/Herr"
+                            to="/Herr"
                             class="stretched-link"
                         ></b-link>
                     </b-card>
@@ -40,7 +40,7 @@
                         class="category-card"
                     >
                         <b-link
-                            to="../views/Barn"
+                            to="/Barn"
                             class="stretched-link"
                         ></b-link>
                     </b-card>
