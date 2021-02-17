@@ -3,7 +3,7 @@
     <b-card
       v-for="product in products"
       :key="product.id"
-      img-src="https://picsum.photos/600/300/?image=25"
+      :img-src="require('../assets/' + product.img)"
       img-alt="Image"
       img-top
       style="max-width: 20rem"
