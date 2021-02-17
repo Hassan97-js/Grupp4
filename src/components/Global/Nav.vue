@@ -33,7 +33,7 @@
       </router-link>
       <router-link class="link-item flex-link-item mx-2" to="/login">
         <b-icon class="" icon="person-circle" variant="secondary"></b-icon>
-        Signup
+        Account
       </router-link>
       <router-link
         to="#"
