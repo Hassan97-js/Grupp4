@@ -65,17 +65,7 @@
                 <b-col cols="8" sm="4" md="4">
                     <b-card
                         title="Hoodies"
-                        img-src="https://picsum.photos/300/300/?image=41"
-                        img-alt="Image"
-                        img-top
-                        class="category-card"
-                    >
-                    </b-card>
-                </b-col>
-                <b-col cols="8" sm="4" md="4">
-                    <b-card
-                        title="T-shirts"
-                        img-src="https://picsum.photos/300/300/?image=41"
+                        :img-src="require('../assets/hoodie-purple.png')"
                         img-alt="Image"
                         img-top
                         class="category-card"
@@ -85,7 +75,17 @@
                 <b-col cols="8" sm="4" md="4">
                     <b-card
                         title="Accessories"
-                        img-src="https://picsum.photos/300/300/?image=41"
+                        :img-src="require('../assets/assec-orange.png')"
+                        img-alt="Image"
+                        img-top
+                        class="category-card"
+                    >
+                    </b-card>
+                </b-col>
+                <b-col cols="8" sm="4" md="4">
+                    <b-card
+                        title="T-shirts"
+                        :img-src="require('../assets/tshirt-white.png')"
                         img-alt="Image"
                         img-top
                         class="category-card"
