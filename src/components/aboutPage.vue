@@ -138,6 +138,7 @@
     }
     .card {
       border: none;
+      min-width: 250px;
     }
   }
 }

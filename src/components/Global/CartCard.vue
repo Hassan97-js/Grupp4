@@ -11,7 +11,7 @@
       />
       <div class="product-info-text">
         <p class="text-capitalize">{{ $store.state.cart[0].productType }}</p>
-        <p>{{ $store.state.cart[0].productInfon }}</p>
+        <p>{{ $store.state.cart[0].productTarget }}</p>
       </div>
     </div>
     <div class="user-cart-options">

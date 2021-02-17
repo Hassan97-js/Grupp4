@@ -11,10 +11,7 @@
                         img-top
                         class="category-card"
                     >
-                        <b-link
-                            to="../views/Dam"
-                            class="stretched-link"
-                        ></b-link>
+                        <b-link to="/Dam" class="stretched-link"></b-link>
                     </b-card>
                 </b-col>
                 <b-col class="card-container" cols="8" sm="4" md="4">
@@ -25,10 +22,7 @@
                         img-top
                         class="category-card"
                     >
-                        <b-link
-                            to="../views/Herr"
-                            class="stretched-link"
-                        ></b-link>
+                        <b-link to="/Herr" class="stretched-link"></b-link>
                     </b-card>
                 </b-col>
                 <b-col class="card-container" cols="8" sm="4" md="4">
@@ -39,10 +33,7 @@
                         img-top
                         class="category-card"
                     >
-                        <b-link
-                            to="../views/Barn"
-                            class="stretched-link"
-                        ></b-link>
+                        <b-link to="/Barn" class="stretched-link"></b-link>
                     </b-card>
                 </b-col>
             </b-row>
