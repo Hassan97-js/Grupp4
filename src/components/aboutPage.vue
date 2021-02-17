@@ -3,7 +3,7 @@
     <img src="../assets/about-img.jpg" alt="" class="header-img" />
     <div class="about-us">
       <div class="about-us-main">
-        <h1><span class="highlight">About us</span></h1>
+        <h1>About us</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -17,7 +17,7 @@
         </p>
       </div>
       <div class="our-team">
-        <h1><span class="highlight">Our team</span></h1>
+        <h1>Our team</h1>
         <b-container align="left" class="bv-example-row">
           <b-row>
             <b-col>
@@ -132,13 +132,9 @@
     min-width: 260px;
     margin: 0 auto 10em auto;
     h1 {
-      .highlight {
-        background: black;
-      }
-      color: white;
       letter-spacing: 2px;
-      font-size: 68px;
-      margin: 1em 0;
+      font-size: 60px;
+      margin: 0.5em 0;
     }
     .card {
       border: none;
