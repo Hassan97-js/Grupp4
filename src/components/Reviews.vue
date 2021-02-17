@@ -99,7 +99,7 @@
 </script>
 
 <style scoped>
-    <<<<<<< HEAD
+   
         .reviewDeck {
             padding-bottom: 50px;
         }
@@ -133,7 +133,7 @@
                 align-items: center;
             }
         }
-    =======
+   
     div.card-body {
       flex-direction: column;
     }
@@ -164,5 +164,5 @@
         align-items: center;
       }
     }
-    >>>>>>> 7b5a7b915e9c05b6b1b6546dc4417b19a54cb2ff
+
 </style>
