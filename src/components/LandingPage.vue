@@ -6,8 +6,8 @@
                 <b-col class="card-container" cols="8" sm="4" md="4">
                     <b-card
                         title="Women"
-                        img-src="https://picsum.photos/300/300/?image=41"
-                        img-alt="Image"
+                        :img-src="require('../assets/women.svg')"
+                        img-alt="women-img"
                         img-top
                         class="category-card"
                     >
@@ -17,7 +17,7 @@
                 <b-col class="card-container" cols="8" sm="4" md="4">
                     <b-card
                         title="Men"
-                        img-src="https://picsum.photos/300/300/?image=41"
+                        :img-src="require('../assets/men.svg')"
                         img-alt="Image"
                         img-top
                         class="category-card"
@@ -27,8 +27,8 @@
                 </b-col>
                 <b-col class="card-container" cols="8" sm="4" md="4">
                     <b-card
-                        title="Children"
-                        img-src="https://picsum.photos/300/300/?image=41"
+                        title="Kids"
+                        :img-src="require('../assets/Kids.svg')"
                         img-alt="Image"
                         img-top
                         class="category-card"
