@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="kids">
     <h1>Barn</h1>
     <product-gallery :products="kids"></product-gallery>
   </div>
