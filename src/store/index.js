@@ -8,7 +8,23 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     allProducts: null,
-    cart: null
+    cart: null,
+
+    //User details
+    users: [
+      {
+        username: "testuser",
+        password: "test",
+        email: "test@test.com",
+        
+      },
+      {
+        username: "testuser2",
+        password: "test2",
+        email: "test@test.com",
+        
+      }
+    ]
   },
   mutations: {
     setAllProducts(state, products) {
@@ -18,7 +34,12 @@ export default new Vuex.Store({
       const productInfoArr = [];
       productInfoArr.push(newInfo);
       state.cart = productInfoArr;
-    }
+    },
+    
+      addUser (state, user) {
+        state.users.push(user)
+    },
+        
   },
   actions: {
     async getProductInfo(context) {
