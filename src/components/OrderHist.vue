@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-container>
-            <h1>{{currentUser.username}}'s order history</h1>
+            <h1 v-if="currentUser">{{currentUser.username}}'s order history</h1>
         </b-container>
     </div>
 </template>

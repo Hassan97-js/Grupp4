@@ -164,15 +164,18 @@ import OrderHist from '@/components/OrderHist.vue'
                 console.log(this.username)
                 localStorage.setItem('username', this.username)
                 this.$bvModal.show('confirm-username')
+                this.$store.commit('editUsername', {id: this.currentUser.id, username: this.username})
             },
             handleOkPassword() {
                 console.log(this.password)
                 localStorage.setItem('password', this.password)
                 this.$bvModal.show('confirm-password')
+                this.$store.commit('editPassword', {id: this.currentUser.id, password: this.password})
             },
             handleOkEmail() {
                 localStorage.setItem('email', this.email)
                 this.$bvModal.show('confirm-email')
+                this.$store.commit('editEmail', {id: this.currentUser.id, email: this.email})
             }
         }
     }
