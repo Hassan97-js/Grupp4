@@ -1,101 +1,124 @@
 <template>
-  <div class="productGallery">
-    <b-card
-      v-for="product in products"
-      :key="product.id"
-      :img-src="require('../assets/' + product.img)"
-      img-alt="Image"
-      img-top
-      style="max-width: 20rem"
-      class="mb-2 product-card"
-    >
-      <div class="h2 mb-0">
-        <b-icon
-          icon="heart-fill"
-          class="favourite rounded bg-light p-2"
-          variant="dark"
-        ></b-icon>
-      </div>
-      <span v-if="product.onSale === true" class="sale bg-danger">- 30%</span>
-      <b-row class="product-type">
-        <b-card-text class="title">
-          {{ product.productType }}
-        </b-card-text>
-      </b-row>
-      <b-row class="price-cart">
-        <b-card-text class="price"> {{ product.price }} SEK </b-card-text>
+    <div class="productGallery">
+        <b-card
+            v-for="product in products"
+            :key="product.id"
+            :img-src="require('../assets/' + product.img)"
+            img-alt="Image"
+            img-top
+            style="max-width: 20rem"
+            class="mb-2 product-card"
+        >
+            <div class="h2 mb-0">
+                <b-icon
+                    @click="addToFaves(product)"
+                    icon="heart-fill"
+                    class="favourite rounded bg-light p-2"
+                    variant="dark"
+                ></b-icon>
+            </div>
+            <span v-if="product.onSale === true" class="sale bg-danger"
+                >- 30%</span
+            >
+            <b-row class="product-type">
+                <b-card-text class="title">
+                    {{ product.productType }}
+                </b-card-text>
+            </b-row>
+            <b-row class="price-cart">
+                <b-card-text class="price">
+                    {{ product.price }} SEK
+                </b-card-text>
 
-        <b-button href="#" variant="primary" class="addToCart"
-          ><b-icon class="icon" icon="cart3" variant="secondary"></b-icon
-        ></b-button>
-      </b-row>
-    </b-card>
-  </div>
+                <b-button href="#" variant="primary" class="addToCart"
+                    ><b-icon
+                        class="icon"
+                        icon="cart3"
+                        variant="secondary"
+                    ></b-icon
+                ></b-button>
+            </b-row>
+        </b-card>
+        <b-modal id="mustLogIn">Please log in to add favourites</b-modal>
+    </div>
 </template>
 
 <script>
-export default {
-  name: "ProductGallery",
+    export default {
+        name: 'ProductGallery',
 
-  data() {
-    return {};
-  },
+        data() {
+            return {}
+        },
+        methods: {
+            addToFaves(product) {
+                console.log(product.productType)
+                if (localStorage.getItem('username')) {
+                    this.$store.commit('addToFavourites', {
+                        username: localStorage.getItem('username'),
+                        product: product
+                    })
+                } else {
+                    this.$bvModal.show('mustLogIn')
+                }
+            }
+        },
 
-  props: {
-    products: {
-      type: Array
+        props: {
+            products: {
+                type: Array
+            }
+        }
     }
-  }
-};
 </script>
 
 <style lang="scss" scoped>
-div.productGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.price-cart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3px;
-}
-.product-type {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-.product-card {
-  padding: 10px;
-  margin: 10px;
-}
-p.card-text.price {
-  margin: 0;
-}
-.sale {
-  position: absolute;
-  left: 80%;
-  top: 6%;
-  width: 50px;
-  text-align: center;
-  height: 30px;
-  line-height: 8px;
-  border-radius: 75px;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: bold;
-}
-.favourite {
-  position: absolute;
-  right: 83%;
-  top: 6%;
-  width: 40px;
-}
+    div.productGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .price-cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+    }
+    .product-type {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .product-card {
+        padding: 10px;
+        margin: 10px;
+    }
+    p.card-text.price {
+        margin: 0;
+    }
+    .sale {
+        position: absolute;
+        left: 80%;
+        top: 6%;
+        width: 50px;
+        text-align: center;
+        height: 30px;
+        line-height: 8px;
+        border-radius: 75px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: bold;
+    }
+    .favourite {
+        position: absolute;
+        right: 83%;
+        top: 6%;
+        width: 40px;
+    }
 </style>

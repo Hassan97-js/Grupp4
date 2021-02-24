@@ -4,6 +4,7 @@
             <b-card-body>
                 <b-form @submit="onSubmit">
                     <p class="h4 text-center ">Register</p>
+                    <p class="text-center">Don't have an account? Register here!</p>
                     <b-form-group
                         id="input-group-1"
                         label="Email:"
@@ -36,6 +37,7 @@
                         <b-form-input
                             id="input-2"
                             type="password"
+                            required
                             placeholder="Enter password"
                             v-model="password"
                         ></b-form-input>
@@ -64,6 +66,14 @@
                 password: ''
             }
         },
+        mounted () {
+            if (
+                localStorage.getItem('username') &&
+                localStorage.getItem('password')
+            ) {
+                this.$router.push('/user')
+            }
+        },
 
         methods: {
             onSubmit(e) {
@@ -75,7 +85,7 @@
                 localStorage.setItem('username', this.username)
                 localStorage.setItem('password', this.password)
                 localStorage.setItem('email', this.email)
-                this.$store.commit('addUser', {id: this.$store.state.users.length +1, username: this.username, password: this.password, email: this.email})
+                this.$store.commit('addUser', {id: this.$store.state.users.length +1, username: this.username, password: this.password, email: this.email, favourites:[]})
                 this.$router.push('/user')
             }
         }

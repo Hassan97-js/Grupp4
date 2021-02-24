@@ -16,13 +16,15 @@ export default new Vuex.Store({
                 id: 1,
                 username: 'testuser',
                 password: 'test',
-                email: 'test@test.com'
+                email: 'test@test.com',
+                favourites: []
             },
             {
                 id: 2,
                 username: 'testuser2',
                 password: 'test2',
-                email: 'test@test.com'
+                email: 'test@test.com',
+                favourites: []
             }
         ]
     },
@@ -35,7 +37,7 @@ export default new Vuex.Store({
             productInfoArr.push(newInfo)
             state.cart = productInfoArr
         },
-        //User mutations
+        // User mutations
         addUser(state, user) {
             state.users.push(user)
         },
@@ -50,6 +52,11 @@ export default new Vuex.Store({
         editEmail(state, newEmail) {
           const index = state.users.findIndex(users => users.id === newEmail.id)
           state.users[index].email = newEmail.email
+        },
+        // favourites 
+        addToFavourites(state, product) {
+            const index = state.users.findIndex(users => users.username === product.username)
+            state.users[index].favourites.push(product.product)
         }
         
     },
