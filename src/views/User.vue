@@ -6,7 +6,7 @@
             size="4em"
             class="mb-4"
         ></b-avatar>
-        <h1>Hello {{ username }}!</h1>
+        <h1 v-if="currentUser">Hello {{ currentUser.username }}!</h1>
         <b-button class="mx-2" variant="danger" @click="logout"
             >Log out</b-button
         >
@@ -17,7 +17,7 @@
                     <h4>Username:</h4>
                 </b-col>
                 <b-col>
-                    <p>{{ username }}</p>
+                    <p>{{ currentUser.username }}</p>
                 </b-col>
                 <b-col>
                     <b-button v-b-modal.username-modal size="sm" variant="light"
@@ -164,8 +164,6 @@
                 //TODO make avatar text first initial
             },
             handleOkUsername() {
-                console.log('submit')
-                console.log(this.username)
                 localStorage.setItem('username', this.username)
                 this.$bvModal.show('confirm-username')
                 setTimeout(() => this.$bvModal.hide('confirm-username'), 1500)
@@ -175,7 +173,6 @@
                 })
             },
             handleOkPassword() {
-                console.log(this.password)
                 localStorage.setItem('password', this.password)
                 this.$bvModal.show('confirm-password')
                 setTimeout(() => this.$bvModal.hide('confirm-password'), 1500)
