@@ -85,7 +85,7 @@
                 localStorage.setItem('username', this.username)
                 localStorage.setItem('password', this.password)
                 localStorage.setItem('email', this.email)
-                this.$store.commit('addUser', {id: this.$store.state.users.length +1, username: this.username, password: this.password, email: this.email, favourites:[]})
+                this.$store.commit('addUser', {id: this.$store.state.users.length +1, username: this.username, password: this.password, email: this.email, favourites:[], orders:[]})
                 this.$router.push('/user')
             }
         }

@@ -97,15 +97,23 @@
                     <button @click="addToCart" class="buy--btn btn-success">
                         ADD TO CART
                     </button>
-                    <b-icon
-                        class="ml-5"
-                        icon="heart-fill"
-                        variant="danger"
-                        style="width: 2rem; height: 2rem"
-                    ></b-icon>
+                    <b-button @click="addToFaves(product)" class="ml-5 buy--btn" variant="primary">
+                        <b-icon icon="heart-fill" variant="danger"></b-icon>
+                    </b-button>
                 </div>
             </div>
         </div>
+        <b-modal id="mustLogIn" hide-header ok-only button-size="sm" size="sm"
+            >Please log in to add favourites</b-modal
+        >
+        <b-modal id="added" hide-header hide-footer size="sm"
+            >Added to favourites!
+            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="2"></b-icon>
+        </b-modal>
+        <b-modal id="addedToCart" hide-header hide-footer size="sm"
+            >Added to cart!
+            <b-icon icon="cart-check" animation="cylon" font-scale="2"></b-icon>
+        </b-modal>
     </section>
 </template>
 
@@ -136,6 +144,7 @@
                     'pushToCart',
                     Object.assign({ counter: 1 }, this.rightProduct)
                 )
+                this.$bvModal.show('addedToCart')
             },
             getRightProduct(id) {
                 const data = this.products
@@ -147,6 +156,18 @@
                     }
                     return productId
                 })
+            },
+            // favourites
+            addToFaves(product) {
+                if (localStorage.getItem('username')) {
+                    this.$bvModal.show('added')
+                    this.$store.commit('addToFavourites', {
+                        username: localStorage.getItem('username'),
+                        product: product
+                    })
+                } else {
+                    this.$bvModal.show('mustLogIn')
+                }
             }
         }
     }

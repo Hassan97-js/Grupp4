@@ -24,18 +24,21 @@
     export default {
         name: 'Sale',
         components: { ProductGallery },
-        created() {
-            fetch('http://localhost:3000/products')
-                .then(response => {
-                    return response.json()
-                })
-                .then(data => {
-                    this.sale = data.filter(function(sale) {
-                        return sale.onSale === true
-                    })
-                })
+         async created() {
+            await this.$store.dispatch('getProductInfo')
+            this.getCategory()
+        },
+        computed: {
+            allProducts() {
+                return this.$store.state.allProducts
+            }
         },
         methods: {
+            getCategory() {
+                this.sale = this.allProducts.filter(category => {
+                    return category.onSale === true
+                })
+            },
             sortLowToHigh() {
                 return this.sale.sort(function(a, b) {
                     return a.price - b.price

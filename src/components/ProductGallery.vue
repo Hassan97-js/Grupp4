@@ -54,7 +54,7 @@
         >
         <b-modal id="added" hide-header hide-footer size="sm"
             >Added to favourites!
-            <b-icon icon="heart-fill" animation="throb" variant="danger"></b-icon>
+            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="2"></b-icon>
         </b-modal>
     </div>
 </template>

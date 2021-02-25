@@ -1,5 +1,19 @@
 <template>
     <div v-if="men">
+        <b-dropdown
+            variant="primary"
+            size="sm"
+            text="Sort by"
+            class="float-right"
+        >
+            <b-dropdown-item @click="sortLowToHigh"
+                >Price low-high</b-dropdown-item
+            >
+            <b-dropdown-item @click="sortHighToLow"
+                >Price high-low</b-dropdown-item
+            >
+            <b-dropdown-item @click="sortByName">Name</b-dropdown-item>
+        </b-dropdown>
         <h1>Herr</h1>
         <product-gallery :products="men"></product-gallery>
     </div>
@@ -29,6 +43,28 @@
                 this.men = this.allProducts.filter(category => {
                     return category.productTarget === 'men'
                 })
+            },
+            sortLowToHigh() {
+                return this.men.sort(function(a, b) {
+                    return a.price - b.price
+                })
+            },
+            sortHighToLow() {
+                return this.men.sort(function(a, b) {
+                    return b.price - a.price
+                })
+            },
+            sortByName() {
+                this.men.sort((a, b) => {
+                    if (a.productType < b.productType) {
+                        return -1
+                    }
+                    if (a.productType > b.productType) {
+                        return 1
+                    }
+                    return 0
+                })
+                return this.men
             }
         }
     }

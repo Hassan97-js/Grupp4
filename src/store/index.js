@@ -17,14 +17,16 @@ export default new Vuex.Store({
         username: "testuser",
         password: "test",
         email: "test@test.com",
-        favourites: []
+        favourites: [],
+        orders: []
       },
       {
         id: 2,
         username: "testuser2",
         password: "test2",
         email: "test@test.com",
-        favourites: []
+        favourites: [],
+        orders: []
       }
     ]
   },
