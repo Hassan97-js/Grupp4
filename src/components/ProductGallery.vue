@@ -72,13 +72,12 @@
     }
 </script>
 <style scoped lang="scss">
-        div.productGallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 50px;
+    div.productGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
 
-    <style lang="scss" scoped>
         div.productGallery {
             display: flex;
             flex-wrap: wrap;
@@ -127,4 +126,5 @@
             top: 6%;
             width: 40px;
         }
+    }
 </style>
