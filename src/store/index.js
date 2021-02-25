@@ -8,7 +8,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     allProducts: null,
-    cart: null,
+    cart: [],
 
     //User details
     users: [
@@ -33,9 +33,10 @@ export default new Vuex.Store({
       state.allProducts = products;
     },
     pushToCart(state, newInfo) {
-      const productInfoArr = [];
-      productInfoArr.push(newInfo);
-      state.cart = productInfoArr;
+      state.cart.push(newInfo);
+    },
+    removeItem(state, id) {
+      Vue.delete(state.cart, id);
     },
     // User mutations
     addUser(state, user) {

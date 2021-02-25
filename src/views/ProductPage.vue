@@ -88,7 +88,7 @@
                 <div class="description mb-4">
                     <h3>Benefits</h3>
                     <ul class="text-left p-0">
-                        <li></li>
+                        <li>{{ product.productInfo }}</li>
                     </ul>
                 </div>
                 <div

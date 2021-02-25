@@ -20,11 +20,18 @@
             <span v-if="product.onSale === true" class="sale bg-danger"
                 >- 30%</span
             >
-            <b-row class="product-type">
-                <b-card-text class="title">
-                    {{ product.productType }}
-                </b-card-text>
-            </b-row>
+            <router-link
+                :to="{
+                    name: 'ProductPage',
+                    params: { id: product.id }
+                }"
+            >
+                <b-row class="product-type">
+                    <b-card-text class="title">
+                        {{ product.productType }}
+                    </b-card-text>
+                </b-row>
+            </router-link>
             <b-row class="price-cart">
                 <b-card-text class="price">
                     {{ product.price }} SEK
@@ -46,7 +53,6 @@
 <script>
     export default {
         name: 'ProductGallery',
-
         data() {
             return {}
         },
