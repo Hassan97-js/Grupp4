@@ -8,23 +8,28 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     allProducts: null,
-    cart: null
+    cart: []
   },
   mutations: {
     setAllProducts(state, products) {
       state.allProducts = products;
     },
     pushToCart(state, newInfo) {
-      const productInfoArr = [];
-      productInfoArr.push(newInfo);
-      state.cart = productInfoArr;
+      state.cart.push(newInfo);
+    },
+    removeItem(state, index) {
+      Vue.delete(state.cart, index);
     }
   },
   actions: {
     async getProductInfo(context) {
-      const productInfo = await fetch("http://localhost:3000/products");
-      const productResult = await productInfo.json();
-      context.commit("setAllProducts", productResult);
+      try {
+        const productInfo = await fetch("http://localhost:3000/products");
+        const productResult = await productInfo.json();
+        context.commit("setAllProducts", productResult);
+      } catch (err) {
+        console.error(err);
+      }
     }
   }
 });

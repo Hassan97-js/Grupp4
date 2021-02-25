@@ -123,4 +123,12 @@
             padding: 15px;
         }
     }
+    /* Media query for fitted images */
+    @media (min-width: 993px) {
+        /* fixed height of img:es */
+        img.card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+    }
 </style>
