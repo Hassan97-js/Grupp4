@@ -11,6 +11,7 @@
         >
             <div class="h2 mb-0">
                 <b-icon
+                    @click="addToFaves(product)"
                     icon="heart-fill"
                     class="favourite rounded bg-light p-2"
                     variant="dark"
@@ -19,18 +20,11 @@
             <span v-if="product.onSale === true" class="sale bg-danger"
                 >- 30%</span
             >
-            <router-link
-                :to="{
-                    name: 'ProductPage',
-                    params: { id: product.id }
-                }"
-            >
-                <b-row class="product-type">
-                    <b-card-text class="title">
-                        {{ product.productType }}
-                    </b-card-text>
-                </b-row>
-            </router-link>
+            <b-row class="product-type">
+                <b-card-text class="title">
+                    {{ product.productType }}
+                </b-card-text>
+            </b-row>
             <b-row class="price-cart">
                 <b-card-text class="price">
                     {{ product.price }} SEK
@@ -45,6 +39,7 @@
                 ></b-button>
             </b-row>
         </b-card>
+        <b-modal id="mustLogIn">Please log in to add favourites</b-modal>
     </div>
 </template>
 
@@ -55,6 +50,20 @@
         data() {
             return {}
         },
+        methods: {
+            addToFaves(product) {
+                console.log(product.productType)
+                if (localStorage.getItem('username')) {
+                    this.$store.commit('addToFavourites', {
+                        username: localStorage.getItem('username'),
+                        product: product
+                    })
+                } else {
+                    this.$bvModal.show('mustLogIn')
+                }
+            }
+        },
+
         props: {
             products: {
                 type: Array
@@ -63,12 +72,19 @@
     }
 </script>
 <style scoped lang="scss">
-    div.productGallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 50px;
+        div.productGallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
 
+    <style lang="scss" scoped>
+        div.productGallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
         .price-cart {
             display: flex;
             justify-content: space-between;
@@ -85,12 +101,6 @@
         .product-card {
             padding: 10px;
             margin: 10px;
-        }
-        //  Fixed image width and height
-        img.card-img-top {
-            width: 100%;
-            height: 345px;
-            object-fit: scale-down;
         }
         p.card-text.price {
             margin: 0;
@@ -117,5 +127,4 @@
             top: 6%;
             width: 40px;
         }
-    }
 </style>

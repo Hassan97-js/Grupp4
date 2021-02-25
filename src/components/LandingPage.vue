@@ -46,7 +46,7 @@
                 header="Sale"
                 lead="View all items on Sale"
             >
-                <b-button variant="primary" href="#">Shop Sale</b-button>
+                <b-button variant="primary" to="/sale">Shop Sale</b-button>
             </b-jumbotron>
         </div>
 

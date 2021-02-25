@@ -4,6 +4,7 @@
             <b-card-body>
                 <b-form @submit="onSubmit">
                     <p class="h4 text-center ">Sign in</p>
+                    <p class="text-center">Have an account? Login here!</p>
                     <b-form-group
                         id="input-group-1"
                         label="Username:"
@@ -23,8 +24,9 @@
                     >
                         <b-form-input
                             id="input-2"
-                            type="password"
                             placeholder="Enter password"
+                            required
+                            type="password"
                             v-model="password"
                         ></b-form-input>
                     </b-form-group>
@@ -33,11 +35,16 @@
                             >Sign in</b-button
                         >
                         <span class="mx-2">or</span>
-                        <b-button variant="light" to="/register">Register</b-button>
+                        <b-button variant="light" to="/register"
+                            >Register</b-button
+                        >
                     </div>
                 </b-form>
             </b-card-body>
         </b-card>
+        <b-modal id="incorrect"
+            >Wrong username or password. Please try again.</b-modal
+        >
     </div>
 </template>
 
@@ -53,12 +60,14 @@
         },
 
         mounted() {
+
             if (
                 localStorage.getItem('username') &&
                 localStorage.getItem('password')
             ) {
                 this.$router.push('/user')
             }
+            return this.$store.state.users
         },
 
         methods: {
@@ -67,10 +76,20 @@
                 this.login()
             },
             login() {
-                console.log(this.username)
-                localStorage.setItem('username', this.username)
-                localStorage.setItem('password', this.password)
-                this.$router.push('/user')
+                
+                //validation
+                for (let i = 0; i < this.$store.state.users.length; i++) {
+                    if (
+                        this.username === this.$store.state.users[i].username &&
+                        this.password === this.$store.state.users[i].password
+                    ) {
+                        console.log(this.$store.state.users[i])
+                        localStorage.setItem('username', this.username)
+                        localStorage.setItem('password', this.password)
+
+                        this.$router.push('/user')
+                    } else this.$bvModal.show('incorrect')
+                }
             }
         }
     }

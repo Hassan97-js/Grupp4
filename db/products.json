@@ -7,7 +7,8 @@
             "img": "hoodie-orange.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 2,
@@ -16,7 +17,8 @@
             "img": "tshirt-purple.png",
             "productTarget": "kids",
             "onSale": false,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 3,
@@ -25,7 +27,8 @@
             "img": "hoodie-white.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 4,
@@ -34,7 +37,8 @@
             "img": "tshirt-purple.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 5,
@@ -43,7 +47,8 @@
             "img": "assec-white.png",
             "productTarget": "kids",
             "onSale": true,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 6,
@@ -52,7 +57,8 @@
             "img": "tshirt-orange.png",
             "productTarget": "kids",
             "onSale": true,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 7,
@@ -61,7 +67,8 @@
             "img": "hoodie-white.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 8,
@@ -70,7 +77,8 @@
             "img": "assec-orange.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 9,
@@ -79,7 +87,8 @@
             "img": "tshirt-white.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 10,
@@ -88,7 +97,8 @@
             "img": "hoodie-purple.png",
             "productTarget": "kids",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 11,
@@ -97,7 +107,8 @@
             "img": "tshirt-orange.png",
             "productTarget": "kids",
             "onSale": false,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 12,
@@ -106,7 +117,8 @@
             "img": "hoodie-white.png",
             "productTarget": "kids",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 13,
@@ -115,7 +127,8 @@
             "img": "hoodie-orange.png",
             "productTarget": "women",
             "onSale": false,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 14,
@@ -124,7 +137,8 @@
             "img": "trousers-orange.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 15,
@@ -133,7 +147,8 @@
             "img": "hoodie-orange.png",
             "productTarget": "women",
             "onSale": false,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 16,
@@ -142,7 +157,8 @@
             "img": "assec-purple.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 17,
@@ -151,7 +167,8 @@
             "img": "tshirt-orange.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 18,
@@ -160,7 +177,8 @@
             "img": "hoodie-purple.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 19,
@@ -169,7 +187,8 @@
             "img": "trousers-orange.png",
             "productTarget": "women",
             "onSale": false,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 20,
@@ -178,7 +197,8 @@
             "img": "assec-purple.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 21,
@@ -187,7 +207,8 @@
             "img": "assec-orange.png",
             "productTarget": "women",
             "onSale": false,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 22,
@@ -196,7 +217,8 @@
             "img": "assec-purple.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 23,
@@ -205,7 +227,8 @@
             "img": "trousers-blue.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 24,
@@ -214,7 +237,8 @@
             "img": "tshirt-purple.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 25,
@@ -223,7 +247,8 @@
             "img": "assec-white.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 26,
@@ -232,7 +257,8 @@
             "img": "trousers-orange.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 27,
@@ -241,7 +267,8 @@
             "img": "tshirt-purple.png",
             "productTarget": "men",
             "onSale": false,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 28,
@@ -250,7 +277,8 @@
             "img": "tshirt-white.png",
             "productTarget": "kids",
             "onSale": false,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 29,
@@ -259,7 +287,8 @@
             "img": "trousers-purple.png",
             "productTarget": "women",
             "onSale": false,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 30,
@@ -268,7 +297,8 @@
             "img": "assec-orange.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 31,
@@ -277,7 +307,8 @@
             "img": "trousers-orange.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 32,
@@ -286,7 +317,8 @@
             "img": "trousers-orange.png",
             "productTarget": "kids",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 33,
@@ -295,7 +327,8 @@
             "img": "hoodie-white.png",
             "productTarget": "kids",
             "onSale": false,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 34,
@@ -304,7 +337,8 @@
             "img": "trousers-purple.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 35,
@@ -313,7 +347,8 @@
             "img": "tshirt-white.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 36,
@@ -322,7 +357,8 @@
             "img": "hoodie-white.png",
             "productTarget": "men",
             "onSale": false,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 37,
@@ -331,7 +367,8 @@
             "img": "trousers-purple.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 38,
@@ -340,7 +377,8 @@
             "img": "assec-purple.png",
             "productTarget": "women",
             "onSale": false,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 39,
@@ -349,7 +387,8 @@
             "img": "trousers-purple.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 40,
@@ -358,7 +397,8 @@
             "img": "hoodie-purple.png",
             "productTarget": "kids",
             "onSale": false,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 41,
@@ -367,7 +407,8 @@
             "img": "tshirt-white.png",
             "productTarget": "men",
             "onSale": false,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 42,
@@ -376,7 +417,8 @@
             "img": "hoodie-purple.png",
             "productTarget": "men",
             "onSale": false,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 43,
@@ -385,7 +427,8 @@
             "img": "hoodie-orange.png",
             "productTarget": "kids",
             "onSale": false,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 44,
@@ -394,7 +437,8 @@
             "img": "assec-purple.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 299
+            "price": 299,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 45,
@@ -403,7 +447,8 @@
             "img": "tshirt-purple.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 46,
@@ -412,7 +457,8 @@
             "img": "tshirt-white.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 149
+            "price": 149,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 47,
@@ -421,7 +467,8 @@
             "img": "hoodie-purple.png",
             "productTarget": "kids",
             "onSale": false,
-            "price": 199
+            "price": 199,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 48,
@@ -430,7 +477,8 @@
             "img": "assec-purple.png",
             "productTarget": "women",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 49,
@@ -439,7 +487,8 @@
             "img": "tshirt-purple.png",
             "productTarget": "men",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
         },
         {
             "id": 50,

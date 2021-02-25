@@ -45,6 +45,16 @@
             <a href="#" class="font-rale font-size-14 text-white-50 pb-1"
               >Terms &amp; Conditions</a
             >
+
+
+          <router-link
+              to="/Form"
+              class="font-rale font-size-14 text-white-50 pb-1"
+              >Form </router-link
+            >
+
+
+
           </div>
         </div>
         <div class="col-lg-2 col-12">
