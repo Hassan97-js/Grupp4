@@ -54,7 +54,7 @@
         >
         <b-modal id="added" hide-header hide-footer size="sm"
             >Added to favourites!
-            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="2"></b-icon>
+            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="1.5"></b-icon>
         </b-modal>
     </div>
 </template>
@@ -70,6 +70,7 @@
                 console.log(product.productType)
                 if (localStorage.getItem('username')) {
                     this.$bvModal.show('added')
+                    setTimeout(() => this.$bvModal.hide('added'), 1500)
                     this.$store.commit('addToFavourites', {
                         username: localStorage.getItem('username'),
                         product: product

@@ -108,11 +108,11 @@
         >
         <b-modal id="added" hide-header hide-footer size="sm"
             >Added to favourites!
-            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="2"></b-icon>
+            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="1.5"></b-icon>
         </b-modal>
         <b-modal id="addedToCart" hide-header hide-footer size="sm"
             >Added to cart!
-            <b-icon icon="cart-check" animation="cylon" font-scale="2"></b-icon>
+            <b-icon icon="cart-check" animation="cylon" font-scale="1.5"></b-icon>
         </b-modal>
     </section>
 </template>
@@ -145,6 +145,7 @@
                     Object.assign({ counter: 1 }, this.rightProduct)
                 )
                 this.$bvModal.show('addedToCart')
+                setTimeout(() => this.$bvModal.hide('addedToCart'), 1500)
             },
             getRightProduct(id) {
                 const data = this.products
@@ -161,6 +162,7 @@
             addToFaves(product) {
                 if (localStorage.getItem('username')) {
                     this.$bvModal.show('added')
+                    setTimeout(() => this.$bvModal.hide('added'), 1500)
                     this.$store.commit('addToFavourites', {
                         username: localStorage.getItem('username'),
                         product: product

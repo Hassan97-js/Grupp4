@@ -24,6 +24,7 @@
                         >Edit<b-icon class="ml-2" icon="pencil"></b-icon
                     ></b-button>
                     <b-modal
+                        button-size="sm"
                         id="username-modal"
                         title="Change username"
                         @ok="handleOkUsername"
@@ -55,6 +56,7 @@
                         >Edit<b-icon class="ml-2" icon="pencil"></b-icon
                     ></b-button>
                     <b-modal
+                        button-size="sm"
                         id="password-modal"
                         title="Change password"
                         @ok="handleOkPassword"
@@ -85,6 +87,7 @@
                         >Edit<b-icon class="ml-2" icon="pencil"></b-icon
                     ></b-button>
                     <b-modal
+                        button-size="sm"
                         id="email-modal"
                         title="Change email"
                         @ok="handleOkEmail"
@@ -107,14 +110,14 @@
         <hr class="mt-5">
         <favourites :currentUser="currentUser"></favourites>
 
-        <b-modal id="confirm-username">
-            <p class="my-4">Username changed!</p>
+        <b-modal id="confirm-username" hide-header hide-footer size="sm">
+            <p class="my-4">Username changed! <b-icon icon="hand-thumbs-up" animation="cylon-vertical" font-scale="1.5"></b-icon> </p> 
         </b-modal>
-        <b-modal id="confirm-password">
-            <p class="my-4">Password changed!</p>
+        <b-modal id="confirm-password" hide-header hide-footer size="sm">
+            <p class="my-4">Password changed! <b-icon icon="hand-thumbs-up" animation="cylon-vertical" font-scale="1.5"></b-icon> </p>
         </b-modal>
-        <b-modal id="confirm-email">
-            <p class="my-4">Email changed!</p>
+        <b-modal id="confirm-email" hide-header hide-footer size="sm">
+            <p class="my-4">Email changed! <b-icon icon="hand-thumbs-up" animation="cylon-vertical" font-scale="1.5"></b-icon> </p>
         </b-modal>
     </div>
 </template>
@@ -165,6 +168,7 @@
                 console.log(this.username)
                 localStorage.setItem('username', this.username)
                 this.$bvModal.show('confirm-username')
+                setTimeout(() => this.$bvModal.hide('confirm-username'), 1500)
                 this.$store.commit('editUsername', {
                     id: this.currentUser.id,
                     username: this.username
@@ -174,6 +178,7 @@
                 console.log(this.password)
                 localStorage.setItem('password', this.password)
                 this.$bvModal.show('confirm-password')
+                setTimeout(() => this.$bvModal.hide('confirm-password'), 1500)
                 this.$store.commit('editPassword', {
                     id: this.currentUser.id,
                     password: this.password
@@ -182,6 +187,7 @@
             handleOkEmail() {
                 localStorage.setItem('email', this.email)
                 this.$bvModal.show('confirm-email')
+                setTimeout(() => this.$bvModal.hide('confirm-email'), 1500)
                 this.$store.commit('editEmail', {
                     id: this.currentUser.id,
                     email: this.email
