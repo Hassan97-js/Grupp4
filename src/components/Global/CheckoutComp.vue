@@ -122,7 +122,6 @@
         justify-content: space-between;
     }
     .favourite-text {
-        border: 1px solid black;
         margin-right: 10px;
     }
     .card-img-left {
