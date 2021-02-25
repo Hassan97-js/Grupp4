@@ -10,12 +10,15 @@
             class="mb-2 product-card"
         >
             <div class="h2 mb-0">
-                <b-icon
+                <b-button
                     @click="addToFaves(product)"
-                    icon="heart-fill"
-                    class="favourite rounded bg-light p-2"
-                    variant="dark"
-                ></b-icon>
+                    id="fave-button"
+                    class="favourite"
+                    size="sm"
+                    variant="outline-primary"
+                >
+                    <b-icon icon="heart-fill" variant="dark"></b-icon>
+                </b-button>
             </div>
             <span v-if="product.onSale === true" class="sale bg-danger"
                 >- 30%</span
@@ -46,7 +49,13 @@
                 ></b-button>
             </b-row>
         </b-card>
-        <b-modal id="mustLogIn">Please log in to add favourites</b-modal>
+        <b-modal id="mustLogIn" hide-header ok-only button-size="sm" size="sm"
+            >Please log in to add favourites</b-modal
+        >
+        <b-modal id="added" hide-header hide-footer size="sm"
+            >Added to favourites!
+            <b-icon icon="heart-fill" animation="throb" variant="danger"></b-icon>
+        </b-modal>
     </div>
 </template>
 
@@ -60,6 +69,7 @@
             addToFaves(product) {
                 console.log(product.productType)
                 if (localStorage.getItem('username')) {
+                    this.$bvModal.show('added')
                     this.$store.commit('addToFavourites', {
                         username: localStorage.getItem('username'),
                         product: product

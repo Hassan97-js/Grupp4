@@ -27,6 +27,7 @@
 </script>
 
 <style lang="scss">
+<<<<<<< HEAD
     @import './scss/main.scss';
     .wrapper {
         min-height: 70vh;
@@ -47,4 +48,26 @@
         color: #2c3e50;
         background-color: $body-bg;
     }
+=======
+@import "./scss/main.scss";
+.wrapper {
+  min-height: 70vh;
+}
+div.hr-line {
+  width: 100vw;
+  height: 0.5vh;
+  background: $light-purple;
+  opacity: 0.5;
+}
+#app {
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  background-color: $body-bg;
+}
+>>>>>>> sign-up
 </style>

@@ -42,8 +42,8 @@
                 </b-form>
             </b-card-body>
         </b-card>
-        <b-modal id="incorrect"
-            >Wrong username or password. Please try again.</b-modal
+        <b-modal id="incorrect" hide-header ok-only button-size="sm" size="sm"
+            >Wrong username and/or password. Please try again.</b-modal
         >
     </div>
 </template>
