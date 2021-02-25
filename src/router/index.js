@@ -11,7 +11,15 @@ import About from "../views/About.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import User from "../views/User.vue";
-import Sale from "../views/Sale.vue"
+import Sale from "../views/Sale.vue";
+
+
+
+
+import Form from "../components/Global/Form.vue";
+
+
+
 
 Vue.use(VueRouter);
 
@@ -68,7 +76,19 @@ const routes = [
     path: "/sale",
     name: "Sale",
     component: Sale
+  },
+
+
+
+  {
+    path: "/Form",
+    name: "Form",
+    component: Form
   }
+
+
+
+
 ];
 
 const router = new VueRouter({
