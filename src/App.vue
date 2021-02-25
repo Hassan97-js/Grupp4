@@ -34,7 +34,7 @@ export default {
 div.hr-line {
   width: 100vw;
   height: 0.5vh;
-  background: $main-blue;
+  background: $light-purple;
   opacity: 0.5;
 }
 #app {
