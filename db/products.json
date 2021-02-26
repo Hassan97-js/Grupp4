@@ -1,6 +1,6 @@
 {
-    "products": [{
-
+    "products": [
+        {
             "id": 1,
             "productType": "hoodie",
             "color": 1,

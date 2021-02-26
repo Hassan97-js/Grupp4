@@ -11,7 +11,15 @@ import About from '../views/About.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import User from '../views/User.vue'
+
+
+
+import Sale from '../views/Sale.vue'
 import Checkout from '../views/Checkout.vue'
+
+import Form from '../components/Global/Form.vue'
+
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -29,17 +37,15 @@ const routes = [
         path: '/barn',
         name: 'Barn',
         component: Barn
-    },
-
-    {
+    },{
         path: '/herr',
         name: 'Herr',
         component: Herr
     },
 
     {
-        path: '/product',
-        name: 'Herr',
+        path: '/product/:id?',
+        name: 'ProductPage',
         component: ProductPage
     },
 
@@ -67,6 +73,18 @@ const routes = [
         path: '/checkout',
         name: 'Checkout',
         component: Checkout
+    },
+    {
+        path: '/sale',
+        name: 'Sale',
+        component: Sale
+    },
+
+    {
+        path: '/Form',
+        name: 'Form',
+        component: Form
+
     }
 ]
 

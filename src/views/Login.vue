@@ -4,6 +4,7 @@
             <b-card-body>
                 <b-form @submit="onSubmit">
                     <p class="h4 text-center ">Sign in</p>
+                    <p class="text-center">Have an account? Login here!</p>
                     <b-form-group
                         id="input-group-1"
                         label="Username:"
@@ -23,8 +24,9 @@
                     >
                         <b-form-input
                             id="input-2"
-                            type="password"
                             placeholder="Enter password"
+                            required
+                            type="password"
                             v-model="password"
                         ></b-form-input>
                     </b-form-group>
@@ -40,8 +42,8 @@
                 </b-form>
             </b-card-body>
         </b-card>
-        <b-modal id="incorrect"
-            >Wrong username or password. Please try again.</b-modal
+        <b-modal id="incorrect" hide-header ok-only button-size="sm" size="sm"
+            >Wrong username and/or password. Please try again.</b-modal
         >
     </div>
 </template>

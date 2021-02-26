@@ -46,7 +46,7 @@
                 header="Sale"
                 lead="View all items on Sale"
             >
-                <b-button variant="primary" href="#">Shop Sale</b-button>
+                <b-button variant="primary" to="/sale">Shop Sale</b-button>
             </b-jumbotron>
         </div>
 
@@ -121,6 +121,14 @@
         }
         div.card-body {
             padding: 15px;
+        }
+    }
+    /* Media query for fitted images */
+    @media (min-width: 993px) {
+        /* fixed height of img:es */
+        img.card-img-top {
+            height: 300px;
+            object-fit: cover;
         }
     }
 </style>
