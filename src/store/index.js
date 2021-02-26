@@ -62,6 +62,12 @@ export default new Vuex.Store({
         users => users.username === product.username
       );
       state.users[index].favourites.push(product.product);
+    },
+
+    // orders
+    addOrder(state, payload) {
+      const index = state.users.findIndex(users => users.id === payload.id)
+      state.users[index].orders.push(payload.order)
     }
   },
   actions: {
