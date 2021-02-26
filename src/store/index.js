@@ -9,6 +9,7 @@ export default new Vuex.Store({
   state: {
     allProducts: null,
     cart: [],
+    sizeProduct: null,
 
     //User details
     users: [

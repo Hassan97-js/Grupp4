@@ -1,5 +1,12 @@
 <template>
     <section v-if="products" class="product row my-5">
+        <div class="modal">
+            <b-modal id="size-error-modal" title="Size error">
+                <p class="my-4">
+                    You did not choose a size. Please choose a size.
+                </p>
+            </b-modal>
+        </div>
         <div
             class="d-lg-flex"
             v-for="product in getRightProduct($route.params.id)"
@@ -75,13 +82,25 @@
                     <h3 class="select-size">Select a size</h3>
                     <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
                         <li class="col-4 px-1 px-lg-0">
-                            <span class="border border-dark px-3">S</span>
+                            <span
+                                @click="pushSize('Small')"
+                                class="border border-dark px-3"
+                                >S</span
+                            >
                         </li>
                         <li class="col-4 px-0">
-                            <span class="border border-dark px-3">M</span>
+                            <span
+                                @click="pushSize('Medium')"
+                                class="border border-dark px-3"
+                                >M</span
+                            >
                         </li>
                         <li class="col-4 px-0">
-                            <span class="border border-dark px-3">L</span>
+                            <span
+                                @click="pushSize('Large')"
+                                class="border border-dark px-3"
+                                >L</span
+                            >
                         </li>
                     </ul>
                 </div>
@@ -95,7 +114,7 @@
                     class="row favourit w-100 mx-auto justify-content-between align-items-center"
                 >
                     <button @click="addToCart" class="buy--btn btn-success">
-                        ADD TO CART
+                        Add to cart
                     </button>
                     <b-icon
                         class="ml-5"
@@ -114,7 +133,8 @@
         data() {
             return {
                 rightProduct: null,
-                id: null
+                id: null,
+                size: null
             }
         },
         computed: {
@@ -128,14 +148,26 @@
         methods: {
             addToCart() {
                 for (const item of this.$store.state.cart) {
-                    if (item.id === this.id) {
+                    if (item.id === this.id && item.size === this.size) {
+                        item.counter++
                         return
                     }
                 }
-                this.$store.commit(
-                    'pushToCart',
-                    Object.assign({ counter: 1 }, this.rightProduct)
-                )
+                if (
+                    this.size === 'Small' ||
+                    this.size === 'Medium' ||
+                    this.size === 'Large'
+                ) {
+                    this.$store.commit(
+                        'pushToCart',
+                        Object.assign(
+                            { counter: 1, size: this.size },
+                            this.rightProduct
+                        )
+                    )
+                } else {
+                    this.$bvModal.show('size-error-modal')
+                }
             },
             getRightProduct(id) {
                 const data = this.products
@@ -147,6 +179,9 @@
                     }
                     return productId
                 })
+            },
+            pushSize(size) {
+                this.size = size
             }
         }
     }
