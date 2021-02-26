@@ -48,7 +48,7 @@
                 <div class="variant mb-3">
                     <h3 class="select-color">Select a color</h3>
                     <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
-                        <li class="col-3">
+                        <li class="col-3 ">
                             <img
                                 class="w-75 rounded"
                                 :src="require('../assets/' + product.img)"
@@ -84,21 +84,21 @@
                         <li class="col-4 px-1 px-lg-0">
                             <span
                                 @click="pushSize('Small')"
-                                class="border border-dark px-3"
+                                class="cursor border border-dark px-3 border-0"
                                 >S</span
                             >
                         </li>
                         <li class="col-4 px-0">
                             <span
                                 @click="pushSize('Medium')"
-                                class="border border-dark px-3"
+                                class="cursor border border-dark px-3 border-0"
                                 >M</span
                             >
                         </li>
                         <li class="col-4 px-0">
                             <span
                                 @click="pushSize('Large')"
-                                class="border border-dark px-3"
+                                class="cursor border border-dark px-3 border-0"
                                 >L</span
                             >
                         </li>
@@ -202,6 +202,15 @@
     }
     span {
         color: rgb(59, 56, 106);
+    }
+    .cursor {
+        cursor: pointer;
+        &:hover {
+            background: #ffb17a;
+            color: #fff;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
     }
     .buy--btn {
         padding: 1.2rem 2.2rem;
