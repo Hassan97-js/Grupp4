@@ -181,7 +181,6 @@
         },
         methods: {
             handleShop() {
-                console.log("a thing")
                 this.$store.commit('addOrder', {id: this.currentUser.id, order: this.myCart})
             }
         },
@@ -213,7 +212,8 @@
                 ],
                 myCart: this.$store.state.cart.slice(0),
                 username: localStorage.getItem('username'),
-                currentUser: null
+                currentUser: null,
+                
             }
         },
         

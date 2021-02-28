@@ -67,7 +67,11 @@ export default new Vuex.Store({
     // orders
     addOrder(state, payload) {
       const index = state.users.findIndex(users => users.id === payload.id)
-      state.users[index].orders.push(payload.order)
+      
+      state.users[index].orders.push ({id: Math.floor(Math.random() * 100), order: payload.order})
+      // Object.assign(state.users[index].orders, {id: state.users[index].id + 1, order: payload.order})
+      // state.users[index].orders = {id: 1, order: payload.order}
+      
     }
   },
   actions: {
