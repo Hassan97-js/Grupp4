@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-sidebar id="sidebar-right" right shadow width="450px">
+        <b-sidebar id="sidebar-right" right shadow backdrop width="450px">
             <header class="h2 mb-4">Shopping Cart</header>
             <hr class="bg-dark" />
             <main class="px-3 py-2 scroll-container">

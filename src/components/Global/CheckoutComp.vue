@@ -161,6 +161,7 @@
                 </b-col>
             </b-row>
         </b-container>
+        <b-modal id="thanks" ok-only @ok="backToStore" ok-title="Back to the store">Thank you for your order, {{ currentUser.username }}!</b-modal>
     </div>
 </template>
 
@@ -181,7 +182,13 @@
         },
         methods: {
             handleShop() {
+                this.$bvModal.show('thanks')
                 this.$store.commit('addOrder', {id: this.currentUser.id, order: this.myCart})
+                this.$store.commit('emptyCart', [])
+                
+            },
+            backToStore() {
+                this.$router.push('/')
             }
         },
         data() {
