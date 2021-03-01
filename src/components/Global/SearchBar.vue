@@ -9,12 +9,14 @@
         placeholder="Search"
         aria-label="Sök"
         aria-describedby="button-addon2"
+        v-model="search"
       />
       <div class="input-group-append">
         <button
           class="btn btn-outline-primary"
           type="button"
           id="button-addon2"
+          @click="submit()"
         >
           Search
         </button>
@@ -24,9 +26,55 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
 export default {
-  name: "SearchBar"
-};
+  name: 'SearchBar',
+  data() {
+    return {
+      products: []
+    }
+  },
+  methods: {
+    submit() {
+      this.$router.push({ name: 'Search' })
+    },
+    ...mapActions(['SET_SEARCH']),
+    ...mapGetters(['getSearch', 'getFilteredSearch'])
+  },
+  computed: {
+    filteredSearch() {
+      return this.$store.getters.getFilteredSearch
+    },
+    search: {
+      get() {
+        return this.$store.state.search
+      },
+      set(value) {
+        return this.$store.dispatch('filteredProducts', value)
+      }
+    }
+    // filteredProducts() {
+    //         if (this.$store.state.allProducts === null) {
+    //             return []
+    //         }
+    //         return this.$store.state.allProducts.filter((product) => {
+    //             return product.productType.match(this.search)
+    //         })
+    //     }
+
+    // search: {
+    //   get() {
+    //     return this.$store.state.search
+    //   },
+    //   set(search) {
+    //     this.$store.commit('setSearch', search)
+    //   }
+    // }
+  },
+  async created() {
+    await this.$store.dispatch('getProductInfo')
+  }
+}
 </script>
 
 <style scoped lang="scss">

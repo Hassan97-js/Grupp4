@@ -11,7 +11,7 @@ import About from "../views/About.vue";
 import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import User from "../views/User.vue";
-
+import SearchResults from "../views/SearchResults.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -62,6 +62,11 @@ const routes = [
     path: "/user",
     name: "User",
     component: User
+  },
+  {
+    path: "/searchresults",
+    name: "Search",
+    component: SearchResults
   }
 ];
 
