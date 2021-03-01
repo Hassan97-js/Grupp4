@@ -11,13 +11,13 @@
         </div>
         <div class="navLinks d-md-flex flex-column flex-lg-row">
             <router-link class="link-item mt-sm-2 mt-lg-0" to="/barn"
-                >Barn</router-link
+                >Kids</router-link
             >
             <router-link class="link-item mt-sm-2 mt-lg-0" to="/dam"
-                >Dam</router-link
+                >Women</router-link
             >
             <router-link class="link-item mt-sm-2 mt-lg-0" to="/herr"
-                >Herr</router-link
+                >Men</router-link
             >
             <router-link class="link-item mt-sm-2 mt-lg-0" to="/about"
                 >About</router-link
