@@ -10,12 +10,17 @@
             <div class="cart-price">
                 <h2 class="mt-3 font-weight-bolder">Total</h2>
                 <h3>{{ totalAmount }}:-</h3>
-                <button @click="checkLogIn" class="btn btn-primary m-4 button-kassa">
+                <button
+                    @click="checkLogIn"
+                    class="btn btn-primary m-4 button-kassa"
+                >
                     Checkout
                 </button>
             </div>
         </b-sidebar>
-        <b-modal id="logIn" hide-header hide-footer>Please log in or register an account to check out.</b-modal>
+        <b-modal id="logIn" hide-header hide-footer
+            >Please log in or register an account to check out.</b-modal
+        >
     </div>
 </template>
 
@@ -39,8 +44,8 @@
             }
         },
         methods: {
-            checkLogIn () {
-                if(localStorage.getItem('username')) {
+            checkLogIn() {
+                if (localStorage.getItem('username')) {
                     this.$router.push('/checkout')
                 } else {
                     this.$bvModal.show('logIn')
