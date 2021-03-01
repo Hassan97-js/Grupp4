@@ -82,25 +82,28 @@
                     <h3 class="select-size">Select a size</h3>
                     <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
                         <li class="col-4 px-1 px-lg-0">
-                            <span
+                            <button
                                 @click="pushSize('Small')"
-                                class="cursor border border-dark px-3 border-0"
-                                >S</span
+                                class="cursor btn-focus border border-dark px-3 border-0"
                             >
+                                S
+                            </button>
                         </li>
                         <li class="col-4 px-0">
-                            <span
+                            <button
                                 @click="pushSize('Medium')"
-                                class="cursor border border-dark px-3 border-0"
-                                >M</span
+                                class="cursor btn-focus border border-dark px-3 border-0"
                             >
+                                M
+                            </button>
                         </li>
                         <li class="col-4 px-0">
-                            <span
+                            <button
                                 @click="pushSize('Large')"
-                                class="cursor border border-dark px-3 border-0"
-                                >L</span
+                                class="cursor btn-focus border border-dark px-3 border-0"
                             >
+                                L
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -188,20 +191,18 @@
 </script>
 
 <style scoped lang="scss">
+    .btn-focus:focus {
+        background: #ee944f;
+        color: #fff;
+    }
     li {
         list-style: none;
     }
-    h1 {
-        color: rgb(59, 56, 106);
-    }
-    h2 {
-        color: rgb(59, 56, 106);
-    }
-    h3 {
-        color: rgb(59, 56, 106);
-    }
+    h1,
+    h2,
+    h3,
     span {
-        color: rgb(59, 56, 106);
+        color: #3b386a;
     }
     .cursor {
         cursor: pointer;
