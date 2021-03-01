@@ -40,7 +40,10 @@
                     {{ product.price }} SEK
                 </b-card-text>
 
-                <b-button href="#" variant="primary" class="addToCart"
+                <b-button
+                    :to="{ name: 'ProductPage', params: { id: product.id } }"
+                    variant="primary"
+                    class="addToCart"
                     ><b-icon
                         class="icon"
                         icon="cart3"
@@ -54,7 +57,12 @@
         >
         <b-modal id="added" hide-header hide-footer size="sm"
             >Added to favourites!
-            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="1.5"></b-icon>
+            <b-icon
+                icon="heart-fill"
+                animation="throb"
+                variant="danger"
+                font-scale="1.5"
+            ></b-icon>
         </b-modal>
     </div>
 </template>
