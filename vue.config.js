@@ -17,5 +17,9 @@ module.exports = {
       ]
       /* exclude: [ /_redirects/ ] */
     }
-  }
+  },
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/dist/'
+      : '/'
+  
 };
