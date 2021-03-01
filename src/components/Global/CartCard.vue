@@ -24,6 +24,9 @@
                         {{ product.productType }}
                     </p>
                     <p>{{ product.productTarget }}</p>
+                    <p>
+                        {{ product.size }}
+                    </p>
                 </div>
             </div>
             <div
@@ -62,7 +65,6 @@
 <script>
     export default {
         name: 'CartCard',
-
         computed: {
             cart() {
                 return this.$store.state.cart

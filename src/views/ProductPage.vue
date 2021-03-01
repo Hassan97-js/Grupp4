@@ -1,5 +1,12 @@
 <template>
     <section v-if="products" class="product row my-5">
+        <div class="modal">
+            <b-modal id="size-error-modal" title="Size error">
+                <p class="my-4">
+                    You did not choose a size. Please choose a size.
+                </p>
+            </b-modal>
+        </div>
         <div
             class="d-lg-flex"
             v-for="product in getRightProduct($route.params.id)"
@@ -41,7 +48,7 @@
                 <div class="variant mb-3">
                     <h3 class="select-color">Select a color</h3>
                     <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
-                        <li class="col-3">
+                        <li class="col-3 ">
                             <img
                                 class="w-75 rounded"
                                 :src="require('../assets/' + product.img)"
@@ -75,13 +82,28 @@
                     <h3 class="select-size">Select a size</h3>
                     <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
                         <li class="col-4 px-1 px-lg-0">
-                            <span class="border border-dark px-3">S</span>
+                            <button
+                                @click="pushSize('Small')"
+                                class="cursor btn-focus border border-dark px-3 border-0"
+                            >
+                                S
+                            </button>
                         </li>
                         <li class="col-4 px-0">
-                            <span class="border border-dark px-3">M</span>
+                            <button
+                                @click="pushSize('Medium')"
+                                class="cursor btn-focus border border-dark px-3 border-0"
+                            >
+                                M
+                            </button>
                         </li>
                         <li class="col-4 px-0">
-                            <span class="border border-dark px-3">L</span>
+                            <button
+                                @click="pushSize('Large')"
+                                class="cursor btn-focus border border-dark px-3 border-0"
+                            >
+                                L
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -95,9 +117,13 @@
                     class="row favourit w-100 mx-auto justify-content-between align-items-center"
                 >
                     <button @click="addToCart" class="buy--btn btn-success">
-                        ADD TO CART
+                        Add to cart
                     </button>
-                    <b-button @click="addToFaves(product)" class="ml-5 buy--btn" variant="primary">
+                    <b-button
+                        @click="addToFaves(product)"
+                        class="ml-5 buy--btn"
+                        variant="primary"
+                    >
                         <b-icon icon="heart-fill" variant="danger"></b-icon>
                     </b-button>
                 </div>
@@ -108,11 +134,20 @@
         >
         <b-modal id="added" hide-header hide-footer size="sm"
             >Added to favourites!
-            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="1.5"></b-icon>
+            <b-icon
+                icon="heart-fill"
+                animation="throb"
+                variant="danger"
+                font-scale="1.5"
+            ></b-icon>
         </b-modal>
         <b-modal id="addedToCart" hide-header hide-footer size="sm"
             >Added to cart!
-            <b-icon icon="cart-check" animation="cylon" font-scale="1.5"></b-icon>
+            <b-icon
+                icon="cart-check"
+                animation="cylon"
+                font-scale="1.5"
+            ></b-icon>
         </b-modal>
     </section>
 </template>
@@ -122,7 +157,8 @@
         data() {
             return {
                 rightProduct: null,
-                id: null
+                id: null,
+                size: null
             }
         },
         computed: {
@@ -136,16 +172,28 @@
         methods: {
             addToCart() {
                 for (const item of this.$store.state.cart) {
-                    if (item.id === this.id) {
+                    if (item.id === this.id && item.size === this.size) {
+                        item.counter++
                         return
                     }
                 }
-                this.$store.commit(
-                    'pushToCart',
-                    Object.assign({ counter: 1 }, this.rightProduct)
-                )
                 this.$bvModal.show('addedToCart')
                 setTimeout(() => this.$bvModal.hide('addedToCart'), 1500)
+                if (
+                    this.size === 'Small' ||
+                    this.size === 'Medium' ||
+                    this.size === 'Large'
+                ) {
+                    this.$store.commit(
+                        'pushToCart',
+                        Object.assign(
+                            { counter: 1, size: this.size },
+                            this.rightProduct
+                        )
+                    )
+                } else {
+                    this.$bvModal.show('size-error-modal')
+                }
             },
             getRightProduct(id) {
                 const data = this.products
@@ -158,6 +206,7 @@
                     return productId
                 })
             },
+
             // favourites
             addToFaves(product) {
                 if (localStorage.getItem('username')) {
@@ -170,26 +219,36 @@
                 } else {
                     this.$bvModal.show('mustLogIn')
                 }
+            },
+            pushSize(size) {
+                this.size = size
             }
         }
     }
 </script>
 
 <style scoped lang="scss">
+    .btn-focus:focus {
+        background: #ee944f;
+        color: #fff;
+    }
     li {
         list-style: none;
     }
-    h1 {
-        color: rgb(59, 56, 106);
-    }
-    h2 {
-        color: rgb(59, 56, 106);
-    }
-    h3 {
-        color: rgb(59, 56, 106);
-    }
+    h1,
+    h2,
+    h3,
     span {
-        color: rgb(59, 56, 106);
+        color: #3b386a;
+    }
+    .cursor {
+        cursor: pointer;
+        &:hover {
+            background: #ffb17a;
+            color: #fff;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
     }
     .buy--btn {
         padding: 1.2rem 2.2rem;

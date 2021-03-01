@@ -1,50 +1,41 @@
 <template>
-  <nav id="nav">
-    <div class="logo">
-      <router-link to="/">
-        <img
-          class="logoImg"
-          src="../../assets/double-line-logo.png"
-          alt="Bootstrap logo"
-        />
-      </router-link>
-    </div>
-    <div class="navLinks d-md-flex flex-column flex-lg-row">
-      <router-link class="link-item mt-sm-2 mt-lg-0" to="/barn"
-        >Barn</router-link
-      >
-      <router-link class="link-item mt-sm-2 mt-lg-0" to="/dam">Dam</router-link>
-      <router-link class="link-item mt-sm-2 mt-lg-0" to="/herr"
-        >Herr</router-link
-      >
-      <router-link class="link-item mt-sm-2 mt-lg-0" to="/about"
-        >About</router-link
-      >
-      <router-link class="link-item mt-sm-2 mt-lg-0" to="/product"
-        >Product Page</router-link
-      >
-    </div>
-    <div
-      class="userMenu d-flex align-items-start align-items-md-start align-items-lg-center"
-    >
-      <!-- <router-link class="link-item flex-link-item mr-2" to="/favorit">
-        <b-icon class="" icon="heart-fill" variant="danger"></b-icon>
-        Favourite
-      </router-link> -->
-      <router-link class="link-item flex-link-item mx-2" to="/login">
-        <b-icon class="" icon="person-circle" variant="info"></b-icon>
-        Account
-      </router-link>
-      <router-link
-        to="#"
-        v-b-toggle.sidebar-right
-        class="link-item mx-2 flex-link-item"
-      >
-        <b-icon class="icon" icon="cart3" variant="info"></b-icon>
-        Cart
-      </router-link>
-    </div>
-  </nav>
+    <nav id="nav">
+        <div class="logo">
+            <router-link to="/">
+                <img
+                    class="logoImg"
+                    src="../../assets/double-line-logo.png"
+                    alt="Bootstrap logo"
+                />
+            </router-link>
+        </div>
+        <div class="navLinks d-md-flex flex-column flex-lg-row">
+            <router-link class="link-item mt-sm-2 mt-lg-0" to="/barn"
+                >Barn</router-link
+            >
+            <router-link class="link-item mt-sm-2 mt-lg-0" to="/dam"
+                >Dam</router-link
+            >
+            <router-link class="link-item mt-sm-2 mt-lg-0" to="/herr"
+                >Herr</router-link
+            >
+            <router-link class="link-item mt-sm-2 mt-lg-0" to="/about"
+                >About</router-link
+            >
+        </div>
+        <div
+            class="userMenu d-flex align-items-start align-items-md-start align-items-lg-center"
+        >
+            <router-link class="link-item flex-link-item mx-2" to="/login">
+                <b-icon class="" icon="person-circle" variant="info"></b-icon>
+                Account
+            </router-link>
+            <a v-b-toggle.sidebar-right class="link-item mx-2 flex-link-item">
+                <b-icon class="icon" icon="cart3" variant="info"></b-icon>
+                Cart
+            </a>
+        </div>
+    </nav>
 </template>
 
 <script>
