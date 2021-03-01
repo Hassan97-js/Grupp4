@@ -12,57 +12,75 @@ import Login from "../views/Login.vue";
 import Register from "../views/Register.vue";
 import User from "../views/User.vue";
 import SearchResults from "../views/SearchResults.vue";
+import Sale from '../views/Sale.vue'
+import Checkout from '../views/Checkout.vue'
+import Form from '../components/Global/Form.vue'
+
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home
-  },
-  {
-    path: "/dam",
-    name: "Dam",
-    component: Dam
-  },
-  {
-    path: "/barn",
-    name: "Barn",
-    component: Barn
-  },
+    {
+        path: '/',
+        name: 'Home',
+        component: Home
+    },
+    {
+        path: '/dam',
+        name: 'Dam',
+        component: Dam
+    },
+    {
+        path: '/barn',
+        name: 'Barn',
+        component: Barn
+    },{
+        path: '/herr',
+        name: 'Herr',
+        component: Herr
+    },
 
-  {
-    path: "/herr",
-    name: "Herr",
-    component: Herr
-  },
+    {
+        path: '/product/:id?',
+        name: 'ProductPage',
+        component: ProductPage
+    },
 
-  {
-    path: "/product",
-    name: "Herr",
-    component: ProductPage
-  },
+    {
+        path: '/about',
+        name: 'About',
+        component: About
+    },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: Register
+    },
+    {
+        path: '/user',
+        name: 'User',
+        component: User
+    },
+    {
+        path: '/checkout',
+        name: 'Checkout',
+        component: Checkout
+    },
+    {
+        path: '/sale',
+        name: 'Sale',
+        component: Sale
+    },
 
-  {
-    path: "/about",
-    name: "About",
-    component: About
-  },
-  {
-    path: "/login",
-    name: "Login",
-    component: Login
-  },
-  {
-    path: "/register",
-    name: "Register",
-    component: Register
-  },
-  {
-    path: "/user",
-    name: "User",
-    component: User
-  },
+    {
+        path: '/Form',
+        name: 'Form',
+        component: Form
+    },
   {
     path: "/searchresults",
     name: "Search",
@@ -71,7 +89,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
-});
+    routes
+})
 
-export default router;
+export default router

@@ -1,29 +1,29 @@
 <template>
-  <div id="app">
-    <SearchBar />
-    <Nav />
-    <div class="hr-line"></div>
-    <b-container class="mt-4 wrapper">
-      <router-view />
-    </b-container>
-    <Footer />
-    <bootShoppingCart />
-  </div>
+    <div id="app">
+        <SearchBar />
+        <Nav />
+        <div class="hr-line"></div>
+        <b-container class="mt-4 wrapper">
+            <router-view />
+        </b-container>
+        <Footer />
+        <bootShoppingCart />
+    </div>
 </template>
 
 <script>
-import Nav from "./components/Global/Nav";
-import SearchBar from "./components/Global/SearchBar";
-import bootShoppingCart from "./components/Global/bootShoppingCart";
-import Footer from "./components/Global/Footer";
-export default {
-  components: {
-    Nav,
-    SearchBar,
-    bootShoppingCart,
-    Footer
-  }
-};
+    import Nav from './components/Global/Nav'
+    import SearchBar from './components/Global/SearchBar'
+    import bootShoppingCart from './components/Global/bootShoppingCart'
+    import Footer from './components/Global/Footer'
+    export default {
+        components: {
+            Nav,
+            SearchBar,
+            bootShoppingCart,
+            Footer
+        }
+    }
 </script>
 
 <style lang="scss">
@@ -34,7 +34,7 @@ export default {
 div.hr-line {
   width: 100vw;
   height: 0.5vh;
-  background: $main-blue;
+  background: $light-purple;
   opacity: 0.5;
 }
 #app {
