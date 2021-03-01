@@ -8,7 +8,8 @@
     "json-vue-serve": "npm-run-all -p json-serve serve",
     "generate": "json-server ./db/generate.js",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "json-vue-build": "npm-run-all -p json-serve build"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
