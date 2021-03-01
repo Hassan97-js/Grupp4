@@ -1,5 +1,6 @@
 <template>
     <!-- Saxat koden från product gallery -->
+    <!-- test -->
     <div class="filteredGallery">
         <b-card
             v-for="product in $store.state.filteredSearch"
