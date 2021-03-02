@@ -113,9 +113,10 @@
                                 ></b-avatar>
                                 <b-card-title>Noel</b-card-title>
                                 <b-card-text>
-                                    I love cats and this is text to build on the
-                                    card title and make up the bulk of the
-                                    card's content.
+                                    Switched lanes from caring for the elderly
+                                    to caring about Front-end. Or maybe my cat
+                                    whispered in my ear at night that I've
+                                    always had this dream, so why not pursue it?
                                 </b-card-text>
 
                                 <b-link
@@ -139,12 +140,15 @@
                                 ></b-avatar>
                                 <b-card-title>Ann</b-card-title>
                                 <b-card-text>
-                                    A future front-end devoloper who delights in making, breaking and fixing things. And also loves cats.
+                                    A future front-end devoloper who delights in
+                                    making, breaking and fixing things. And also
+                                    loves cats.
                                 </b-card-text>
 
-                                <b-link href="https://www.linkedin.com/in/ann-mathenge-87083a192/">LinkedIn </b-link>|<b-link
-                                    href="https://github.com/Gremlet"
-                                >
+                                <b-link
+                                    href="https://www.linkedin.com/in/ann-mathenge-87083a192/"
+                                    >LinkedIn </b-link
+                                >|<b-link href="https://github.com/Gremlet">
                                     Github</b-link
                                 >
                             </b-card>
