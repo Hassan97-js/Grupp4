@@ -104,6 +104,9 @@
         margin: 0px;
         background-color: #3988ff;
     }
+    img.card-img-top {
+        object-fit: contain;
+    }
     .categoryDeck {
         padding: 20px;
     }
@@ -119,6 +122,9 @@
             font-size: 14px;
             margin-bottom: 0;
         }
+        img.card-img-top {
+            height: 111px;
+        }
         div.card-body {
             padding: 15px;
         }
@@ -128,7 +134,6 @@
         /* fixed height of img:es */
         img.card-img-top {
             height: 300px;
-            object-fit: cover;
         }
     }
 </style>

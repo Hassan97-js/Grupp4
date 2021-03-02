@@ -14,7 +14,7 @@
             >
             <b-dropdown-item @click="sortByName">Name</b-dropdown-item>
         </b-dropdown>
-        <h1>Dam</h1>
+        <h1>Women</h1>
         <product-gallery :products="women"></product-gallery>
     </div>
 </template>

@@ -40,7 +40,10 @@
                     {{ product.price }} SEK
                 </b-card-text>
 
-                <b-button href="#" variant="primary" class="addToCart"
+                <b-button
+                    :to="{ name: 'ProductPage', params: { id: product.id } }"
+                    variant="primary"
+                    class="addToCart"
                     ><b-icon
                         class="icon"
                         icon="cart3"
@@ -54,7 +57,12 @@
         >
         <b-modal id="added" hide-header hide-footer size="sm"
             >Added to favourites!
-            <b-icon icon="heart-fill" animation="throb" variant="danger" font-scale="1.5"></b-icon>
+            <b-icon
+                icon="heart-fill"
+                animation="throb"
+                variant="danger"
+                font-scale="1.5"
+            ></b-icon>
         </b-modal>
     </div>
 </template>
@@ -94,54 +102,61 @@
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 50px;
-
-        div.productGallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 50px;
-        }
-        .price-cart {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 3px;
-        }
-        .product-type {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-            font-weight: bold;
-            text-transform: capitalize;
-        }
-        .product-card {
-            padding: 10px;
-            margin: 10px;
-        }
-        p.card-text.price {
-            margin: 0;
-        }
-        .sale {
-            position: absolute;
-            left: 80%;
-            top: 6%;
-            width: 50px;
-            text-align: center;
-            height: 30px;
-            line-height: 8px;
-            border-radius: 75px;
-            font-size: 13px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: bold;
-        }
-        .favourite {
-            position: absolute;
-            right: 83%;
-            top: 6%;
-            width: 40px;
-        }
+    }
+    div.card.mb-2.product-card {
+        min-width: 290px;
+    }
+    img.card-img-top {
+        width: 100%;
+        height: 40vh;
+        object-fit: contain;
+    }
+    div.productGallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .price-cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+    }
+    .product-type {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .product-card {
+        padding: 10px;
+        margin: 10px;
+    }
+    p.card-text.price {
+        margin: 0;
+    }
+    .sale {
+        position: absolute;
+        left: 80%;
+        top: 6%;
+        width: 50px;
+        text-align: center;
+        height: 30px;
+        line-height: 8px;
+        border-radius: 75px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: bold;
+    }
+    .favourite {
+        position: absolute;
+        right: 83%;
+        top: 6%;
+        width: 40px;
     }
 </style>
