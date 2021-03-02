@@ -7,7 +7,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 2
         },
         {
             "id": 2,
@@ -17,7 +18,8 @@
             "productTarget": "kids",
             "onSale": false,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 2
         },
         {
             "id": 3,
@@ -27,7 +29,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 4,
@@ -37,7 +40,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 5,
@@ -47,7 +51,8 @@
             "productTarget": "kids",
             "onSale": true,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 2
         },
         {
             "id": 6,
@@ -57,7 +62,8 @@
             "productTarget": "kids",
             "onSale": true,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 7,
@@ -67,7 +73,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 8,
@@ -77,7 +84,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 9,
@@ -87,7 +95,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 2
         },
         {
             "id": 10,
@@ -97,7 +106,8 @@
             "productTarget": "kids",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 11,
@@ -107,7 +117,8 @@
             "productTarget": "kids",
             "onSale": false,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 12,
@@ -117,7 +128,8 @@
             "productTarget": "kids",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 2
         },
         {
             "id": 13,
@@ -127,7 +139,8 @@
             "productTarget": "women",
             "onSale": false,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 14,
@@ -137,7 +150,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 2
         },
         {
             "id": 15,
@@ -147,7 +161,8 @@
             "productTarget": "women",
             "onSale": false,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 16,
@@ -157,7 +172,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 17,
@@ -167,7 +183,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 18,
@@ -177,7 +194,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 19,
@@ -187,7 +205,8 @@
             "productTarget": "women",
             "onSale": false,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 20,
@@ -197,7 +216,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 21,
@@ -207,7 +227,8 @@
             "productTarget": "women",
             "onSale": false,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 22,
@@ -217,7 +238,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 23,
@@ -227,7 +249,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 24,
@@ -237,7 +260,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 25,
@@ -247,7 +271,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 26,
@@ -257,7 +282,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 27,
@@ -267,7 +293,8 @@
             "productTarget": "men",
             "onSale": false,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 28,
@@ -277,7 +304,8 @@
             "productTarget": "kids",
             "onSale": false,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 29,
@@ -287,7 +315,8 @@
             "productTarget": "women",
             "onSale": false,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 30,
@@ -297,7 +326,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 31,
@@ -307,7 +337,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 32,
@@ -317,7 +348,8 @@
             "productTarget": "kids",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 33,
@@ -327,7 +359,8 @@
             "productTarget": "kids",
             "onSale": false,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 34,
@@ -337,7 +370,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 35,
@@ -347,7 +381,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 36,
@@ -357,7 +392,8 @@
             "productTarget": "men",
             "onSale": false,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 37,
@@ -367,7 +403,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 38,
@@ -377,7 +414,8 @@
             "productTarget": "women",
             "onSale": false,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 39,
@@ -387,7 +425,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 40,
@@ -397,7 +436,8 @@
             "productTarget": "kids",
             "onSale": false,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 41,
@@ -407,7 +447,8 @@
             "productTarget": "men",
             "onSale": false,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 42,
@@ -417,7 +458,8 @@
             "productTarget": "men",
             "onSale": false,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 3
         },
         {
             "id": 43,
@@ -427,7 +469,8 @@
             "productTarget": "kids",
             "onSale": false,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 44,
@@ -437,7 +480,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 299,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 5
         },
         {
             "id": 45,
@@ -447,7 +491,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 46,
@@ -457,7 +502,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 149,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 47,
@@ -467,7 +513,8 @@
             "productTarget": "kids",
             "onSale": false,
             "price": 199,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 48,
@@ -477,7 +524,8 @@
             "productTarget": "women",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         },
         {
             "id": 49,
@@ -487,7 +535,8 @@
             "productTarget": "men",
             "onSale": true,
             "price": 99,
-            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. "
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 1
         },
         {
             "id": 50,
@@ -496,7 +545,9 @@
             "img": "hoodie-purple.png",
             "productTarget": "kids",
             "onSale": true,
-            "price": 99
+            "price": 99,
+            "productInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam tincidunt suscipit at orci. ",
+            "rating": 4
         }
     ]
 }
