@@ -100,7 +100,7 @@
                   the bulk of the card's content.
                 </b-card-text>
 
-                <b-link href="#">LinkedIn </b-link>|<b-link href="#">
+                <b-link href="https://www.linkedin.com/feed/?trk=nav_logo">LinkedIn </b-link>|<b-link href="https://github.com/mirac369">
                   Github</b-link
                 >
               </b-card></b-col
