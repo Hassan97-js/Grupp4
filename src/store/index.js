@@ -11,6 +11,7 @@ export default new Vuex.Store({
     cart: [],
     search: null,
     filteredSearch: null,
+    allUsers: null,
 
     //User details
     users: [
@@ -51,6 +52,9 @@ export default new Vuex.Store({
       Vue.delete(state.cart, id);
     },
     // User mutations
+    storeAllUsers(state, allUsers) {
+      state.allUsers = allUsers;
+    },
     addUser(state, user) {
       state.users.push(user);
     },

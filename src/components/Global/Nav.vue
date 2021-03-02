@@ -27,7 +27,7 @@
             class="userMenu d-flex align-items-start align-items-md-start align-items-lg-center"
         >
             <router-link class="link-item flex-link-item mx-2" to="/login">
-                <b-icon class="" icon="person-circle" variant="info"></b-icon>
+                <b-icon icon="person-circle" variant="info"></b-icon>
                 Account
             </router-link>
             <a v-b-toggle.sidebar-right class="link-item mx-2 flex-link-item">

@@ -10,7 +10,7 @@
         <b-button class="mx-2" variant="danger" @click="logout"
             >Log out</b-button
         >
-        <hr class="mt-3">
+        <hr class="mt-3" />
         <b-container>
             <b-row class="mt-5">
                 <b-col>
@@ -107,17 +107,38 @@
             <hr class="mt-5" />
         </b-container>
         <order-hist :currentUser="currentUser"></order-hist>
-        <hr class="mt-5">
+        <hr class="mt-5" />
         <favourites :currentUser="currentUser"></favourites>
 
         <b-modal id="confirm-username" hide-header hide-footer size="sm">
-            <p class="my-4">Username changed! <b-icon icon="hand-thumbs-up" animation="cylon-vertical" font-scale="1.5"></b-icon> </p> 
+            <p class="my-4">
+                Username changed!
+                <b-icon
+                    icon="hand-thumbs-up"
+                    animation="cylon-vertical"
+                    font-scale="1.5"
+                ></b-icon>
+            </p>
         </b-modal>
         <b-modal id="confirm-password" hide-header hide-footer size="sm">
-            <p class="my-4">Password changed! <b-icon icon="hand-thumbs-up" animation="cylon-vertical" font-scale="1.5"></b-icon> </p>
+            <p class="my-4">
+                Password changed!
+                <b-icon
+                    icon="hand-thumbs-up"
+                    animation="cylon-vertical"
+                    font-scale="1.5"
+                ></b-icon>
+            </p>
         </b-modal>
         <b-modal id="confirm-email" hide-header hide-footer size="sm">
-            <p class="my-4">Email changed! <b-icon icon="hand-thumbs-up" animation="cylon-vertical" font-scale="1.5"></b-icon> </p>
+            <p class="my-4">
+                Email changed!
+                <b-icon
+                    icon="hand-thumbs-up"
+                    animation="cylon-vertical"
+                    font-scale="1.5"
+                ></b-icon>
+            </p>
         </b-modal>
     </div>
 </template>

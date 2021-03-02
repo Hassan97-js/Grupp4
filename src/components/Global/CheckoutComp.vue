@@ -18,54 +18,52 @@
                                     ></b-form-input>
                                 </b-form-group>
                                 <b-form-group
-                                    id="input-group-1"
+                                    id="input-group-2"
                                     label="Full Name:"
-                                    label-for="input-1"
+                                    label-for="input-2"
                                 >
                                     <b-form-input
-                                        id="input-1"
+                                        id="input-2"
                                         placeholder="Enter Name"
                                         required
                                     ></b-form-input>
                                 </b-form-group>
                                 <b-form-group
-                                    id="input-group-2"
+                                    id="input-group-3"
                                     label="Address:"
-                                    label-for="input-2"
+                                    label-for="input-3"
                                 >
                                     <b-form-input
                                         class="mb-2"
-                                        id="input-2"
+                                        id="input-3"
                                         placeholder="Street"
                                         required
                                     ></b-form-input>
                                     <b-form-input
                                         class="mb-2"
-                                        id="input-2"
                                         placeholder="Zip Code"
                                         required
                                     ></b-form-input>
                                     <b-form-input
-                                        id="input-2"
                                         placeholder="City"
                                         required
                                     ></b-form-input>
                                 </b-form-group>
                                 <b-form-group
                                     class="mt-4"
-                                    id="input-group-3"
+                                    id="input-group-4"
                                     label="Card Details"
-                                    label-for="input-3"
+                                    label-for="input-4"
                                 >
                                     <b-form-input
                                         class="mb-2"
-                                        id="input-3"
+                                        id="input-4"
                                         placeholder="Name on card"
                                         required
                                     ></b-form-input>
-                                    <b-input-group class="mt-2">
+                                    <b-input-group id="input-5" class="mt-2">
                                         <b-form-input
-                                            id="input-3"
+                                            id="input-5"
                                             required
                                             placeholder="Card number"
                                         ></b-form-input>
@@ -79,7 +77,7 @@
                                     <b-col md="8">
                                         <b-form-group
                                             class="mt-2"
-                                            id="input-group-4"
+                                            id="input-group-6"
                                             label="Expiry date"
                                         >
                                             <b-input-group class="mt-2">
@@ -98,7 +96,7 @@
                                     <b-col md="4" xs="6">
                                         <b-form-group
                                             class="mt-2"
-                                            id="input-group-5"
+                                            id="input-group-7"
                                             label="CVV"
                                         >
                                             <b-input-group class="mt-2">
@@ -133,23 +131,26 @@
                                 img-left
                                 class="mb-3"
                             >
-                                
-
                                 <b-card-text class="product-type">
-                                    {{ product.productType }} x {{ product.counter }}
+                                    {{ product.productType }} x
+                                    {{ product.counter }}
                                 </b-card-text>
 
                                 <b-card-text class="product-price">
                                     {{ product.price }}kr
                                 </b-card-text>
-                                
                             </b-card>
                         </div>
+                        <div
+                            class="mb-3 bg-secondary text-light font-weight-bolder"
+                        >
+                            Total: {{ totalAmount }}kr
+                        </div>
                         <div class="btn-group">
-                            <b-button variant="default" to="/"
-                                > <b-icon icon="arrow-left"></b-icon> Continue Shopping</b-button
+                            <b-button variant="default" to="/">
+                                <b-icon icon="arrow-left"></b-icon> Continue
+                                Shopping</b-button
                             >
-                            
                         </div>
                     </b-card>
                 </b-col>
@@ -171,6 +172,15 @@
         computed: {
             cart() {
                 return this.$store.state.cart
+            },
+            totalAmount() {
+                if (this.$store.state.cart.length > 0) {
+                    return this.$store.state.cart
+                        .map(product => product.price * product.counter)
+                        .reduce((total, amount) => total + amount)
+                } else {
+                    return 0
+                }
             }
         },
         created() {

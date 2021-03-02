@@ -30,20 +30,24 @@
                                     style="margin-bottom: 1em"
                                     size="lg"
                                 ></b-avatar>
-                                <b-card-title>Nicklas</b-card-title>
+                                <b-card-title>Niclas</b-card-title>
                                 <b-card-text>
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    Former excavator operator that change his
+                                    life to the deep web.
                                 </b-card-text>
 
-                                <b-link href="#">LinkedIn </b-link>|<b-link
-                                    href="#"
+                                <b-link
+                                    target="#"
+                                    href="https://www.linkedin.com/in/niclas-lundstr%C3%B6m-62b9891b5/"
+                                    >LinkedIn </b-link
+                                >|<b-link
+                                    target="#"
+                                    href="https://github.com/niclaslundstrom"
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                         <b-col>
                             <b-card
                                 class="card"
@@ -83,13 +87,18 @@
                                     title and make up the bulk of the card's
                                     content.
                                 </b-card-text>
-                                <b-link href="#">LinkedIn </b-link>|<b-link
-                                    href="#"
+                                <b-link
+                                    target="#"
+                                    href="https://www.linkedin.com/in/hassan-se-a81317190/"
+                                    >LinkedIn </b-link
+                                >|<b-link
+                                    target="#"
+                                    href="https://github.com/Hassan97-js"
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                     </b-row>
                     <b-row>
                         <b-col>
@@ -100,25 +109,21 @@
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
-                                    src="https://placekitten.com/250/250"
                                 ></b-avatar>
                                 <b-card-title>Noel</b-card-title>
                                 <b-card-text>
-                                    I love cats, and this is example text to
-                                    build on the card title and make up the bulk
-                                    of the card's content.
+                                    Some quick example text to build on the card
+                                    title and make up the bulk of the card's
+                                    content.
                                 </b-card-text>
 
-                                <b-link
-                                    href="https://www.linkedin.com/in/noel-andersson-köhler"
-                                    >LinkedIn </b-link
-                                >|<b-link
-                                    href="https://github.com/kycklingenrut"
+                                <b-link href="#">LinkedIn </b-link>|<b-link
+                                    href="#"
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                         <b-col>
                             <b-card
                                 class="card"
@@ -140,8 +145,8 @@
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                         <b-col>
                             <b-card
                                 class="card"
@@ -158,14 +163,13 @@
                                     content.
                                 </b-card-text>
 
-                                <b-link
-                                    href="https://www.linkedin.com/feed/?trk=nav_logo"
-                                    >LinkedIn </b-link
-                                >|<b-link href="https://github.com/mirac369">
+                                <b-link href="#">LinkedIn </b-link>|<b-link
+                                    href="#"
+                                >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                     </b-row>
                 </b-container>
             </div>

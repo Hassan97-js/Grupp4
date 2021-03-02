@@ -1,10 +1,11 @@
 <template>
-    <div v-if="kids">
+    <div class="d-flex flex-column" v-if="kids">
+        <h1>Kids</h1>
         <b-dropdown
             variant="primary"
             size="sm"
             text="Sort by"
-            class="float-right"
+            class="mx-auto w-25 my-4"
         >
             <b-dropdown-item @click="sortLowToHigh"
                 >Price low-high</b-dropdown-item
@@ -14,7 +15,6 @@
             >
             <b-dropdown-item @click="sortByName">Name</b-dropdown-item>
         </b-dropdown>
-        <h1>Kids</h1>
         <product-gallery :products="kids"></product-gallery>
     </div>
 </template>

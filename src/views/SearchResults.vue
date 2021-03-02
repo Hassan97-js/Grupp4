@@ -118,6 +118,11 @@
         justify-content: center;
         margin-bottom: 50px;
     }
+    img.card-img-top {
+        width: 100%;
+        height: 40vh;
+        object-fit: contain;
+    }
     .price-cart {
         display: flex;
         justify-content: space-between;

@@ -85,23 +85,22 @@
 </script>
 
 <style scoped lang="scss">
-    p {
-        color: rgb(59, 56, 106);
-    }
+    @import '../../scss/variables';
+    p,
     span {
-        color: rgb(59, 56, 106);
+        color: $dark-shade;
     }
     div.flex-cart-container {
         height: 35%;
         max-height: 220px;
         width: 80%;
         margin: 0 auto 1rem auto;
-        background: rgb(224, 211, 233);
+        background: #e0d3e9;
         display: flex;
         flex-direction: column;
         border-radius: 10px;
         padding: 1rem;
-        box-shadow: 5px 5px 14px -2px rgba(0, 0, 0, 0.35);
+        box-shadow: 5px 5px 14px -2px #00000059;
         div.flex-product-info-item {
             display: flex;
             padding: 0.3rem;

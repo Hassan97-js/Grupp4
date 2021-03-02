@@ -45,46 +45,13 @@
                 <div class="price font-weight-bold h1 mb-3">
                     <span>{{ product.price }} :-</span>
                 </div>
-                <div class="variant mb-3">
-                    <h3 class="select-color">Select a color</h3>
-                    <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
-                        <li class="col-3 ">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                        <li class="col-3">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                        <li class="col-3">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                        <li class="col-3">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                    </ul>
-                </div>
                 <div class="product-size mb-3">
                     <h3 class="select-size">Select a size</h3>
                     <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
                         <li class="col-4 px-1 px-lg-0">
                             <button
                                 @click="pushSize('Small')"
-                                class="cursor btn-focus border border-dark px-3 border-0"
+                                class="button-transition btn-focus border border-dark px-3 border-0"
                             >
                                 S
                             </button>
@@ -92,7 +59,7 @@
                         <li class="col-4 px-0">
                             <button
                                 @click="pushSize('Medium')"
-                                class="cursor btn-focus border border-dark px-3 border-0"
+                                class="button-transition btn-focus border border-dark px-3 border-0"
                             >
                                 M
                             </button>
@@ -100,7 +67,7 @@
                         <li class="col-4 px-0">
                             <button
                                 @click="pushSize('Large')"
-                                class="cursor btn-focus border border-dark px-3 border-0"
+                                class="button-transition btn-focus border border-dark px-3 border-0"
                             >
                                 L
                             </button>
@@ -173,11 +140,10 @@
             addToCart() {
                 for (const item of this.$store.state.cart) {
                     if (item.id === this.id && item.size === this.size) {
-                        item.counter++
+                        item.counter < 10 ? item.counter++ : (item.counter = 10)
                         return
                     }
                 }
-                this.$bvModal.show('addedToCart')
                 setTimeout(() => this.$bvModal.hide('addedToCart'), 1500)
                 if (
                     this.size === 'Small' ||
@@ -191,6 +157,7 @@
                             this.rightProduct
                         )
                     )
+                    this.$bvModal.show('addedToCart')
                 } else {
                     this.$bvModal.show('size-error-modal')
                 }
@@ -228,27 +195,10 @@
 </script>
 
 <style scoped lang="scss">
+    @import '../scss/variables';
     .btn-focus:focus {
         background: #ee944f;
         color: #fff;
-    }
-    li {
-        list-style: none;
-    }
-    h1,
-    h2,
-    h3,
-    span {
-        color: #3b386a;
-    }
-    .cursor {
-        cursor: pointer;
-        &:hover {
-            background: #ffb17a;
-            color: #fff;
-            border-radius: 3px;
-            transition: 0.3s;
-        }
     }
     .buy--btn {
         padding: 1.2rem 2.2rem;
@@ -259,37 +209,39 @@
         letter-spacing: 1.3px;
         color: #fff;
         box-shadow: 2px 2px 15px -7px #4c4c4c;
-        cursor: pointer;
-
+        &:hover {
+            transition: 0.3s;
+        }
         &:active {
             transform: scale(0.98);
         }
     }
-
-    @media (min-width: 0px) and (max-width: 576px) {
-        .product-info-title {
+    li {
+        list-style: none;
+    }
+    h1,
+    h2,
+    h3,
+    span {
+        color: #3b386a;
+    }
+    .button-transition {
+        &:hover {
+            transition: 0.3s;
+            background: #ffb17a;
+        }
+    }
+    .product-size {
+        h3 {
             font-size: 1.5rem;
         }
-        .price {
-            font-size: 1.4rem;
+        ul {
+            width: 80%;
         }
-        .variant {
-            h3 {
-                font-size: 1.5rem;
-            }
-        }
-        .product-size {
-            h3 {
-                font-size: 1.5rem;
-            }
-            ul {
-                width: 80%;
-            }
-        }
-        .description {
-            h3 {
-                font-size: 1.5rem;
-            }
+    }
+    .description {
+        h3 {
+            font-size: 1.5rem;
         }
     }
 

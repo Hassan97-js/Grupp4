@@ -4,7 +4,9 @@
             <b-card-body>
                 <b-form @submit="onSubmit">
                     <p class="h4 text-center ">Register</p>
-                    <p class="text-center">Don't have an account? Register here!</p>
+                    <p class="text-center">
+                        Don't have an account? Register here!
+                    </p>
                     <b-form-group
                         id="input-group-1"
                         label="Email:"
@@ -18,24 +20,24 @@
                         ></b-form-input>
                     </b-form-group>
                     <b-form-group
-                        id="input-group-1"
+                        id="input-group-2"
                         label="Username:"
-                        label-for="input-1"
+                        label-for="input-2"
                     >
                         <b-form-input
-                            id="input-1"
+                            id="input-2"
                             placeholder="Enter username"
                             required
                             v-model="username"
                         ></b-form-input>
                     </b-form-group>
                     <b-form-group
-                        id="input-group-2"
+                        id="input-group-3"
                         label="Password:"
-                        label-for="input-2"
+                        label-for="input-3"
                     >
                         <b-form-input
-                            id="input-2"
+                            id="input-3"
                             type="password"
                             required
                             placeholder="Enter password"
@@ -56,6 +58,7 @@
 </template>
 
 <script>
+    import '../../storage.js'
     export default {
         name: 'Register',
 
@@ -66,7 +69,7 @@
                 password: ''
             }
         },
-        mounted () {
+        mounted() {
             if (
                 localStorage.getItem('username') &&
                 localStorage.getItem('password')
@@ -74,7 +77,6 @@
                 this.$router.push('/user')
             }
         },
-
         methods: {
             onSubmit(e) {
                 e.preventDefault()
@@ -85,7 +87,14 @@
                 localStorage.setItem('username', this.username)
                 localStorage.setItem('password', this.password)
                 localStorage.setItem('email', this.email)
-                this.$store.commit('addUser', {id: this.$store.state.users.length +1, username: this.username, password: this.password, email: this.email, favourites:[], orders:[]})
+                this.$store.commit('addUser', {
+                    id: this.$store.state.users.length + 1,
+                    username: this.username,
+                    password: this.password,
+                    email: this.email,
+                    favourites: [],
+                    orders: []
+                })
                 this.$router.push('/user')
             }
         }

@@ -1,6 +1,6 @@
 <template>
     <div class="checkout-view">
-        <h1>Checkout</h1>
+        <h1 class="mb-4">Checkout</h1>
         <checkout-comp></checkout-comp>
     </div>
 </template>
@@ -15,7 +15,6 @@
 
 <style>
     .checkout-view {
-        height: 150vh;
         margin-bottom: 50px;
     }
 </style>
