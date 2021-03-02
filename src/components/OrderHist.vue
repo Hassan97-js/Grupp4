@@ -10,13 +10,12 @@
 
             <b-row v-for="orderItem in orderHistory" :key="orderItem.id">
                 <b-col class="text-left"> Order id: {{ orderItem.id }} </b-col>
-
-                <div
-                    class="product-list text-left"
-                    v-for="item in orderItem.order"
-                    :key="item.id"
-                >
-                    <b-col>
+                <div>
+                    <b-col
+                        class="product-list text-left"
+                        v-for="item in orderItem.order"
+                        :key="item.id"
+                    >
                         <b-list-group>
                             <b-list-group-item>
                                 <b-img
@@ -24,17 +23,18 @@
                                     class="images"
                                     style="height: 40px"
                                 ></b-img>
-                                <p>
+
+                                <span>
                                     {{ item.productType }} ({{
                                         item.productTarget
-                                    }}) x {{item.counter}} 
-                                </p>
-                                <p>{{ item.counter * item.price }}:-</p>
+                                    }}) x {{ item.counter }}
+                                </span>
                             </b-list-group-item>
                         </b-list-group>
                     </b-col>
                     <hr />
                 </div>
+                <b-col>Basket total: {{ orderItem.price }}:-</b-col>
             </b-row>
         </b-container>
     </div>
