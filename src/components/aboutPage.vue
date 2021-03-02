@@ -109,16 +109,20 @@
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
+                                    src="http://placekitten.com/250/250"
                                 ></b-avatar>
                                 <b-card-title>Noel</b-card-title>
                                 <b-card-text>
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    I love cats and this is text to build on the
+                                    card title and make up the bulk of the
+                                    card's content.
                                 </b-card-text>
 
-                                <b-link href="#">LinkedIn </b-link>|<b-link
-                                    href="#"
+                                <b-link
+                                    href="https://www.linkedin.com/in/noel-andersson-k%C3%B6hler/"
+                                    >LinkedIn </b-link
+                                >|<b-link
+                                    href="https://github.com/kycklingenrut"
                                 >
                                     Github</b-link
                                 >
