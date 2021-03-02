@@ -64,13 +64,14 @@
                                     content.
                                 </b-card-text>
 
-                                <b-link href="#">LinkedIn </b-link>|<b-link
-                                    href="#"
-                                >
+                                <b-link
+                                    href="http://linkedin.com/in/cathy-van-heijst-87472b15a"
+                                    >LinkedIn </b-link
+                                >|<b-link href="https://github.com/Cathyvh">
                                     Github</b-link
                                 >
-                            </b-card>
-                        </b-col>
+                            </b-card></b-col
+                        >
                         <b-col>
                             <b-card
                                 class="card"

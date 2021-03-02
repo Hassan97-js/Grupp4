@@ -52,30 +52,42 @@
         "env": {
             "node": true
         },
+        "extends": [
+            "eslint:recommended",
+            "plugin:vue/essential"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
         "eslintConfig": {
             "env": {
                 "node": true
             },
-            "extends": [
-                "eslint:recommended",
-                "plugin:vue/essential"
-            ],
-            "parserOptions": {
-                "parser": "babel-eslint"
-            },
-            "root": true,
-            "rules": {
-                "no-console": "off",
-                "vue/html-self-closing": [
-                    "error",
-                    {
-                        "html": {
-                            "component": "always",
-                            "normal": "always",
-                            "void": "always"
+            "eslintConfig": {
+                "env": {
+                    "node": true
+                },
+                "extends": [
+                    "eslint:recommended",
+                    "plugin:vue/essential"
+                ],
+                "parserOptions": {
+                    "parser": "babel-eslint"
+                },
+                "root": true,
+                "rules": {
+                    "no-console": "off",
+                    "vue/html-self-closing": [
+                        "error",
+                        {
+                            "html": {
+                                "component": "always",
+                                "normal": "always",
+                                "void": "always"
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     }
