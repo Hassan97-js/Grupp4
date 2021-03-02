@@ -46,8 +46,8 @@
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                         <b-col>
                             <b-card
                                 class="card"
@@ -69,8 +69,8 @@
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                         <b-col>
                             <b-card
                                 class="card"
@@ -96,8 +96,8 @@
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                     </b-row>
                     <b-row>
                         <b-col>
@@ -121,8 +121,8 @@
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                         <b-col>
                             <b-card
                                 class="card"
@@ -144,8 +144,8 @@
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                         <b-col>
                             <b-card
                                 class="card"
@@ -167,8 +167,8 @@
                                 >
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
                     </b-row>
                 </b-container>
             </div>

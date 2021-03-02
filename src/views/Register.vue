@@ -20,24 +20,24 @@
                         ></b-form-input>
                     </b-form-group>
                     <b-form-group
-                        id="input-group-1"
+                        id="input-group-2"
                         label="Username:"
-                        label-for="input-1"
+                        label-for="input-2"
                     >
                         <b-form-input
-                            id="input-1"
+                            id="input-2"
                             placeholder="Enter username"
                             required
                             v-model="username"
                         ></b-form-input>
                     </b-form-group>
                     <b-form-group
-                        id="input-group-2"
+                        id="input-group-3"
                         label="Password:"
-                        label-for="input-2"
+                        label-for="input-3"
                     >
                         <b-form-input
-                            id="input-2"
+                            id="input-3"
                             type="password"
                             required
                             placeholder="Enter password"
