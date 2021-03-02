@@ -45,39 +45,6 @@
                 <div class="price font-weight-bold h1 mb-3">
                     <span>{{ product.price }} :-</span>
                 </div>
-                <div class="variant mb-3">
-                    <h3 class="select-color">Select a color</h3>
-                    <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
-                        <li class="col-3 ">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                        <li class="col-3">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                        <li class="col-3">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                        <li class="col-3">
-                            <img
-                                class="w-75 rounded"
-                                :src="require('../assets/' + product.img)"
-                                alt="Product Image"
-                            />
-                        </li>
-                    </ul>
-                </div>
                 <div class="product-size mb-3">
                     <h3 class="select-size">Select a size</h3>
                     <ul class="row mx-0 mb-0 py-3 pl-0 pr-3">
@@ -228,9 +195,24 @@
 </script>
 
 <style scoped lang="scss">
+    @import '../scss/variables';
     .btn-focus:focus {
         background: #ee944f;
         color: #fff;
+    }
+    .buy--btn {
+        padding: 1.2rem 2.2rem;
+        border: none;
+        border-radius: 7px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        color: #fff;
+        box-shadow: 2px 2px 15px -7px #4c4c4c;
+        cursor: pointer;
+        &:active {
+            transform: scale(0.98);
+        }
     }
     li {
         list-style: none;
@@ -245,154 +227,122 @@
         cursor: pointer;
         &:hover {
             background: #ffb17a;
-            color: #fff;
-            border-radius: 3px;
-            transition: 0.3s;
+            .product-size {
+                h3 {
+                    font-size: 1.5rem;
+                }
+                ul {
+                    width: 80%;
+                }
+            }
+            .description {
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
         }
-    }
-    .buy--btn {
-        padding: 1.2rem 2.2rem;
-        border: none;
-        border-radius: 7px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 1.3px;
-        color: #fff;
-        box-shadow: 2px 2px 15px -7px #4c4c4c;
-        cursor: pointer;
 
-        &:active {
-            transform: scale(0.98);
-        }
-    }
-
-    @media (min-width: 0px) and (max-width: 576px) {
-        .product-info-title {
-            font-size: 1.5rem;
-        }
-        .price {
-            font-size: 1.4rem;
-        }
-        .variant {
-            h3 {
-                font-size: 1.5rem;
-            }
-        }
-        .product-size {
-            h3 {
-                font-size: 1.5rem;
-            }
-            ul {
-                width: 80%;
-            }
-        }
-        .description {
-            h3 {
-                font-size: 1.5rem;
-            }
-        }
-    }
-
-    @media (min-width: 577px) and (max-width: 768px) {
-        .product-info-title {
-            font-size: 2rem;
-        }
-        .price {
-            font-size: 1.9rem;
-        }
-        .variant {
-            h3 {
+        @media (min-width: 577px) and (max-width: 768px) {
+            .product-info-title {
                 font-size: 2rem;
             }
+            .price {
+                font-size: 1.9rem;
+            }
+            .variant {
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+            .product-size {
+                h3 {
+                    font-size: 2rem;
+                }
+                ul {
+                    width: 50%;
+                    li {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .description {
+                h3 {
+                    font-size: 2rem;
+                }
+                ul {
+                    li {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
-        .product-size {
-            h3 {
+
+        @media (min-width: 769px) and (max-width: 992px) {
+            .product-info-title {
+                font-size: 2.8rem;
+            }
+            .price {
+                font-size: 2.4rem;
+            }
+            .variant {
+                h3 {
+                    font-size: 2.5rem;
+                }
+            }
+            .product-size {
+                h3 {
+                    font-size: 2.5rem;
+                }
+                ul {
+                    width: 50%;
+                    li {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .description {
+                h3 {
+                    font-size: 2.5rem;
+                }
+                ul {
+                    li {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 993px) {
+            .product-info-title {
+                font-size: 2.6rem;
+            }
+            .price {
                 font-size: 2rem;
             }
-            ul {
-                width: 50%;
-                li {
-                    font-size: 1.2rem;
+            .variant {
+                h3 {
+                    font-size: 2.1rem;
                 }
             }
-        }
-        .description {
-            h3 {
-                font-size: 2rem;
-            }
-            ul {
-                li {
-                    font-size: 1.2rem;
+            .product-size {
+                h3 {
+                    font-size: 2.1rem;
+                }
+                ul {
+                    width: 50%;
+                    li {
+                        font-size: 1.2rem;
+                    }
                 }
             }
-        }
-    }
-
-    @media (min-width: 769px) and (max-width: 992px) {
-        .product-info-title {
-            font-size: 2.8rem;
-        }
-        .price {
-            font-size: 2.4rem;
-        }
-        .variant {
-            h3 {
-                font-size: 2.5rem;
-            }
-        }
-        .product-size {
-            h3 {
-                font-size: 2.5rem;
-            }
-            ul {
-                width: 50%;
-                li {
-                    font-size: 1.4rem;
+            .description {
+                h3 {
+                    font-size: 2.1rem;
                 }
-            }
-        }
-        .description {
-            h3 {
-                font-size: 2.5rem;
-            }
-            ul {
-                li {
-                    font-size: 1.4rem;
-                }
-            }
-        }
-    }
-
-    @media (min-width: 993px) {
-        .product-info-title {
-            font-size: 2.6rem;
-        }
-        .price {
-            font-size: 2rem;
-        }
-        .variant {
-            h3 {
-                font-size: 2.1rem;
-            }
-        }
-        .product-size {
-            h3 {
-                font-size: 2.1rem;
-            }
-            ul {
-                width: 50%;
-                li {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-        .description {
-            h3 {
-                font-size: 2.1rem;
-            }
-            ul {
-                li {
-                    font-size: 1.2rem;
+                ul {
+                    li {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }

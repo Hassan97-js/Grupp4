@@ -60,7 +60,6 @@
         },
 
         mounted() {
-
             if (
                 localStorage.getItem('username') &&
                 localStorage.getItem('password')
@@ -76,7 +75,6 @@
                 this.login()
             },
             login() {
-                
                 //validation
                 for (let i = 0; i < this.$store.state.users.length; i++) {
                     if (
@@ -88,7 +86,9 @@
                         localStorage.setItem('password', this.password)
 
                         this.$router.push('/user')
-                    } else this.$bvModal.show('incorrect')
+                    } else {
+                        this.$bvModal.show('incorrect')
+                    }
                 }
             }
         }

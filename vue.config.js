@@ -15,7 +15,7 @@ module.exports = {
           urlPattern: "http://localhost:3000/products"
         }
       ]
-      /* exclude: [ /_redirects/ ] */
-    }
+    },
+    publicPath: process.env.NODE_ENV === "production" ? "/dist/" : "/"
   }
 };

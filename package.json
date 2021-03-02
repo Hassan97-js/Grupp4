@@ -1,70 +1,77 @@
 {
-  "name": "user-storage",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "json-serve": "json-server ./db/products.json",
-    "serve": "vue-cli-service serve",
-    "json-vue-serve": "npm-run-all -p json-serve serve",
-    "generate": "json-server ./db/generate.js",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "bootstrap": "^4.6.0",
-    "bootstrap-vue": "^2.21.2",
-    "concurrently": "^5.3.0",
-    "core-js": "^3.6.5",
-    "json-server": "^0.16.3",
-    "lodash": "^4.17.20",
-    "register-service-worker": "^1.7.1",
-    "sass-loader": "^10.1.1",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-pwa": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-plugin-vuex": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "lint-staged": "^9.5.0",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.32.6",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [ "vue-cli-service lint", "git add" ]
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
+    "name": "user-storage",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "json-serve": "json-server ./db/products.json",
+        "serve": "vue-cli-service serve",
+        "json-vue-serve": "npm-run-all -p json-serve serve",
+        "generate": "json-server ./db/generate.js",
+        "build": "vue-cli-service build",
+        "json-vue-build": "npm-run-all -p json-serve build",
+        "lint": "vue-cli-service lint"
     },
-    "extends": [ "eslint:recommended", "plugin:vue/essential" ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "bootstrap-vue": "^2.21.2",
+        "concurrently": "^5.3.0",
+        "core-js": "^3.6.5",
+        "json-server": "^0.16.3",
+        "lodash": "^4.17.20",
+        "register-service-worker": "^1.7.1",
+        "sass-loader": "^10.1.1",
+        "vue": "^2.6.11",
+        "vue-router": "^3.2.0",
+        "vuex": "^3.4.0"
     },
-    "root": true,
-    "rules": {
-      "no-console": "off",
-      "vue/html-self-closing": [
-        "error",
-        {
-          "html": {
-            "component": "always",
-            "normal": "always",
-            "void": "always"
-          }
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-plugin-pwa": "~4.5.0",
+        "@vue/cli-plugin-router": "~4.5.0",
+        "@vue/cli-plugin-vuex": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "lint-staged": "^9.5.0",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.32.6",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,jsx,vue}": [
+            "vue-cli-service lint",
+            "git add"
+        ]
+    },
+    "eslintConfig": {
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "plugin:vue/essential"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "root": true,
+        "rules": {
+            "no-console": "off",
+            "vue/html-self-closing": [
+                "error",
+                {
+                    "html": {
+                        "component": "always",
+                        "normal": "always",
+                        "void": "always"
+                    }
+                }
+            ]
         }
-      ]
     }
-  }
 }
