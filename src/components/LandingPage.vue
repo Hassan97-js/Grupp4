@@ -46,7 +46,9 @@
                 header="Sale"
                 lead="View all items on Sale"
             >
-                <b-button variant="primary" to="/sale">Shop Sale</b-button>
+                <b-button variant="primary" size="md" to="/sale"
+                    >Shop Sale</b-button
+                >
             </b-jumbotron>
         </div>
 
@@ -100,9 +102,18 @@
     .saleJumbotron {
         padding: 20px;
     }
+    div.jumbotron.jumbotron-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .jumbotron-info {
         margin: 0px;
         background-color: #3988ff;
+    }
+    a.btn.btn-primary.btn-md {
+        width: 150px;
+        align-self: center;
     }
     img.card-img-top {
         object-fit: contain;
@@ -127,6 +138,9 @@
         }
         div.card-body {
             padding: 15px;
+        }
+        div.jumbotron.jumbotron-info {
+            height: 250px;
         }
     }
     /* Media query for fitted images */
