@@ -195,7 +195,8 @@
                 this.$bvModal.show('thanks')
                 this.$store.commit('addOrder', {
                     id: this.currentUser.id,
-                    order: this.myCart
+                    order: this.myCart,
+                    price: this.totalAmount
                 })
                 this.$store.commit('emptyCart', [])
             },
