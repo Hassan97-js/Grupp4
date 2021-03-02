@@ -82,11 +82,10 @@
                 <b-avatar style="margin-bottom: 1em" size="lg"></b-avatar>
                 <b-card-title>Ann</b-card-title>
                 <b-card-text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  A future front-end devoloper who delights in making, breaking and fixing things.
                 </b-card-text>
 
-                <b-link href="#">LinkedIn </b-link>|<b-link href="#">
+                <b-link href="https://www.linkedin.com/in/ann-mathenge-87083a192/" target="_blank">LinkedIn </b-link>|<b-link href="https://github.com/Gremlet" target="_blank">
                   Github</b-link
                 >
               </b-card></b-col

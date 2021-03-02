@@ -65,7 +65,7 @@
                 localStorage.getItem('username') &&
                 localStorage.getItem('password')
             ) {
-                this.$router.push('/user')
+                this.$router.push({name: 'User'})
             }
             return this.$store.state.users
         },
@@ -83,7 +83,6 @@
                         this.username === this.$store.state.users[i].username &&
                         this.password === this.$store.state.users[i].password
                     ) {
-                        console.log(this.$store.state.users[i])
                         localStorage.setItem('username', this.username)
                         localStorage.setItem('password', this.password)
 
