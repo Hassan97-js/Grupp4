@@ -71,7 +71,7 @@
             text-decoration: none;
         }
         a.router-link-exact-active {
-            color: #42b983;
+            color: #3988ff;
         }
         .icon {
             cursor: pointer;
