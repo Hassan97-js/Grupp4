@@ -6,7 +6,9 @@
             size="4em"
             class="mb-4"
         ></b-avatar>
-        <h1 v-if="currentUser">Hello {{ currentUser.username }}!</h1>
+        <h1 class="text-capitalize" v-if="currentUser">
+            Hello {{ currentUser.username }}!
+        </h1>
         <b-button class="mx-2" variant="danger" @click="logout"
             >Log out</b-button
         >

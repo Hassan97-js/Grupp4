@@ -140,6 +140,7 @@
             addToCart() {
                 for (const item of this.$store.state.cart) {
                     if (item.id === this.id && item.size === this.size) {
+                        /* item.id = Math.floor(Math.random() * 500) + 300 */
                         item.counter < 10 ? item.counter++ : (item.counter = 10)
                         return
                     }

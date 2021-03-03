@@ -189,6 +189,7 @@
                     this.currentUser = this.$store.state.users[i]
                 }
             }
+            console.log(this.myCart)
         },
         methods: {
             handleShop() {

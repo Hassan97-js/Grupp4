@@ -80,12 +80,15 @@
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
+                                    src="https://media-exp1.licdn.com/dms/image/C4E03AQFDjNUPdMmmDg/profile-displayphoto-shrink_800_800/0/1614268833081?e=1620259200&v=beta&t=haI37MHYEnGSX4H97W_QBO8Hi1-_-iU_l8JBLmubKIc"
                                 ></b-avatar>
                                 <b-card-title>Hassan</b-card-title>
                                 <b-card-text>
-                                    Some quick example text to build on the card
-                                    title and make up the bulk of the card's
-                                    content.
+                                    A man with lots of big dreams. One of my big
+                                    dreams is to be the best JavaScript/Web
+                                    developer in the field. Currently I am
+                                    studying JavaScript development at
+                                    IT-Högskola.
                                 </b-card-text>
                                 <b-link
                                     target="#"
@@ -210,6 +213,7 @@
             .card {
                 border: none;
                 min-width: 250px;
+                height: 28vh;
             }
         }
     }
