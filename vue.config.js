@@ -27,14 +27,6 @@ module.exports = {
           options: {
             networkTimeoutSeconds: 5
           },
-          urlPattern:
-            "https://www.linkedin.com/in/niclas-lundstr%C3%B6m-62b9891b5/"
-        },
-        {
-          handler: "NetworkFirst",
-          options: {
-            networkTimeoutSeconds: 5
-          },
           urlPattern: "http://placekitten.com/250/250"
         }
       ]
