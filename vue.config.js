@@ -21,13 +21,6 @@ module.exports = {
           },
           urlPattern:
             "https://media-exp1.licdn.com/dms/image/C4E03AQFDjNUPdMmmDg/profile-displayphoto-shrink_800_800/0/1614268833081?e=1620259200&v=beta&t=haI37MHYEnGSX4H97W_QBO8Hi1-_-iU_l8JBLmubKIc"
-        },
-        {
-          handler: "NetworkFirst",
-          options: {
-            networkTimeoutSeconds: 5
-          },
-          urlPattern: "http://placekitten.com/250/250"
         }
       ]
     },
