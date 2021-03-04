@@ -58,7 +58,6 @@
 </template>
 
 <script>
-    import '../../storage.js'
     export default {
         name: 'Register',
 
