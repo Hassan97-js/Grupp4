@@ -1,4 +1,4 @@
-// jshint esversion:8
+// jshint esversion:6
 
 import Vue from "vue";
 import Vuex from "vuex";
@@ -109,9 +109,11 @@ export default new Vuex.Store({
   },
   actions: {
     async getProductInfo(context) {
-      const productInfo = await fetch("http://localhost:3000/products");
+      const productInfo = await fetch(
+        "https://ourstoreapi.netlify.app/products.json"
+      );
       const productResult = await productInfo.json();
-      context.commit("setAllProducts", productResult);
+      context.commit("setAllProducts", productResult.products);
     },
     SET_SEARCH(context, newSearch) {
       context.commit("setSearch", newSearch);
