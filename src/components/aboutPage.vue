@@ -140,6 +140,7 @@
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
+                                    src="https://scontent.fgse1-1.fna.fbcdn.net/v/t1.0-9/97443248_10157158825686299_2161913183336398848_n.jpg?_nc_cat=111&ccb=3&_nc_sid=174925&_nc_ohc=Pquwg4LmTtwAX_M7XRV&_nc_ht=scontent.fgse1-1.fna&oh=bd5105767566a4c86a62792e05a9b011&oe=60671704"
                                 ></b-avatar>
                                 <b-card-title>Ann</b-card-title>
                                 <b-card-text>
@@ -149,7 +150,7 @@
                                 </b-card-text>
 
                                 <b-link
-                                    href="https://www.linkedin.com/in/ann-mathenge-87083a192/"
+                                    href="https://www.linkedin.com/in/ann-w-mathenge/"
                                     >LinkedIn </b-link
                                 >|<b-link href="https://github.com/Gremlet">
                                     Github</b-link
@@ -213,7 +214,7 @@
             .card {
                 border: none;
                 min-width: 250px;
-                height: 28vh;
+                
             }
         }
     }
