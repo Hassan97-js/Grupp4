@@ -20,12 +20,9 @@
             <div class="our-team">
                 <h1>Our team</h1>
                 <b-container align="left" class="bv-example-row">
-                    <b-row>
+                    <b-row cols-md="12">
                         <b-col>
-                            <b-card
-                                class="card"
-                                style="max-width: 15rem; margin-bottom: 2em"
-                            >
+                            <b-card class="card" style=" margin-bottom: 2em">
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
@@ -49,10 +46,7 @@
                             </b-card>
                         </b-col>
                         <b-col>
-                            <b-card
-                                class="card"
-                                style="max-width: 15rem; margin-bottom: 2em"
-                            >
+                            <b-card class="card" style=" margin-bottom: 2em">
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
@@ -70,13 +64,11 @@
                                 >|<b-link href="https://github.com/Cathyvh">
                                     Github</b-link
                                 >
-                            </b-card></b-col
-                        >
+                            </b-card>
+                        </b-col>
+
                         <b-col>
-                            <b-card
-                                class="card"
-                                style="max-width: 15rem; margin-bottom: 2em"
-                            >
+                            <b-card class="card" style=" margin-bottom: 2em">
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
@@ -102,13 +94,9 @@
                                 >
                             </b-card>
                         </b-col>
-                    </b-row>
-                    <b-row>
+
                         <b-col>
-                            <b-card
-                                class="card"
-                                style="max-width: 15rem; margin-bottom: 2em"
-                            >
+                            <b-card class="card" style=" margin-bottom: 2em">
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
@@ -133,10 +121,7 @@
                             </b-card>
                         </b-col>
                         <b-col>
-                            <b-card
-                                class="card"
-                                style="max-width: 15rem; margin-bottom: 2em"
-                            >
+                            <b-card class="card" style=" margin-bottom: 2em">
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
@@ -158,10 +143,7 @@
                             </b-card>
                         </b-col>
                         <b-col>
-                            <b-card
-                                class="card"
-                                style="max-width: 15rem; margin-bottom: 2em"
-                            >
+                            <b-card class="card" style=" margin-bottom: 2em">
                                 <b-avatar
                                     style="margin-bottom: 1em"
                                     size="lg"
@@ -214,7 +196,7 @@
             .card {
                 border: none;
                 min-width: 250px;
-                
+                min-height: 28vh;
             }
         }
     }

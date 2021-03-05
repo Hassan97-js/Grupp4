@@ -19,6 +19,9 @@
             <router-link class="link-item mt-sm-2 mt-lg-0" to="/herr"
                 >Men</router-link
             >
+            <router-link class="link-item mt-sm-2 mt-lg-0" to="/sale"
+                >Sale</router-link
+            >
             <router-link class="link-item mt-sm-2 mt-lg-0" to="/about"
                 >About</router-link
             >
