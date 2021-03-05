@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "/dist/" : "/",
   pwa: {
     manifestOptions: {
       background_color: "#3988ff"
@@ -24,6 +25,6 @@ module.exports = {
         }
       ]
     },
-    publicPath: process.env.NODE_ENV === "production" ? "/dist/" : "/"
+    
   }
 };
