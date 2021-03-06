@@ -1,5 +1,7 @@
 # This.Store Ecommerce 🔥
 
+## Check out the app here ➡️ https://this-store.netlify.app
+
 ## Project setup
 
 ```
